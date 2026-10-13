@@ -1,0 +1,367 @@
+id: メルケル細胞癌2025
+title: メルケル細胞癌診療ガイドライン2025（皮膚がん診療ガイドライン第4版）
+guideline: メルケル細胞癌診療ガイドライン2025（皮膚がん診療ガイドライン第4版）
+publisher: 日本皮膚科学会・日本皮膚悪性腫瘍学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+normalize_radicals: true
+description: |
+  『メルケル細胞癌診療ガイドライン 2025』(皮膚がん診療ガイドライン第 4 版 / 公益社団法人
+  日本皮膚科学会・一般社団法人日本皮膚悪性腫瘍学会 皮膚がん診療ガイドライン策定委員会
+  (メルケル細胞癌診療ガイドライングループ) / 日本皮膚科学会雑誌 135(2), 213-256, 2025 年)。
+
+  メルケル細胞癌 (Merkel cell carcinoma) は高齢者の日光露光部に好発する高悪性度の皮膚神経内分泌
+  腫瘍で、メルケル細胞ポリオーマウイルス (MCPyV) 陽性例と紫外線関連の陰性例に分かれる。
+  Minds 準拠で作成され、CQ は 4 課題 6 問 (CQ1 / CQ2 / CQ3-1 / CQ3-2 / CQ3-3 / CQ4、
+  推奨の強さ 1〜5 / エビデンスの強さ A〜D)。
+
+  構成は 3 章 + 文献:
+  - 第 1 章 メルケル細胞癌診療ガイドラインについて (目的・対象・作成方法・COI、別表 1 委員一覧)
+  - 第 2 章 メルケル細胞癌総論 (疫学と病因 / 診断 / 病期分類と治療指針 / 手術療法 /
+    放射線療法 / 薬物療法)
+  - 第 3 章 クリニカルクエスチョン (CQ) と推奨
+
+  子セクション:
+  - `95_推奨決定資料/CQ01`〜`CQ04` … 学会が「推奨作成関連資料 DL」zip で公開している
+    CQ ごとの推奨決定資料 (RC-7 EtD フレームワーク + SR-1〜SR-15 のシステマティックレビュー
+    関連資料)。**本体の CQ ノードと title を揃えてある**
+  - `96_スコープ` … 同 zip 同梱のスコープ (SC-1〜SC-4)
+strip_edge:
+  # 日皮会誌の柱とノンブル。raw モードではページ末尾の 2 行に来る
+  lines: 3
+  patterns:
+  - '\d{1,4} ● 日皮会誌：135（2）\s*，213-256，2025（令和 7）'
+  - '日皮会誌：135（2）\s*，213-256，2025（令和 7）● \d{1,4}'
+  - '皮膚がん診療ガイドライン策定委員会（メルケル細胞癌診療ガイドライングループ）'
+  - '皮膚がん診療ガイドライン第 4 版 メルケル細胞癌診療ガイドライン 2025( 日本皮膚科学会ガイドライン)?'
+pdfs:
+  - file: メルケル細胞癌診療ガイドライン2025.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/Merkel2025.pdf
+    label: 本体 (全 44 ページ)
+    # 学会誌組版の 2 段組。既定モードは左段と右段を 1 行ずつ交互に出すので raw を使う
+    mode: raw
+  # 推奨決定資料・スコープは zip 同梱で単独 URL が無いので url を省略して slug で指定する。
+  # SR の評価シート・EtD フレームワークが表主体なので layout
+  - {file: MCC_CQ_1_推奨決定資料.pdf,   slug: jda_merkel_2025_cq1_rec.pdf,   label: CQ1 推奨決定資料,   mode: layout}
+  - {file: MCC_CQ_2_推奨決定資料.pdf,   slug: jda_merkel_2025_cq2_rec.pdf,   label: CQ2 推奨決定資料,   mode: layout}
+  - {file: MCC_CQ_3-1_推奨決定資料.pdf, slug: jda_merkel_2025_cq3_1_rec.pdf, label: CQ3-1 推奨決定資料, mode: layout}
+  - {file: MCC_CQ_3-2_推奨決定資料.pdf, slug: jda_merkel_2025_cq3_2_rec.pdf, label: CQ3-2 推奨決定資料, mode: layout}
+  - {file: MCC_CQ_3-3_推奨決定資料.pdf, slug: jda_merkel_2025_cq3_3_rec.pdf, label: CQ3-3 推奨決定資料, mode: layout}
+  - {file: MCC_CQ_4_推奨決定資料.pdf,   slug: jda_merkel_2025_cq4_rec.pdf,   label: CQ4 推奨決定資料,   mode: layout}
+  - {file: MCC_SC_推奨決定資料.pdf,     slug: jda_merkel_2025_sc.pdf,        label: スコープ SC-1〜SC-4, mode: layout}
+nodes:
+  - path: 00_表紙・目次・作成委員会
+    title: 表紙・目次・皮膚がん診療ガイドライン策定委員会（メルケル細胞癌診療ガイドライングループ）
+    body:
+      - {pdf: メルケル細胞癌診療ガイドライン2025.pdf, pages: [1, 3], until: '^(#+\s*)?第 1 章'}
+  - path: 01_ガイドラインについて
+    title: 第 1 章 メルケル細胞癌診療ガイドラインについて
+    children:
+      - path: 01_目的・対象・特徴
+        title: '[第 1 章 1〜4] 本ガイドラインの目的／適応が想定される対象者／使用する場合の注意事項／本ガイドラインの特徴'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [3, 4]
+            from: '^(#+\s*)?第 1 章'
+            until: '^(#+\s*)?5．エビデンス収集方法'
+            allow_overlap: true
+      - path: 02_エビデンス収集とシステマティックレビュー
+        title: '[第 1 章 5〜6] エビデンス収集方法（文献検索）／システマティックレビューの方法 (別表 1 委員一覧)'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [4, 5]
+            from: '^(#+\s*)?5．エビデンス収集方法'
+            until: '^(#+\s*)?7．推奨決定の方法'
+            allow_overlap: true
+      - path: 03_推奨決定・改訂作業・外部評価
+        title: '[第 1 章 7〜11] 推奨決定の方法／作成過程における CQ 番号の変更／ガイドライン改訂作業の実際／外部評価およびパブリックコメント／今後の改訂とめざすべき改訂のあり方'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [5, 7]
+            from: '^(#+\s*)?7．推奨決定の方法'
+            until: '^(#+\s*)?12．出版後のガイドラインのモニタリング'
+            allow_overlap: true
+      - path: 04_モニタリング・資金・利益相反
+        title: '[第 1 章 12〜14] 出版後のガイドラインのモニタリング／資金／利益相反 (申告と COI への対応)'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [7, 8]
+            from: '^(#+\s*)?12．出版後のガイドラインのモニタリング'
+            until: '^(#+\s*)?第 2 章'
+            allow_overlap: true
+  - path: 02_総論
+    title: 第 2 章 メルケル細胞癌総論
+    children:
+      - path: 01_疫学と病因
+        title: '[第 2 章 1] メルケル細胞癌の疫学と病因 (疫学・MCPyV 陽性／陰性による病因分類・危険因子)'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [8, 9]
+            from: '^(#+\s*)?第 2 章'
+            until: '^(#+\s*)?2．メルケル細胞癌の診断'
+            allow_overlap: true
+      - path: 02_診断
+        title: '[第 2 章 2] メルケル細胞癌の診断 (臨床像・ダーモスコピー・病理組織・MCPyV・画像検査・センチネルリンパ節生検)'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [9, 13]
+            from: '^(#+\s*)?2．メルケル細胞癌の診断'
+            until: '^(#+\s*)?3．メルケル細胞癌の病期分類と治療指針'
+            allow_overlap: true
+      - path: 03_病期分類と治療指針
+        title: '[第 2 章 3] メルケル細胞癌の病期分類と治療指針 (TNM 分類・病期分類・病期別予後・病期別の治療指針)'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [13, 15]
+            from: '^(#+\s*)?3．メルケル細胞癌の病期分類と治療指針'
+            until: '^(#+\s*)?4．手術療法'
+            allow_overlap: true
+      - path: 04_手術療法
+        title: '[第 2 章 4] 手術療法 (原発巣切除・センチネルリンパ節生検・リンパ節郭清術・今後の課題と展望)'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [15, 17]
+            from: '^(#+\s*)?4．手術療法'
+            until: '^(#+\s*)?5．放射線療法'
+            allow_overlap: true
+      - path: 05_放射線療法
+        title: '[第 2 章 5] 放射線療法 (術後放射線療法・根治的放射線療法・緩和的放射線療法・照射線量／範囲／方法)'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [17, 20]
+            from: '^(#+\s*)?5．放射線療法'
+            until: '^(#+\s*)?6．薬物療法'
+            allow_overlap: true
+      - path: 06_薬物療法
+        title: '[第 2 章 6] 薬物療法 (免疫療法 avelumab・pembrolizumab／殺細胞性抗がん剤による化学療法)'
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [20, 23]
+            from: '^(#+\s*)?6．薬物療法'
+            until: '^(#+\s*)?第 3 章'
+            allow_overlap: true
+  - path: 03_クリニカルクエスチョンと推奨
+    title: 第 3 章 メルケル細胞癌診療ガイドライン クリニカルクエスチョン（CQ）と推奨
+    children:
+      - path: CQ01
+        title: '[CQ1] メルケル細胞癌原発巣の手術療法の際に，1 cm 以下の側方マージンは勧められるか？【術後放射線療法を施行しない場合：推奨の強さ 4（実施しないことを推奨）／エビデンスの強さ D、施行する場合：推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ01`。
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [23, 25]
+            from: '^(#+\s*)?第 3 章'
+            allow_overlap: true
+      - path: CQ02
+        title: '[CQ2] メルケル細胞癌に対してセンチネルリンパ節生検は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ02`。
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [26, 28]
+            until: '^(#+\s*)?CQ3-1 メルケル細胞癌原発巣切除後の断端陰性例'
+      - path: CQ03-1
+        title: '[CQ3-1] メルケル細胞癌原発巣切除後の断端陰性例に，原発巣に対する術後放射線療法は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ03-1`。
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [28, 30]
+            from: '^(#+\s*)?CQ3-1 メルケル細胞癌原発巣切除後の断端陰性例'
+            until: '^(#+\s*)?CQ3-2 センチネルリンパ節転移陰性の場合'
+            allow_overlap: true
+      - path: CQ03-2
+        title: '[CQ3-2] センチネルリンパ節転移陰性の場合，領域リンパ節群への術後放射線療法は勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ03-2`。
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [30, 32]
+            from: '^(#+\s*)?CQ3-2 センチネルリンパ節転移陰性の場合'
+            until: '^(#+\s*)?CQ3-3 領域リンパ節郭清後に'
+            allow_overlap: true
+      - path: CQ03-3
+        title: '[CQ3-3] 領域リンパ節郭清後に領域リンパ節群への術後放射線療法は勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ03-3`。
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [32, 34]
+            from: '^(#+\s*)?CQ3-3 領域リンパ節郭清後に'
+            until: '^(#+\s*)?CQ4\D{0,6}免疫療法不応または不適な'
+            allow_overlap: true
+      - path: CQ04
+        title: '[CQ4] 免疫療法不応または不適な進行期メルケル細胞癌に EP/EC 療法以外の全身化学療法は勧められるか？【推奨の強さ 5（推奨なし）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ04`。
+        body:
+          - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+            pages: [34, 37]
+            from: '^(#+\s*)?CQ4\D{0,6}免疫療法不応または不適な'
+            until: '^(#+\s*)?文 献'
+            allow_overlap: true
+  - path: 04_文献
+    title: 文献
+    body:
+      - pdf: メルケル細胞癌診療ガイドライン2025.pdf
+        pages: [37, 44]
+        from: '^(#+\s*)?文 献'
+        allow_overlap: true
+  - path: 95_推奨決定資料
+    title: 推奨決定資料（CQ1・CQ2・CQ3-1・CQ3-2・CQ3-3・CQ4）
+    body_text: |
+      学会が「推奨作成関連資料 DL」の zip で公開している、CQ ごとの推奨決定資料。
+      **RC-7 EtD フレームワーク (Clinical recommendation: Individual perspective)** に続いて、
+      システマティックレビューの全資料 (SR-1 データベース検索結果 / SR-2 文献検索フローチャート /
+      SR-3 二次スクリーニング後の一覧表 / SR-4 引用文献リスト / SR-6 評価シート 観察研究 /
+      SR-7 評価シート エビデンス総体 / SR-9 定性的システマティックレビュー /
+      SR-11 システマティックレビューレポートのまとめ / SR-15 Future Research Question) が入る。
+      1 資料 18〜33 ページ・5 万〜11 万字あるので、様式ごとにノードを割った。
+      **本体の CQ ノード (`03_クリニカルクエスチョンと推奨/CQ01`〜) と title を揃えてある。**
+      単独 URL は無く zip 同梱なので、配信名は `jda_merkel_2025_cq<n>_rec.pdf` を自分で付けた。
+    children:
+      - path: CQ01
+        title: '[CQ1 推奨決定資料] メルケル細胞癌原発巣の手術療法の際に，1 cm 以下の側方マージンは勧められるか？【術後放射線療法を施行しない場合：推奨の強さ 4（実施しないことを推奨）／エビデンスの強さ D、施行する場合：推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D】'
+        children:
+          - {path: 01_EtDフレームワーク, title: '[CQ1 推奨決定資料] RC-7 EtD フレームワーク（Clinical recommendation: Individual perspective）', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: [1, 5]}]}
+          - {path: 02_データベース検索結果, title: '[CQ1 推奨決定資料] SR-1 データベース検索結果', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: [6, 8]}]}
+          - {path: 03_文献検索フローチャート, title: '[CQ1 推奨決定資料] SR-2 文献検索フローチャート（PRISMA 声明を改変）', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: 9}]}
+          - {path: 04_二次スクリーニング後の一覧表, title: '[CQ1 推奨決定資料] SR-3 二次スクリーニング後の一覧表', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: 10}]}
+          - {path: 05_引用文献リスト, title: '[CQ1 推奨決定資料] SR-4 引用文献リスト', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: 11}]}
+          - {path: 06_評価シート_観察研究, title: '[CQ1 推奨決定資料] SR-6 評価シート 観察研究 (アウトカムごと)', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: [12, 15]}]}
+          - {path: 07_評価シート_エビデンス総体, title: '[CQ1 推奨決定資料] SR-7 評価シート エビデンス総体', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: 16}]}
+          - {path: 08_定性的システマティックレビュー, title: '[CQ1 推奨決定資料] SR-9 定性的システマティックレビュー', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: [17, 18]}]}
+          - {path: 09_SRレポートのまとめ, title: '[CQ1 推奨決定資料] SR-11 システマティックレビューレポートのまとめ', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: 19}]}
+          - {path: 10_Future_Research_Question, title: '[CQ1 推奨決定資料] SR-15 Future Research Question', body: [{pdf: MCC_CQ_1_推奨決定資料.pdf, pages: 20}]}
+      - path: CQ02
+        title: '[CQ2 推奨決定資料] メルケル細胞癌に対してセンチネルリンパ節生検は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        children:
+          - {path: 01_EtDフレームワーク, title: '[CQ2 推奨決定資料] RC-7 EtD フレームワーク（Clinical recommendation: Individual perspective）', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: [1, 5]}]}
+          - {path: 02_データベース検索結果, title: '[CQ2 推奨決定資料] SR-1 データベース検索結果', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: [6, 8]}]}
+          - {path: 03_文献検索フローチャート, title: '[CQ2 推奨決定資料] SR-2 文献検索フローチャート（PRISMA 声明を改変）', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: 9}]}
+          - {path: 04_二次スクリーニング後の一覧表, title: '[CQ2 推奨決定資料] SR-3 二次スクリーニング後の一覧表', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: 10}]}
+          - {path: 05_引用文献リスト, title: '[CQ2 推奨決定資料] SR-4 引用文献リスト', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: 11}]}
+          - {path: 06_評価シート_観察研究, title: '[CQ2 推奨決定資料] SR-6 評価シート 観察研究 (アウトカムごと)', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: [12, 18]}]}
+          - {path: 07_評価シート_エビデンス総体, title: '[CQ2 推奨決定資料] SR-7 評価シート エビデンス総体', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: 19}]}
+          - {path: 08_定性的システマティックレビュー, title: '[CQ2 推奨決定資料] SR-9 定性的システマティックレビュー', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: 20}]}
+          - {path: 09_SRレポートのまとめ, title: '[CQ2 推奨決定資料] SR-11 システマティックレビューレポートのまとめ', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: 21}]}
+          - {path: 10_Future_Research_Question, title: '[CQ2 推奨決定資料] SR-15 Future Research Question', body: [{pdf: MCC_CQ_2_推奨決定資料.pdf, pages: 22}]}
+      - path: CQ03-1
+        title: '[CQ3-1 推奨決定資料] メルケル細胞癌原発巣切除後の断端陰性例に，原発巣に対する術後放射線療法は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        children:
+          - {path: 01_EtDフレームワーク, title: '[CQ3-1 推奨決定資料] RC-7 EtD フレームワーク（Clinical recommendation: Individual perspective）', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: [1, 5]}]}
+          - {path: 02_データベース検索結果, title: '[CQ3-1 推奨決定資料] SR-1 データベース検索結果', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: [6, 8]}]}
+          - {path: 03_文献検索フローチャート, title: '[CQ3-1 推奨決定資料] SR-2 文献検索フローチャート（PRISMA 声明を改変）', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: 9}]}
+          - {path: 04_二次スクリーニング後の一覧表, title: '[CQ3-1 推奨決定資料] SR-3 二次スクリーニング後の一覧表', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: 10}]}
+          - {path: 05_引用文献リスト, title: '[CQ3-1 推奨決定資料] SR-4 引用文献リスト', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: 11}]}
+          - {path: 06_評価シート_観察研究, title: '[CQ3-1 推奨決定資料] SR-6 評価シート 観察研究 (アウトカムごと)', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: [12, 17]}]}
+          - {path: 07_評価シート_エビデンス総体, title: '[CQ3-1 推奨決定資料] SR-7 評価シート エビデンス総体', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: 18}]}
+          - {path: 08_定性的システマティックレビュー, title: '[CQ3-1 推奨決定資料] SR-9 定性的システマティックレビュー', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: [19, 20]}]}
+          - {path: 09_SRレポートのまとめ, title: '[CQ3-1 推奨決定資料] SR-11 システマティックレビューレポートのまとめ', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: 21}]}
+          - {path: 10_Future_Research_Question, title: '[CQ3-1 推奨決定資料] SR-15 Future Research Question', body: [{pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: 22}]}
+      - path: CQ03-2
+        title: '[CQ3-2 推奨決定資料] センチネルリンパ節転移陰性の場合，領域リンパ節群への術後放射線療法は勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        children:
+          - {path: 01_EtDフレームワーク, title: '[CQ3-2 推奨決定資料] RC-7 EtD フレームワーク（Clinical recommendation: Individual perspective）', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: [1, 5]}]}
+          - {path: 02_データベース検索結果, title: '[CQ3-2 推奨決定資料] SR-1 データベース検索結果', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: [6, 8]}]}
+          - {path: 03_文献検索フローチャート, title: '[CQ3-2 推奨決定資料] SR-2 文献検索フローチャート（PRISMA 声明を改変）', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: 9}]}
+          - {path: 04_二次スクリーニング後の一覧表, title: '[CQ3-2 推奨決定資料] SR-3 二次スクリーニング後の一覧表', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: 10}]}
+          - {path: 05_引用文献リスト, title: '[CQ3-2 推奨決定資料] SR-4 引用文献リスト', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: 11}]}
+          - {path: 06_評価シート_観察研究, title: '[CQ3-2 推奨決定資料] SR-6 評価シート 観察研究 (アウトカムごと)', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: [12, 16]}]}
+          - {path: 07_評価シート_エビデンス総体, title: '[CQ3-2 推奨決定資料] SR-7 評価シート エビデンス総体', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: 17}]}
+          - {path: 08_定性的システマティックレビュー, title: '[CQ3-2 推奨決定資料] SR-9 定性的システマティックレビュー', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: 18}]}
+          - {path: 09_SRレポートのまとめ, title: '[CQ3-2 推奨決定資料] SR-11 システマティックレビューレポートのまとめ', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: 19}]}
+          - {path: 10_Future_Research_Question, title: '[CQ3-2 推奨決定資料] SR-15 Future Research Question', body: [{pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: 20}]}
+      - path: CQ03-3
+        title: '[CQ3-3 推奨決定資料] 領域リンパ節郭清後に領域リンパ節群への術後放射線療法は勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        children:
+          - {path: 01_EtDフレームワーク, title: '[CQ3-3 推奨決定資料] RC-7 EtD フレームワーク（Clinical recommendation: Individual perspective）', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: [1, 5]}]}
+          - {path: 02_データベース検索結果, title: '[CQ3-3 推奨決定資料] SR-1 データベース検索結果', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: [6, 8]}]}
+          - {path: 03_文献検索フローチャート, title: '[CQ3-3 推奨決定資料] SR-2 文献検索フローチャート（PRISMA 声明を改変）', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: 9}]}
+          - {path: 04_二次スクリーニング後の一覧表, title: '[CQ3-3 推奨決定資料] SR-3 二次スクリーニング後の一覧表', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: 10}]}
+          - {path: 05_引用文献リスト, title: '[CQ3-3 推奨決定資料] SR-4 引用文献リスト', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: 11}]}
+          - {path: 06_評価シート_観察研究, title: '[CQ3-3 推奨決定資料] SR-6 評価シート 観察研究 (領域リンパ節郭清後の術後放射線療法。アウトカムごと)', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: [12, 14]}]}
+          - {path: 07_評価シート_エビデンス総体, title: '[CQ3-3 推奨決定資料] SR-7 評価シート エビデンス総体', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: 15}]}
+          - {path: 08_定性的システマティックレビュー, title: '[CQ3-3 推奨決定資料] SR-9 定性的システマティックレビュー', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: 16}]}
+          - {path: 09_SRレポートのまとめ, title: '[CQ3-3 推奨決定資料] SR-11 システマティックレビューレポートのまとめ', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: 17}]}
+          - {path: 10_Future_Research_Question, title: '[CQ3-3 推奨決定資料] SR-15 Future Research Question', body: [{pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: 18}]}
+      - path: CQ04
+        title: '[CQ4 推奨決定資料] 免疫療法不応または不適な進行期メルケル細胞癌に EP/EC 療法以外の全身化学療法は勧められるか？【推奨の強さ 5（推奨なし）／エビデンスの強さ D（とても弱い）】'
+        children:
+          - {path: 01_EtDフレームワーク, title: '[CQ4 推奨決定資料] RC-7 EtD フレームワーク（Clinical recommendation: Individual perspective）', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: [1, 6]}]}
+          - {path: 02_データベース検索結果, title: '[CQ4 推奨決定資料] 4-1 データベース検索結果', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: [7, 9]}]}
+          - {path: 03_文献検索フローチャート, title: '[CQ4 推奨決定資料] 4-2 文献検索フローチャート（PRISMA 声明を改変）', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: 10}]}
+          - {path: 04_二次スクリーニング後の一覧表, title: '[CQ4 推奨決定資料] 4-3 二次スクリーニング後の一覧表', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: [11, 12]}]}
+          - {path: 05_引用文献リスト, title: '[CQ4 推奨決定資料] 4-4 引用文献リスト', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: 13}]}
+          - {path: 06_評価シート_観察研究_1, title: '[CQ4 推奨決定資料] 4-6 評価シート 観察研究 (1/2。アウトカムごと)', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: [14, 18]}]}
+          - {path: 07_評価シート_観察研究_2, title: '[CQ4 推奨決定資料] 4-6 評価シート 観察研究 (2/2。アウトカムごと)', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: [19, 23]}]}
+          - {path: 08_評価シート_エビデンス総体, title: '[CQ4 推奨決定資料] 4-7 評価シート エビデンス総体', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: [24, 26]}]}
+          - {path: 09_定性的システマティックレビュー, title: '[CQ4 推奨決定資料] 4-8 定性的システマティックレビュー', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: [27, 31]}]}
+          - {path: 10_SRレポートのまとめ, title: '[CQ4 推奨決定資料] SR-11 システマティックレビューレポートのまとめ', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: 32}]}
+          - {path: 11_Future_Research_Question, title: '[CQ4 推奨決定資料] SR-15 Future Research Question', body: [{pdf: MCC_CQ_4_推奨決定資料.pdf, pages: 33}]}
+  - path: 96_スコープ
+    title: スコープ（SC-1 疾患トピックの基本的特徴／SC-2 診療アルゴリズム／SC-3 スコープ／SC-4 CQ の設定）
+    body_text: |
+      学会が「推奨作成関連資料 DL」の zip で公開しているスコープ。Minds のスコープ様式
+      SC-1〜SC-4 に沿って、疾患トピックの基本的特徴、診療アルゴリズム、スコープ
+      (ガイドラインがカバーする内容・システマティックレビューに関する事項・推奨作成から
+      公開までの取り決め)、CQ の設定 (重要臨床課題ごとの PICO) を示す。
+    children:
+      - {path: 01_疾患トピックの基本的特徴, title: '[SC-1] 疾患トピックの基本的特徴', body: [{pdf: MCC_SC_推奨決定資料.pdf, pages: 1}]}
+      - {path: 02_診療アルゴリズム, title: '[SC-2] 診療アルゴリズム', body: [{pdf: MCC_SC_推奨決定資料.pdf, pages: 2}]}
+      - {path: 03_スコープ, title: '[SC-3] スコープ (タイトル・目的・トピック・想定される利用者と利用施設・既存ガイドラインとの関係・重要臨床課題・CQ リスト・システマティックレビューに関する事項・推奨作成から公開までの取り決め)', body: [{pdf: MCC_SC_推奨決定資料.pdf, pages: [3, 7]}]}
+      - path: 04_CQの設定
+        title: '[SC-4] CQ の設定 (重要臨床課題ごとの PICO)'
+        children:
+          - {path: CQ01, title: '[SC-4 CQ1] 重要臨床課題 1「切除マージンの検討」', body: [{pdf: MCC_SC_推奨決定資料.pdf, pages: 8}]}
+          - {path: CQ02, title: '[SC-4 CQ2] 重要臨床課題 2「センチネルリンパ節生検の位置付け」', body: [{pdf: MCC_SC_推奨決定資料.pdf, pages: 9}]}
+          - {path: CQ03, title: '[SC-4 CQ3] 重要臨床課題 3「術後放射線療法の必要性」(CQ3-1〜CQ3-3 のもとになった課題)', body: [{pdf: MCC_SC_推奨決定資料.pdf, pages: 10}]}
+          - {path: CQ04, title: '[SC-4 CQ4] 重要臨床課題 4「進行期における全身療法オプション」', body: [{pdf: MCC_SC_推奨決定資料.pdf, pages: 11}]}
+vlm_candidates:
+  - {pdf: メルケル細胞癌診療ガイドライン2025.pdf, pages: 4, why: 別表 1 委員一覧 + エビデンスレベルの分類表}
+  - {pdf: メルケル細胞癌診療ガイドライン2025.pdf, pages: 10, why: ダーモスコピー所見の臨床写真 (a. 中央の紅色無構造領域と周囲の樹枝状血管ほか)}
+  - {pdf: メルケル細胞癌診療ガイドライン2025.pdf, pages: [13, 15], why: TNM 分類・病期分類・病期別予後・病期別治療指針の表とアルゴリズム図}
+  - {pdf: メルケル細胞癌診療ガイドライン2025.pdf, pages: [16, 19], why: センチネルリンパ節生検・リンパ節郭清・放射線療法の成績一覧表 (多列)}
+  - {pdf: メルケル細胞癌診療ガイドライン2025.pdf, pages: [21, 23], why: avelumab・pembrolizumab・化学療法レジメンの試験成績表}
+  - {pdf: メルケル細胞癌診療ガイドライン2025.pdf, pages: [23, 37], why: 第 3 章 CQ1〜CQ4 の「投票結果」表と「文献検索式と文献選択」表 (検索式と件数が別行に割れる)}
+  - {pdf: MCC_SC_推奨決定資料.pdf, pages: 2, why: SC-2 診療アルゴリズム (図)}
+  - {pdf: MCC_CQ_1_推奨決定資料.pdf, pages: [1, 20], why: EtD フレームワーク (3 列表) と SR-6／SR-7 評価シート (バイアスリスク × アウトカムの大きな格子表)。以下 CQ2〜CQ4 も同じ}
+  - {pdf: MCC_CQ_2_推奨決定資料.pdf, pages: [1, 22], why: EtD フレームワークと SR 評価シート (格子表)}
+  - {pdf: MCC_CQ_3-1_推奨決定資料.pdf, pages: [1, 22], why: EtD フレームワークと SR 評価シート (格子表)}
+  - {pdf: MCC_CQ_3-2_推奨決定資料.pdf, pages: [1, 20], why: EtD フレームワークと SR 評価シート (格子表)}
+  - {pdf: MCC_CQ_3-3_推奨決定資料.pdf, pages: [1, 18], why: EtD フレームワークと SR 評価シート (格子表)}
+  - {pdf: MCC_CQ_4_推奨決定資料.pdf, pages: [1, 33], why: EtD フレームワークと SR 評価シート (格子表)。p.14〜23 は 1 ページ 1 万字超の大きな表}
+notes: |
+  - **本体は日本皮膚科学会雑誌の 2 段組**。既定モードは左段と右段を 1 行ずつ交互に出して
+    本文が読めなくなるため、本体は `mode: raw` (内容ストリーム順)。
+    **推奨決定資料 7 本は 1 段組だが EtD フレームワーク・SR 評価シートが表主体**なので
+    `mode: layout` に分けた。
+  - **`normalize_radicals: true`**。推奨決定資料 7 本の埋め込みフォントが
+    **康熙部首・CJK 部首補助の字形**を使っており、`pdftotext` 出力に `⽂献` `⼆次` `⼊`
+    `⽣存` `⻑` などが 195〜722 字/ファイル混ざる (本体 PDF には無い)。そのまま読むと
+    引用が別字になるので正規化した。`strip_edge` の正規表現は正規化後の字形で書いてある。
+  - 柱とノンブル (`日皮会誌：135（2），213-256，2025（令和 7）● 213` 形式) を
+    `strip_edge` (lines: 3) で落とした。推奨の強さ・合意率・病期・線量など**裸の数値行が
+    本文に多い**ので、`\d{1,3}` は `strip` に置かず日皮会誌の行ごと edge で落とした。
+  - 原本は折り返した見出しに `‌` (U+200C) と `\x07` を挟むので
+    (`CQ4 ‌ <BEL> 免疫療法不応または不適な…`)、`from`/`until` は
+    `^CQ4\D{0,6}免疫療法不応または不適な` の形で書いた。CQ3-1〜CQ3-3 は折り返さないので
+    そのまま CQ 文言でアンカーしている。
+  - 推奨決定資料 6 本とスコープは**学会ページの zip 同梱で単独 URL が無い**ので、
+    `url` を省略して `slug:` (カタログの slug) を書いた。
+  - **本体の CQ ノードと `95_推奨決定資料` の CQ ノードは title を揃えてある**。
+    本体 CQ の `body_text` に推奨決定資料の path を 1 行置いた。枝番の CQ は `CQ03-1` の形。
+  - 推奨決定資料は 1 本 18〜33 ページ・5 万〜11 万字と大きいので、**Minds の様式番号
+    (RC-7 / SR-1 … SR-15) ごとにノードを割った**。CQ4 の「4-6 評価シート 観察研究」は
+    10 ページ 5 万字あるので 2 ノードに分けた。CQ4 の資料だけ様式番号が
+    `SR-n` ではなく `4-n` と印字されている (原本のまま)。
+  - 本体 44 ページ・推奨決定資料 6 本 (計 135 ページ)・スコープ 11 ページの**全ページが
+    どれかのノードに載っている**。
+  - 皮膚悪性腫瘍診療ガイドライン第 3 版 (2020) のメルケル細胞癌はカタログに無く、
+    本 PDF が現行版。
+
+  ## 原本の誤記への注記 (2026-10-06)
+  - 原本の誤記・原本内の食い違いのうち臨床的に読み違えを招くものは、本文を原本の印字どおり残したまま、
+    該当箇所の直後 (表は直前) に `（注記：…）` の段落を足した。この段落は収録時に足したもので原本には無い。
+    正しい値は断定せず、根拠 (同じ文書の別ページ・表の構造・原典の分類) を添えて「と思われる」に留めた。
+  - 推奨決定資料 CQ1 の SR-6 / SR-7 コメント欄の介入・対照の定義の逆転、CQ3-3 の SR-3 の群の人数の逆転

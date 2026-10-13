@@ -1,0 +1,790 @@
+# 日本神経学会・日本頭痛学会・日本神経治療学会「頭痛の診療ガイドライン2021」取り込み manifest
+# pages は各 PDF の物理ページ (1 始まり, 両端含む)。印字ページ (ローマ数字/アラビア数字) とはずれる。
+id: 頭痛2021
+title: 頭痛の診療ガイドライン2021
+guideline: 頭痛の診療ガイドライン2021
+publisher: 日本神経学会
+source: https://www.neurology-jp.org/guidelinem/headache.html
+retrieved_at: '2026-09-05'
+description: |
+  日本神経学会・日本頭痛学会・日本神経治療学会監修『頭痛の診療ガイドライン 2021』(編集: 「頭痛の診療ガイドライン」作成委員会 / 委員長 荒木信夫, 副委員長 竹島多賀夫, 発行: 医学書院, 2021年10月15日 2021年版第1刷, ISBN978-4-260-04698-5)。協力学会は日本脳神経外科学会。
+
+  『慢性頭痛の診療ガイドライン 2013』の改訂版。今版から名称から「慢性」が外れ, 二次性頭痛を含む全面改訂となった。本体は 489 ページの PDF 1 本で, 以下の 8 章 計 132 CQ からなる (序の記述と一致)。
+
+  - 第Ⅰ章 頭痛一般 27 CQ
+  - 第Ⅱ章 片頭痛 (1. 診断・疫学・病態・誘発因子・疾患予後 15 CQ / 2. 急性期治療 14 CQ / 3. 予防療法 18 CQ)
+  - 第Ⅲ章 緊張型頭痛 8 CQ
+  - 第Ⅳ章 三叉神経・自律神経性頭痛 (TACs) 11 CQ
+  - 第Ⅴ章 その他の一次性頭痛 7 CQ
+  - 第Ⅵ章 薬剤の使用過多による頭痛 (薬物乱用頭痛, MOH) 3 CQ
+  - 第Ⅶ章 小児・思春期の頭痛 8 CQ
+  - 第Ⅷ章 二次性頭痛 21 CQ
+
+  1 ノード = 1 CQ (推奨 / 背景・目的 / 解説・エビデンス / 文献 / 検索式まで自己完結) で切ってある。CQ の番号は原本の表記 (I-1, II-3-14, VIII-21 など) をそのまま path segment に使い, 子の並びが原本順になるよう末尾を 2 桁ゼロ埋めしている (`CQ_I-01`, `CQ_II-3-14`)。唯一の例外が CQ II-3-14 (CGRP 関連薬剤) で, 1 CQ で 2.6 万字あるため引用文献と検索式だけを `CQ_II-3-14_文献` に分けてある。
+
+  `99_English_digest` は英語版ダイジェスト "Clinical Practice Guideline for Headache Disorders 2021" (Araki N, et al. Neurology and Clinical Neuroscience. 2025. Open Access, 19p)。日本頭痛学会サイトから配信されているもので, 一次性頭痛と MOH の主要な推奨だけを英語でまとめたもの。本体 (日本語 489p) の代替ではなく要約なので, 引くときは日本語本体の CQ を優先すること。
+strip:
+- '[IVX]{1,4}'
+- '第[ⅠⅡⅢⅣⅤⅥⅦⅧ]章'
+- 'CQ ?[IVX]+-[\d-]+(（GRADE）)?'
+- '‑'
+- '│'
+- '︱ ?(診断・疫学・病態・誘発因子・疾患予後|急性期治療|予防療法)'
+- '頭痛一般'
+- '片頭痛'
+- '緊張型頭痛'
+- '三叉神経・自律神経性頭痛（TACs）'
+- '三叉神経・自律神経性頭痛︵TACs ︶'
+- 'その他の一次性頭痛'
+- '薬剤の使用過多による頭痛（薬物乱用頭痛，MOH）'
+- '薬剤の使用過多による頭痛︵薬物乱用頭痛︐MOH ︶'
+- '小児・思春期の頭痛'
+- '二次性頭痛'
+- 'Neurology and Clinical Neuroscience, 2025'
+strip_edge:
+  # ノンブル。**strip 後のページの先頭/末尾 3 非空行だけ**に fullmatch させる
+  # (全行に掛けると表の数値セルと上付き文献番号まで消える)
+  lines: 3
+  patterns:
+  - '\d{1,3}'
+# 原本のテキスト層で、ローマ数字 XIII の 1 グリフが ToUnicode を持たず U+FFFD
+# (置換文字) に落ちている。全 489 ページでこの 2 箇所だけ (p.452、印字 p.436)。
+# 原本ページ画像で「経静脈的な第XIII因子」「intravenous factor XIII」を確認した (2026-09-12)。
+# U+FFFD は「読めなかった何か」の総称なので substitutions で全ページ一括置換はせず、
+# ちょうど 1 回一致を要求する patches で 1 箇所ずつ直す
+patches:
+  - {pdf: 頭痛診療ガイドライン2021_PDF.pdf, page: 452, find: "経静脈的な第\uFFFD因子", replace: '経静脈的な第ⅩⅢ因子'}
+  - {pdf: 頭痛診療ガイドライン2021_PDF.pdf, page: 452, find: "intravenous factor \uFFFD administration", replace: 'intravenous factor ⅩⅢ administration'}
+pdfs:
+- file: '頭痛診療ガイドライン2021_PDF.pdf'
+  url: https://www.neurology-jp.org/guidelinem/pdf/headache_medical_2021.pdf
+  label: 頭痛の診療ガイドライン2021
+- file: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf'
+  url: https://www.jhsnet.net/pdf/20250905.pdf
+  label: Clinical Practice Guideline for Headache Disorders 2021 (英語版ダイジェスト)
+  strip:
+  - '\d+, \d+, Downloaded from https://onlinelibrary\.wiley\.com.*'
+nodes:
+- path: 00_序文・作成委員
+  title: '序文・作成委員一覧・COI 開示'
+  body_text: |
+    本体 PDF の前付け (p2-11)。奥付・作成委員一覧・発行の経緯・序 (章構成と CQ 数の内訳)・COI 開示。目次 (p12-16) はこのツリー自体が代わりになるので収録していない。
+  children:
+  - path: 01_書誌情報・作成委員一覧
+    title: '書誌情報（奥付）・「頭痛の診療ガイドライン」作成委員，外部委員，評価・調整委員一覧および協力学会'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [2, 4]}
+  - path: 02_発行について
+    title: '『頭痛の診療ガイドライン 2021』の発行について（日本神経学会・日本頭痛学会・日本神経治療学会）'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [5, 6]}
+  - path: 03_序
+    title: '序 — わが国における頭痛の診療ガイドラインのこれまでと本版の作成方針・章構成'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [7, 9]}
+  - path: 04_COI開示
+    title: 'COI（利益相反）開示 — 作成委員および外部委員の自己申告'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [10, 11]}
+- path: 01_頭痛一般
+  title: '第Ⅰ章 頭痛一般'
+  body_text: |
+    第Ⅰ章。頭痛の分類・診断 (ICHD-3)、一次性/二次性の鑑別、ER・プライマリケア・頭痛外来での診療体制、問診票と頭痛ダイアリー、OTC 医薬品・漢方薬・非薬物療法・認知行動療法、共存症、画像診断、遠隔医療、産業医/学校医の対応、片頭痛と群発頭痛の遺伝要因までを扱う 27 CQ。
+  body:
+  - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [17, 17]}
+  children:
+  - path: CQ_I-01
+    title: '[頭痛一般/CQ I-1] 頭痛はどのように分類し診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [18, 21]}
+  - path: CQ_I-02
+    title: '[頭痛一般/CQ I-2] 一次性頭痛と二次性頭痛はどう鑑別するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [22, 24]}
+  - path: CQ_I-03
+    title: '[頭痛一般/CQ I-3] 救命救急室（ER）での頭痛診断はどのように行うか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [25, 28]}
+  - path: CQ_I-04
+    title: '[頭痛一般/CQ I-4] プライマリケア医および歯科医は頭痛医療にどう取り組むか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [29, 31]}
+  - path: CQ_I-05
+    title: '[頭痛一般/CQ I-5] 頭痛外来，頭痛専門医は必要か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [32, 34]}
+  - path: CQ_I-06
+    title: '[頭痛一般/CQ I-6] 病診連携は一次性頭痛診療に有用か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [35, 37]}
+  - path: CQ_I-07
+    title: '[頭痛一般/CQ I-7] 頭痛診療においてアルゴリズムをどのように使用するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [38, 40]}
+  - path: CQ_I-08
+    title: '[頭痛一般/CQ I-8] 頭痛による個人へのインパクトを知るにはどうするか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [41, 43]}
+  - path: CQ_I-09
+    title: '[頭痛一般/CQ I-9] 頭痛診療において問診票，質問票，スクリーナーをどう利用するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [44, 47]}
+  - path: CQ_I-10
+    title: '[頭痛一般/CQ I-10] 頭痛ダイアリーは有用か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [48, 49]}
+  - path: CQ_I-11
+    title: '[頭痛一般/CQ I-11] どのような一次性頭痛を治療すべきか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [50, 51]}
+  - path: CQ_I-12
+    title: '[頭痛一般/CQ I-12] 一次性頭痛の入院治療の対象と治療法はどのようなものがあるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [52, 53]}
+  - path: CQ_I-13
+    title: '[頭痛一般/CQ I-13] OTC 医薬品による頭痛治療をどのように指導するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [54, 56]}
+  - path: CQ_I-14
+    title: '[頭痛一般/CQ I-14] 頭痛診療において漢方薬は有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [57, 60]}
+  - path: CQ_I-15
+    title: '[頭痛一般/CQ I-15] 頭痛診療において薬物療法以外にどのような治療法があるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [61, 63]}
+  - path: CQ_I-16
+    title: '[頭痛一般/CQ I-16] 認知行動療法は一次性頭痛の治療に有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [64, 66]}
+  - path: CQ_I-17
+    title: '[頭痛一般/CQ I-17] 一次性頭痛は不安・抑うつと共存するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [67, 68]}
+  - path: CQ_I-18
+    title: '[頭痛一般/CQ I-18] 起立性低血圧や POTS による頭痛はどのように診断し対処・治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [69, 72]}
+  - path: CQ_I-19
+    title: '[頭痛一般/CQ I-19] 産業医，脳ドック医は頭痛にどう対処すればよいか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [73, 74]}
+  - path: CQ_I-20
+    title: '[頭痛一般/CQ I-20] 学校医は頭痛を訴える学童・生徒にどう対処すればよいか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [75, 76]}
+  - path: CQ_I-21
+    title: '[頭痛一般/CQ I-21] 頭痛診療における患者教育，医師-患者関係では，どのような点に留意するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [77, 79]}
+  - path: CQ_I-22
+    title: '[頭痛一般/CQ I-22] 頭痛診療においてチーム医療は有用か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [80, 83]}
+  - path: CQ_I-23
+    title: '[頭痛一般/CQ I-23] 頭痛診療における画像診断はどのように行うか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [84, 86]}
+  - path: CQ_I-24
+    title: '[頭痛一般/CQ I-24] 頭痛診療において遠隔医療は有用か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [87, 93]}
+  - path: CQ_I-25
+    title: '[頭痛一般/CQ I-25] 片頭痛には遺伝要因があるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [94, 95]}
+  - path: CQ_I-26
+    title: '[頭痛一般/CQ I-26] 片頭痛の遺伝子診断はできるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [96, 99]}
+  - path: CQ_I-27
+    title: '[頭痛一般/CQ I-27] 群発頭痛，緊張型頭痛には遺伝要因があるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [100, 102]}
+- path: 02_片頭痛
+  title: '第Ⅱ章 片頭痛'
+  body_text: |
+    第Ⅱ章。片頭痛を 3 節に分けて扱う 47 CQ。1. 診断・疫学・病態・誘発因子・疾患予後 (15 CQ)、2. 急性期治療 (14 CQ)、3. 予防療法 (18 CQ)。
+  body:
+  - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [103, 103]}
+  children:
+  - path: 01_診断・疫学・病態・誘発因子・疾患予後
+    title: '1．診断・疫学・病態・誘発因子・疾患予後'
+    body_text: |
+      第Ⅱ章 1 節。片頭痛の分類・診断 (ICHD-3)、わが国の有病率、病態・メカニズム (三叉神経血管説)、前兆と局所脳血流、誘発/増悪因子、自然史と予後、QOL と経済的損失、共存症 (てんかん・脳梗塞)、慢性片頭痛、低用量経口避妊薬、卵円孔開存を扱う 15 CQ。
+    children:
+    - path: CQ_II-1-01
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-1] 片頭痛はどのように分類・診断するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [104, 106]}
+    - path: CQ_II-1-02
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-2] わが国における片頭痛の有病率はどの程度か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [107, 108]}
+    - path: CQ_II-1-03
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-3] 片頭痛の病態，メカニズムはどのように考えられているか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [109, 113]}
+    - path: CQ_II-1-04
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-4] 片頭痛の前兆にはどのようなものがあるか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [114, 115]}
+    - path: CQ_II-1-05
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-5] 片頭痛発作時には局所脳血流はどのように変化するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [116, 119]}
+    - path: CQ_II-1-06
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-6] 片頭痛の誘発因子・増悪因子にはどのようなものがあるか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [120, 122]}
+    - path: CQ_II-1-07
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-7] 片頭痛の自然史および予後はどうか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [123, 125]}
+    - path: CQ_II-1-08
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-8] 片頭痛患者の健康寿命の阻害，QOL の阻害はどの程度か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [126, 128]}
+    - path: CQ_II-1-09
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-9] 片頭痛による経済的損失はどのように評価するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [129, 130]}
+    - path: CQ_II-1-10
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-10] 片頭痛の comorbid disorders（共存症）にはどのようなものがあるか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [131, 132]}
+    - path: CQ_II-1-11
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-11] 片頭痛とてんかんの関係はどのように考えられているか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [133, 137]}
+    - path: CQ_II-1-12
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-12] 慢性片頭痛とはどのような疾患か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [138, 140]}
+    - path: CQ_II-1-13
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-13] 片頭痛は脳梗塞の危険因子か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [141, 142]}
+    - path: CQ_II-1-14
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-14] 片頭痛患者における低用量経口避妊薬の使用は安全か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [143, 146]}
+    - path: CQ_II-1-15
+      title: '[片頭痛/診断・疫学・病態/CQ II-1-15] 片頭痛と卵円孔開存の関連，経皮的卵円孔開存閉鎖術はどのように考えられているか．経皮的卵円孔開存閉鎖術は有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [147, 149]}
+  - path: 02_急性期治療
+    title: '2．急性期治療'
+    body_text: |
+      第Ⅱ章 2 節。片頭痛の急性期治療を扱う 14 CQ。治療のゴール、トリプタン (使用タイミング・使い分け・非経口・在宅自己注射)、アセトアミノフェンと NSAIDs、制吐薬、その他の急性期治療薬、重症発作/発作重積、妊娠・授乳中、月経時片頭痛。CQ II-2-3 のみ GRADE システムでシステマティック・レビューを行っている。
+    children:
+    - path: CQ_II-2-01
+      title: '[片頭痛/急性期治療/CQ II-2-1] 片頭痛の急性期治療には，どのような方法があり，どのように使用するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [150, 156]}
+    - path: CQ_II-2-02
+      title: '[片頭痛/急性期治療/CQ II-2-2] 片頭痛の急性期治療のゴールはどのように設定し，実施するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [157, 161]}
+    - path: CQ_II-2-03
+      title: '[片頭痛/急性期治療/CQ II-2-3（GRADE）] 片頭痛の急性期治療薬として，トリプタンは非ステロイド系抗炎症薬（NSAIDs）よりも有用か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [162, 173]}
+    - path: CQ_II-2-04
+      title: '[片頭痛/急性期治療/CQ II-2-4] トリプタンはどのタイミングで使用すべきか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [174, 176]}
+    - path: CQ_II-2-05
+      title: '[片頭痛/急性期治療/CQ II-2-5] 複数のトリプタンをどう使い分けるか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [177, 180]}
+    - path: CQ_II-2-06
+      title: '[片頭痛/急性期治療/CQ II-2-6] 非経口トリプタンはどのような片頭痛患者に対して，どのように使用すべきか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [181, 182]}
+    - path: CQ_II-2-07
+      title: '[片頭痛/急性期治療/CQ II-2-7] スマトリプタン在宅自己注射は，どのような患者に，どう使用するか（適応，副作用，禁忌）'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [183, 185]}
+    - path: CQ_II-2-08
+      title: '[片頭痛/急性期治療/CQ II-2-8] 片麻痺性片頭痛の急性期にトリプタンは有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [186, 188]}
+    - path: CQ_II-2-09
+      title: '[片頭痛/急性期治療/CQ II-2-9] アセトアミノフェン，非ステロイド性抗炎症薬（NSAIDs）は片頭痛治療に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [189, 190]}
+    - path: CQ_II-2-10
+      title: '[片頭痛/急性期治療/CQ II-2-10] 急性期治療において制吐薬は有用か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [191, 193]}
+    - path: CQ_II-2-11
+      title: '[片頭痛/急性期治療/CQ II-2-11] その他の片頭痛の急性期治療薬にはどのようなものがあるか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [194, 198]}
+    - path: CQ_II-2-12
+      title: '[片頭痛/急性期治療/CQ II-2-12] 片頭痛重症発作，発作重積の急性期治療はどのように行うか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [199, 201]}
+    - path: CQ_II-2-13
+      title: '[片頭痛/急性期治療/CQ II-2-13] 妊娠中，授乳中の片頭痛はどのように治療（急性期・予防）するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [202, 206]}
+    - path: CQ_II-2-14
+      title: '[片頭痛/急性期治療/CQ II-2-14] 月経時片頭痛はどのように診断し治療するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [207, 209]}
+  - path: 03_予防療法
+    title: '3．予防療法'
+    body_text: |
+      第Ⅱ章 3 節。片頭痛の予防療法を扱う 18 CQ。適応とゴール、薬剤の使い分けと継続期間、β遮断薬・Ca 拮抗薬・抗てんかん薬・ACE 阻害薬/ARB・抗うつ薬・漢方薬・CGRP 関連薬剤・ボツリヌス毒素、慢性片頭痛の治療、ニューロモデュレーション。
+    children:
+    - path: CQ_II-3-01
+      title: '[片頭痛/予防療法/CQ II-3-1] どのような患者に予防療法が必要か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [210, 212]}
+    - path: CQ_II-3-02
+      title: '[片頭痛/予防療法/CQ II-3-2] 片頭痛の予防療法にはどのような薬剤があるか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [213, 217]}
+    - path: CQ_II-3-03
+      title: '[片頭痛/予防療法/CQ II-3-3] 片頭痛予防療法のゴールはどのように設定し，実施するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [218, 222]}
+    - path: CQ_II-3-04
+      title: '[片頭痛/予防療法/CQ II-3-4] 複数の予防療法をどのように使い分けるか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [223, 225]}
+    - path: CQ_II-3-05
+      title: '[片頭痛/予防療法/CQ II-3-5] 予防療法はいつまで続ける必要があるか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [226, 228]}
+    - path: CQ_II-3-06
+      title: '[片頭痛/予防療法/CQ II-3-6] β 遮断薬（プロプラノロール）は片頭痛の予防に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [229, 232]}
+    - path: CQ_II-3-07
+      title: '[片頭痛/予防療法/CQ II-3-7] Ca 拮抗薬（ロメリジン）は片頭痛の予防に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [233, 235]}
+    - path: CQ_II-3-08
+      title: '[片頭痛/予防療法/CQ II-3-8] アンジオテンシン変換酵素（ACE）阻害薬（リシノプリル），アンジオテンシン II 受容体拮抗薬（ARB）（カンデサルタン）は片頭痛の予防に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [236, 238]}
+    - path: CQ_II-3-09
+      title: '[片頭痛/予防療法/CQ II-3-9] 抗てんかん薬は片頭痛の予防に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [239, 241]}
+    - path: CQ_II-3-10
+      title: '[片頭痛/予防療法/CQ II-3-10] 抗うつ薬（アミトリプチリン）は片頭痛の予防に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [242, 243]}
+    - path: CQ_II-3-11
+      title: '[片頭痛/予防療法/CQ II-3-11] 抗うつ薬（SSRI/SNRI）とトリプタンの併用は可能か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [244, 245]}
+    - path: CQ_II-3-12
+      title: '[片頭痛/予防療法/CQ II-3-12] マグネシウム，ビタミン B 2（リボフラビン），コエンザイム Q10，ナツシロギク，鎮痛薬は片頭痛の予防に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [246, 250]}
+    - path: CQ_II-3-13
+      title: '[片頭痛/予防療法/CQ II-3-13] 片頭痛のその他の予防療法は有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [251, 254]}
+    - path: CQ_II-3-14
+      title: '[片頭痛/予防療法/CQ II-3-14] CGRP 関連薬剤（CGRP 受容体拮抗薬，抗 CGRP 抗体，抗 CGRP 受容体抗体）は片頭痛の予防に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [255, 261], until: '^文献$'}
+    - path: CQ_II-3-14_文献
+      title: '[片頭痛/予防療法/CQ II-3-14 文献・検索式] CGRP 関連薬剤（CGRP 受容体拮抗薬，抗 CGRP 抗体，抗 CGRP 受容体抗体）は片頭痛の予防に有効か — 引用文献 (1〜76) と検索式'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [261, 263], from: '^文献$', allow_overlap: true}
+    - path: CQ_II-3-15
+      title: '[片頭痛/予防療法/CQ II-3-15] ボツリヌス毒素は片頭痛の予防に有効か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [264, 266]}
+    - path: CQ_II-3-16
+      title: '[片頭痛/予防療法/CQ II-3-16] 典型的前兆のみで頭痛を伴わないものはどのように診断し治療するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [267, 270]}
+    - path: CQ_II-3-17
+      title: '[片頭痛/予防療法/CQ II-3-17] 慢性片頭痛はどのように治療するか'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [271, 274]}
+    - path: CQ_II-3-18
+      title: '[片頭痛/予防療法/CQ II-3-18] 片頭痛治療においてニューロモデュレーションは有用か'
+      body:
+      - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [275, 279]}
+- path: 03_緊張型頭痛
+  title: '第Ⅲ章 緊張型頭痛'
+  body_text: |
+    第Ⅲ章。緊張型頭痛の分類・診断、有病率と誘発/増悪因子、病態、急性期治療と予防療法 (薬物・非薬物)、ボツリヌス毒素までを扱う 8 CQ。
+  body:
+  - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [281, 281]}
+  children:
+  - path: CQ_III-01
+    title: '[緊張型頭痛/CQ III-1] 緊張型頭痛はどのように分類・診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [282, 284]}
+  - path: CQ_III-02
+    title: '[緊張型頭痛/CQ III-2] わが国における緊張型頭痛の有病率はどの程度か．誘発・増悪因子にはどのようなものがあるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [285, 286]}
+  - path: CQ_III-03
+    title: '[緊張型頭痛/CQ III-3] 緊張型頭痛の病態はどのように理解されているか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [287, 289]}
+  - path: CQ_III-04
+    title: '[緊張型頭痛/CQ III-4] 緊張型頭痛の治療はどのように行うか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [290, 293]}
+  - path: CQ_III-05
+    title: '[緊張型頭痛/CQ III-5] 緊張型頭痛の急性期治療にはどのような種類があり，どのように使用するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [294, 295]}
+  - path: CQ_III-06
+    title: '[緊張型頭痛/CQ III-6] 緊張型頭痛の予防療法はどのように行うか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [296, 298]}
+  - path: CQ_III-07
+    title: '[緊張型頭痛/CQ III-7] 緊張型頭痛の治療法には薬物療法以外にどのようなものがあるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [299, 300]}
+  - path: CQ_III-08
+    title: '[緊張型頭痛/CQ III-8] ボツリヌス毒素は緊張型頭痛の予防に有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [301, 302]}
+- path: 04_三叉神経・自律神経性頭痛TACs
+  title: '第Ⅳ章 三叉神経・自律神経性頭痛（TACs）'
+  body_text: |
+    第Ⅳ章。ICHD-3 で「群発頭痛およびその他の三叉神経・自律神経性頭痛」から改称された三叉神経・自律神経性頭痛 (TACs) を扱う 11 CQ。群発頭痛の診断・疫学・病態・急性期治療 (トリプタン皮下注、在宅酸素療法)・予防療法と、発作性片側頭痛・SUNCT/SUNA・持続性片側頭痛を含む。
+  body:
+  - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [303, 303]}
+  children:
+  - path: CQ_IV-01
+    title: '[TACs/CQ IV-1] 三叉神経・自律神経性頭痛（TACs）にはどのような分類・病型があるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [304, 305]}
+  - path: CQ_IV-02
+    title: '[TACs/CQ IV-2] 三叉神経・自律神経性頭痛（TACs）はどのように診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [306, 308]}
+  - path: CQ_IV-03
+    title: '[TACs/CQ IV-3] 群発頭痛にはどの程度の患者が存在するか．危険因子，増悪因子にはどのようなものが存在し，患者の予後はどうか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [309, 311]}
+  - path: CQ_IV-04
+    title: '[TACs/CQ IV-4] 群発頭痛の病態はどのように理解されているか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [312, 315]}
+  - path: CQ_IV-05
+    title: '[TACs/CQ IV-5] 群発頭痛患者の健康寿命の阻害，QOL の阻害はどの程度か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [316, 317]}
+  - path: CQ_IV-06
+    title: '[TACs/CQ IV-6] 群発頭痛急性期（発作期）治療薬にはどのような種類があり，どの程度有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [318, 320]}
+  - path: CQ_IV-07
+    title: '[TACs/CQ IV-7] 群発頭痛の在宅酸素療法はどのように実施するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [321, 324]}
+  - path: CQ_IV-08
+    title: '[TACs/CQ IV-8] 群発頭痛発作期の予防療法にはどのような薬剤があり，どの程度有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [325, 328]}
+  - path: CQ_IV-09
+    title: '[TACs/CQ IV-9] 発作性片側頭痛治療薬にはどのような種類があり，どの程度有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [329, 333]}
+  - path: CQ_IV-10
+    title: '[TACs/CQ IV-10] 短時間持続性片側神経痛様頭痛発作（SUNHA）（SUNCT および SUNA）の治療薬にはどのような種類があり，どの程度有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [334, 336]}
+  - path: CQ_IV-11
+    title: '[TACs/CQ IV-11] 持続性片側頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [337, 340]}
+- path: 05_その他の一次性頭痛
+  title: '第Ⅴ章 その他の一次性頭痛'
+  body_text: |
+    第Ⅴ章。片頭痛・緊張型頭痛・群発頭痛以外の一次性頭痛を扱う 7 CQ。一次性咳嗽性頭痛、一次性運動時頭痛、一次性穿刺様頭痛、一次性雷鳴頭痛、寒冷刺激による頭痛、貨幣状頭痛、睡眠時頭痛、新規発症持続性連日性頭痛 (NDPH) など。
+  body:
+  - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [341, 341]}
+  children:
+  - path: CQ_V-01
+    title: '[その他の一次性頭痛/CQ V-1] 片頭痛，緊張型頭痛，群発頭痛以外の一次性頭痛にはどのようなものがあるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [342, 344]}
+  - path: CQ_V-02
+    title: '[その他の一次性頭痛/CQ V-2] 一次性咳嗽性頭痛，一次性運動時頭痛，一次性穿刺様頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [345, 349]}
+  - path: CQ_V-03
+    title: '[その他の一次性頭痛/CQ V-3] 性行為に伴う一次性頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [350, 352]}
+  - path: CQ_V-04
+    title: '[その他の一次性頭痛/CQ V-4] 睡眠時頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [353, 354]}
+  - path: CQ_V-05
+    title: '[その他の一次性頭痛/CQ V-5] 一次性雷鳴頭痛はどのように診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [355, 356]}
+  - path: CQ_V-06
+    title: '[その他の一次性頭痛/CQ V-6] 新規発症持続性連日性頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [357, 359]}
+  - path: CQ_V-07
+    title: '[その他の一次性頭痛/CQ V-7] 慢性連日性頭痛はどのように診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [360, 361]}
+- path: 06_薬剤の使用過多による頭痛MOH
+  title: '第Ⅵ章 薬剤の使用過多による頭痛（薬物乱用頭痛，MOH）'
+  body_text: |
+    第Ⅵ章。薬剤の使用過多による頭痛 (薬物乱用頭痛、MOH) の分類・診断 (ICHD-3 の服薬日数基準)、疫学・病態、治療と予防を扱う 3 CQ。
+  body:
+  - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [363, 363]}
+  children:
+  - path: CQ_VI-01
+    title: '[MOH/CQ VI-1] 薬剤の使用過多による頭痛（薬物乱用頭痛，MOH）はどのように診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [364, 366]}
+  - path: CQ_VI-02
+    title: '[MOH/CQ VI-2] 薬剤の使用過多による頭痛（薬物乱用頭痛，MOH）の患者はどれくらいいるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [367, 368]}
+  - path: CQ_VI-03
+    title: '[MOH/CQ VI-3] 薬剤の使用過多による頭痛（薬物乱用頭痛，MOH）の治療法と予後はどうか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [369, 372]}
+- path: 07_小児・思春期の頭痛
+  title: '第Ⅶ章 小児・思春期の頭痛'
+  body_text: |
+    第Ⅶ章。小児・思春期の頭痛を扱う 8 CQ。診断上の成人との違い、二次性頭痛の鑑別、有病率、急性期治療薬・予防薬の投与量、慢性連日性頭痛、不登校を伴う頭痛、片頭痛に関連する周期性症候群など。
+  body:
+  - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [373, 373]}
+  children:
+  - path: CQ_VII-01
+    title: '[小児・思春期の頭痛/CQ VII-1] 小児・思春期にはどのような頭痛が多いか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [374, 378]}
+  - path: CQ_VII-02
+    title: '[小児・思春期の頭痛/CQ VII-2] 小児・思春期の片頭痛はどのように診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [379, 381]}
+  - path: CQ_VII-03
+    title: '[小児・思春期の頭痛/CQ VII-3] 小児・思春期の二次性頭痛にはどのようなものが多いか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [382, 384]}
+  - path: CQ_VII-04
+    title: '[小児・思春期の頭痛/CQ VII-4] 小児・思春期の片頭痛非薬物療法にはどのような種類があり，どの程度有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [385, 387]}
+  - path: CQ_VII-05
+    title: '[小児・思春期の頭痛/CQ VII-5] 小児・思春期の片頭痛急性期治療薬，予防薬にはどのような種類があり，どの程度有効か'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [388, 392]}
+  - path: CQ_VII-06
+    title: '[小児・思春期の頭痛/CQ VII-6] 小児・思春期学童に慢性連日性頭痛はどのくらいあるか，また，その診断と治療はどのように進めるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [393, 397]}
+  - path: CQ_VII-07
+    title: '[小児・思春期の頭痛/CQ VII-7] 不登校・不規則登校を伴う頭痛はどのような頭痛か，どう対処すればよいか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [398, 400]}
+  - path: CQ_VII-08
+    title: '[小児・思春期の頭痛/CQ VII-8] 片頭痛に関連する周期性症候群はどのくらいあるか，また，その診断と治療はどのように進めるか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [401, 405]}
+- path: 08_二次性頭痛
+  title: '第Ⅷ章 二次性頭痛'
+  body_text: |
+    第Ⅷ章。二次性頭痛を扱う 21 CQ。頭部外傷、脳血管障害 (くも膜下出血・脳出血・未破裂動脈瘤・動脈解離・脳静脈血栓症・可逆性脳血管攣縮症候群)、非血管性頭蓋内疾患 (脳腫瘍・特発性頭蓋内圧亢進症・低髄液圧)、感染症、睡眠時無呼吸、高血圧、眼/耳/鼻・副鼻腔/歯の疾患、精神疾患、三叉神経痛と顔面痛。
+  body:
+  - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [407, 407]}
+  children:
+  - path: CQ_VIII-01
+    title: '[二次性頭痛/CQ VIII-1] 二次性頭痛にはどのようなものがあり，どのように診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [408, 409]}
+  - path: CQ_VIII-02
+    title: '[二次性頭痛/CQ VIII-2] 頭頸部外傷後の頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [410, 413]}
+  - path: CQ_VIII-03
+    title: '[二次性頭痛/CQ VIII-3] 虚血性脳卒中による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [414, 415]}
+  - path: CQ_VIII-04
+    title: '[二次性頭痛/CQ VIII-4] 非外傷性頭蓋内出血（くも膜下出血を含む）による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [416, 418]}
+  - path: CQ_VIII-05
+    title: '[二次性頭痛/CQ VIII-5] 脳動脈解離による頭痛・頸部痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [419, 425]}
+  - path: CQ_VIII-06
+    title: '[二次性頭痛/CQ VIII-6] 脳静脈血栓症による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [426, 429]}
+  - path: CQ_VIII-07
+    title: '[二次性頭痛/CQ VIII-7] 可逆性脳血管攣縮症候群（RCVS）はどのように診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [430, 437]}
+  - path: CQ_VIII-08
+    title: '[二次性頭痛/CQ VIII-8] 動脈炎による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [438, 439]}
+  - path: CQ_VIII-09
+    title: '[二次性頭痛/CQ VIII-9] 遺伝性血管異常症による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [440, 443]}
+  - path: CQ_VIII-10
+    title: '[二次性頭痛/CQ VIII-10] 下垂体卒中による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [444, 447]}
+  - path: CQ_VIII-11
+    title: '[二次性頭痛/CQ VIII-11] 頭蓋内圧亢進性頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [448, 450]}
+  - path: CQ_VIII-12
+    title: '[二次性頭痛/CQ VIII-12] 低髄液圧による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [451, 453]}
+  - path: CQ_VIII-13
+    title: '[二次性頭痛/CQ VIII-13] 脳腫瘍による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [454, 455]}
+  - path: CQ_VIII-14
+    title: '[二次性頭痛/CQ VIII-14] 感染症による頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [456, 459]}
+  - path: CQ_VIII-15
+    title: '[二次性頭痛/CQ VIII-15] 高山性頭痛と潜水時頭痛にはどのような特徴があるか，またどのように対処するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [460, 463]}
+  - path: CQ_VIII-16
+    title: '[二次性頭痛/CQ VIII-16] 睡眠時無呼吸性頭痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [464, 466]}
+  - path: CQ_VIII-17
+    title: '[二次性頭痛/CQ VIII-17] 高血圧性頭痛にはどのような特徴があるか，またどのように対処するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [467, 469]}
+  - path: CQ_VIII-18
+    title: '[二次性頭痛/CQ VIII-18] 眼疾患，耳疾患，鼻・副鼻腔疾患，歯・顎・頸部構成組織の障害による頭痛はどのように治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [470, 474]}
+  - path: CQ_VIII-19
+    title: '[二次性頭痛/CQ VIII-19] 精神疾患による頭痛はどのように診断するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [475, 477]}
+  - path: CQ_VIII-20
+    title: '[二次性頭痛/CQ VIII-20] 三叉神経痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [478, 482]}
+  - path: CQ_VIII-21
+    title: '[二次性頭痛/CQ VIII-21] 有痛性三叉神経ニューロパチー，その他の顔面痛はどのように診断し治療するか'
+    body:
+    - {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [483, 489]}
+- path: 99_English_digest
+  title: 'Clinical Practice Guideline for Headache Disorders 2021（英語版ダイジェスト）'
+  body_text: |
+    英語版ダイジェスト "Clinical Practice Guideline for Headache Disorders 2021" (Araki N, et al. Neurology and Clinical Neuroscience. 2025; Open Access, 19p)。一次性頭痛と MOH の主要な推奨だけを英語でまとめたもので、日本語本体 489p の要約。表のページ (TABLE 1-6) は 2 段組みのため -layout で抽出している。
+  children:
+  - path: 01_Abstract_Introduction_Procedures
+    title: '[English digest] Abstract / 1. Introduction / 2. Procedures and Organization / 3. On Publication of the English Edition'
+    body:
+    - {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [1, 2]}
+  - path: 02_Migraine
+    title: '[English digest] 4. Migraine — acute treatment (CQ II-2-1〜14) and prophylaxis (CQ II-3-1〜18) recommendations'
+    body:
+    - {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [3, 3]}
+    - {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [4, 8], mode: 'layout'}
+    - {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [9, 9]}
+    - {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [10, 12], mode: 'layout'}
+    - {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [13, 15]}
+  - path: 03_TTH_Cluster_MOH_References
+    title: '[English digest] 5. Tension-type headache / 6. Cluster headache / 7. Medication-overuse headache / References'
+    body:
+    - {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [16, 17], mode: 'layout'}
+    - {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [18, 19]}
+vlm_candidates:
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [20, 20], why: '表1 ICHD-3 の頭痛分類（和英対照の 2 段組み表）'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [26, 26], why: '表1 急性頭痛の二次的原因の例 / 表2 雷鳴頭痛の原因の例'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [38, 39], why: '図1 頭痛診療のアルゴリズム（二次性頭痛の鑑別）/ 図2 頭痛一般の診断フロー'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [55, 55], why: '表1 OTC 解熱鎮痛薬の成分'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [81, 81], why: '図1 集学的治療プログラムの構成'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [105, 105], why: '表1 国際頭痛分類第3版（ICHD-3）における片頭痛の分類'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [124, 124], why: '表1 片頭痛の危険因子'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [151, 153], why: '表1 急性期治療薬エビデンスサマリ（2ページにわたる大表）/ 表2 エルゴタミン'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [163, 163], why: '表1 国際頭痛学会「成人片頭痛発作の急性期治療の対照試験に関するガイドライン 第4版」の評価項目'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [178, 178], why: '表1 トリプタンの薬物動態'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [213, 215], why: '表1 予防薬エビデンスサマリ（2ページにわたる大表）/ 表2 予防薬の薬効 group'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [229, 229], why: '表1 片頭痛治療における β 遮断薬の推奨度'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [240, 240], why: '表1 片頭痛における抗てんかん薬の推奨度'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [273, 273], why: '表1 反復性片頭痛から慢性片頭痛への移行危険因子・慢性片頭痛から反復性片頭痛への回復因子'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [283, 283], why: '表1 ICHD-3 における緊張型頭痛の分類'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [291, 292], why: '表1 緊張型頭痛の急性期治療薬 / 表2 緊張型頭痛の予防薬'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [294, 294], why: '表1 緊張型頭痛の急性期治療に使用される代表的な薬剤'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [297, 297], why: '表1 緊張型頭痛の予防療法に使用される代表的な薬剤'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [304, 304], why: '表1 ICHD-3 における 3．「三叉神経・自律神経性頭痛（TACs）」の分類'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [309, 309], why: '表1 群発頭痛の有病率調査'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [323, 323], why: '表1 酸素濃縮装置と液化酸素装置の比較'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [330, 330], why: '表1 わが国で使用可能なインドメタシンプロドラッグ'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [358, 358], why: '表1 NDPH と鑑別を要する二次性頭痛'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [365, 365], why: '表1 薬剤の使用過多による頭痛（MOH）における服薬日数（ICHD-3）'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [375, 377], why: '表1 小児・思春期の頭痛・片頭痛の有病率に関する総説 / 表2 Blume の分類 / 表3 学校基盤調査による有病率 / 表4 医療機関基盤調査による有病率'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [383, 383], why: '表1 小児救急外来の頭痛における二次性頭痛の割合'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [389, 390], why: '表1 小児・思春期の片頭痛急性期治療薬の投与量 / 表2 小児・思春期の片頭痛予防薬の投与量'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [427, 427], why: '図1 脳静脈洞（横静脈洞等）の解剖図'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [468, 468], why: '図1 二次性頭痛の鑑別のアルゴリズム'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [471, 471], why: '表1 ICHD-3 における 11．「頭蓋骨，頸，眼，耳，鼻，副鼻腔，歯，口…の障害による頭痛」の分類'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [476, 476], why: '表1 ICHD-3 における A12．「精神疾患による頭痛」の分類'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [479, 479], why: '表1 ICHD-3 における三叉神経痛の分類'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [484, 484], why: '表1 ICHD-3 における有痛性三叉神経ニューロパチーの分類'}
+- {pdf: '頭痛診療ガイドライン2021_PDF.pdf', pages: [486, 488], why: '表2 舌咽神経痛/中間神経痛と有痛性ニューロパチー，他の顔面痛の分類 / 図1 顔面痛の診断アルゴリズム / 図2 有痛性ニューロパチーに対する薬物療法'}
+- {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [4, 8], why: 'TABLE 1 Evidence summary of migraine acute medications / TABLE 2 GRADE evidence profile comparing triptans and NSAIDs（複数ページの大表）'}
+- {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [10, 12], why: 'TABLE 3 Evidence summary of migraine prophylactic drugs / TABLE 4 Efficacy grade grouping of migraine prophylactic drugs'}
+- {pdf: 'Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf', pages: [16, 17], why: 'TABLE 5 Acute medications for tension-type headache / TABLE 6 Prophylactic drugs for tension-type headache'}
+notes: |
+  収録範囲と落としたページ (頭痛診療ガイドライン2021_PDF.pdf, 全 489p)
+  - p1 は白紙 (テキスト層 0 字), p280 / p362 / p406 は章扉の前の白ページ。いずれも収録しない。
+  - p12-16 は目次。ツリー自体が目次の役割を果たすので収録しない (共通計画の方針3)。索引は原本 PDF に含まれていない。
+  - 上記以外の p2-11 (奥付・作成委員一覧・発行について・序・COI 開示) と p17-489 (本文) は全ページをノードに割り当てた。
+  - 章扉ページ (p17 / p103 / p281 / p303 / p341 / p363 / p373 / p407) は各章ディレクトリの `_index.md` 本文に入れた。章名だけのページなので strip 後はほぼ空になるが, 子の一覧が付くのでナビとしては成立する。
+  - 第Ⅱ章のサブセクション (1. 診断・疫学・病態・誘発因子・疾患予後 / 2. 急性期治療 / 3. 予防療法) には専用の扉ページが無く, 見出しは各サブセクション先頭の CQ ページに印字されている。よってサブセクションノードは `body` を持たず `children` のみ。
+
+  CQ 境界の確かめ方
+  - 全 489 ページを 1 ページずつ pdftotext し, 先頭に `CQ` + CQ 番号が立つページを CQ の開始ページとした (5 件は見出しの組方が逆 = 番号が先なので目視で補った: I-13 / II-1-10 / II-2-3 / II-3-7 / II-3-14)。検出された 132 件は序 (p8) の章別 CQ 数と完全に一致する。
+  - 目次の印字ページは使っていない (前付けがローマ数字なので 物理ページ = 印字ページ + 16)。
+  - CQ の title は本文見出しから拾った (目次はリーダー絚で途切れるものがある)。II-1-1 / II-2-1 / II-3-1 はサブセクション見出しの混入, II-1-15 は推奨文の食い込み, II-3-8 は 2 段組みの語順入れ替わりを手で直した。
+
+  ヘッダ・フッタ (strip / strip_edge)
+  - 柱は 4 種: ノンブル / 章番号 (片面は ASCII の `I` `II` …, もう片面は `第Ⅰ章`) / 章名 (縦組みは `︵` `︶` `︐` の異体字を使う) / `CQ I-6` 形式のフッタ。ノンブルだけ `strip_edge` (lines: 3), 残りは `strip`。
+  - `[IVX]{1,4}` の fullmatch は全 244 件すべてが章の柱で, 各章のページ数と `第Ⅰ章` 形式の件数の合計が一致することを確かめた (本文行を巻き込まない)。目次ページ p12-15 にだけ例外があるが, 目次は収録しない。
+  - 章名の strip (`片頭痛` `緊張型頭痛` など) は表のセルが単独行になるページ (p39 / p105 / p375-377) では表の値も落とす。これらはすべて vlm_candidates に入れてあり, overlay で置き換える前提。
+  - ノンブルを `strip_edge` (先頭/末尾 3 非空行) に置いたことで, 本文中の上付き文献番号 (「…から構成されている 1）」の `1` が独立行に出るもの) と 表の数値セルは残るようになった。
+
+  残っている柱の取りこぼし (VLM 待ち)
+  - **第Ⅱ章だけ, 節番号のタブ (`1` / `2` / `3` の 1 桁) が本文の途中に残る。** 縦組みの `‑` / `II` / `<節番号>` という 3 行のタブのうち前 2 行は `strip` で落ちるが, 数字はページ端から遠いので `strip_edge` の窓に入らない。第Ⅱ章 177 ページのほぼ全ページに 1 個ずつ (実測 91 個)。
+    `strip` に `[123]` を足せば消えるが, そうすると 本文の上付き文献番号 (第Ⅰ章 p18-19 など) と 表の「薬効の group」列 (1〜5) まで消える。段落の途中に数字が 1 行あるだけの実害と引き換えに文献番号を失うのは割に合わないので, 残す判断をした。該当ページの overlay を作るときにここも直る。
+
+  粒度の例外
+  - CQ II-3-14 (CGRP 関連薬剤, p255-263) だけが 1 CQ で約 2.6 万字あり目安の 2 万字を超えた。推奨・背景・解説は 1 ノードに残したまま, p261 の「文献」行以降 (引用文献 1〜76 と検索式, 約 1.5 万字) を `until:` / `from:` で `CQ_II-3-14_文献` に切り出した。結果 本体 1.1 万字 / 文献 1.5 万字。p261 は両ノードに載るので文献側に `allow_overlap: true` を付けてある。他の 131 CQ は文献・検索式まで 1 ノードで自己完結する。
+  - 英語版ダイジェスト (19p) は全文 7.1 万字あり 1 リーフには大きすぎるので, 論文の大見出しで 3 ノードに分けた (Abstract・Introduction / Migraine / TTH・Cluster・MOH・References)。
+
+
+  ファイル名と実体
+  - `Clinical Practice Guideline for Headache Disorders 2021_PDF.pdf` の配信元は学会サイトではなく日本頭痛学会 (`https://www.jhsnet.net/pdf/20250905.pdf`)。URL basename が日付なので slug は `20250905` になる。内容は 2025 年に Neurology and Clinical Neuroscience に掲載された英語版ダイジェストで, 2021 年版ガイドラインの英語要約。ファイル名の「2021」はガイドラインの版を指し, 論文の発行年ではない。
+  - 英語版は 2 段組みの学術誌レイアウト。抽出モードは**ページごとに使い分けた**:
+    - 表が主体のページ (p4-8 = TABLE 1/2, p10-12 = TABLE 3/4, p16-17 = TABLE 5/6) は `mode: layout`。既定モードだと薬剤名・推奨の強さ・エビデンスレベル・用量がバラバラの行になって対応が読めなくなるが, layout なら桁が揃って表として読める。
+    - 地の文のページ (p1-3, p9, p13-15, p18-19) は既定モードのまま。layout にすると左右の段が 1 行の中で混ざり, 無関係な 2 つの文が 1 行になってしまうため。
+    - 既定モードの副作用として, ページ内の節の順序が前後することがある (例: p9 で 4.15 が 4.13 より先に出る, p19 の文献 4 が末尾に回る)。推奨文自体は欠けないが, 連続した文章として読むときは原本 PDF を見ること。
+  - Wiley のダウンロードバナー (`20494173, 0, Downloaded from https://onlinelibrary.wiley.com/…`) が全 18 ページに入るので, この PDF だけの `strip` で落としている。
+
+  収録しなかった関連ファイル
+  - 旧版 (慢性頭痛の診療ガイドライン 2013 / 2006) は `,/JNS_Guidelines_ALL` に存在しない。
+  - 追補版は発行されていない。

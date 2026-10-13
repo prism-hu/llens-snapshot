@@ -1,0 +1,459 @@
+id: 壊疽性膿皮症2022
+title: 壊疽性膿皮症診療の手引き2022
+guideline: 壊疽性膿皮症診療の手引き2022
+publisher: 日本皮膚科学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『壊疽性膿皮症診療の手引き 2022』(日本皮膚科学会診療の手引き)。
+  壊疽性膿皮症診療の手引き作成委員会が作成し、日本皮膚科学会雑誌に掲載された。
+  壊疽性膿皮症 (pyoderma gangrenosum；PG) の診療の手引き。
+
+  構成 (全 12 章):
+  - 第 1 章 背景と目標 (位置づけと特徴・免責条項・今後の更新計画・利益相反・
+    エビデンスの収集・エビデンスレベルと推奨度の決定事項)
+  - 第 2 章 壊疽性膿皮症の疾患概念 / 第 3 章 診断基準と重症度分類 (表1 海外で提唱されている
+    診断基準・表2 PG 診断基準の比較) / 第 4 章 疫学 / 第 5 章 臨床 (サブタイプ・
+    Post-operative PG・Drug-induced PG・稀な部位・妊婦・小児・Pathergy・臨床検査所見) /
+    第 6 章 病理組織像 / 第 7 章 鑑別診断 / 第 8 章 病態 / 第 9 章 基礎疾患・併存症
+    (表3 本邦 PG 患者の特徴) / 第 10 章 自己炎症性疾患としての壊疽性膿皮症
+    (PAPA 症候群・Hz/Hc 症候群・PASH 症候群) / 第 11 章 治療
+  - 第 12 章 臨床設問（CQ）CQ1〜CQ29
+
+  推奨度は A / B / C1 / C2 / D。CQ1〜CQ6 (診断に関するもの) は推奨度を付けず解説のみ。
+  収録は 1 CQ = 1 ノード。
+
+  これに学会が別に公開している薬剤別の手引き 1 本を子セクションとして収める:
+  - `80_アダリムマブ使用手引き` … 『壊疽性膿皮症におけるアダリムマブの使用手引き』
+    (壊疽性膿皮症診療におけるアダリムマブの使用手引き策定委員会、11 ページ)。
+    適応・用法用量・国内第 III 相試験・適応になる場合／禁忌になる場合・Q&A 19 件
+strip:
+  # 柱 (ノド柱・書名)。日皮会誌の学会誌組版で、raw モードでは**ページ末尾**に出る
+  - '壊疽性膿皮症診療の手引き\s*2022(\s*日本皮膚科学会診療の手引き)?'
+  - '壊疽性膿皮症診療の手引き作成委員会'
+  - '壊疽性膿皮症におけるアダリムマブの使用手引き(\s*日本皮膚科学会診療の手引き)?'
+  - '壊疽性膿皮症診療におけるアダリムマブの使用手引き策定委員会'
+  - '日本皮膚科学会診療の手引き'
+  # ノンブル入りの版面フッタ。`●` を必ず含むので文献中の「日皮会誌，…」とは紛れない
+  - '\d{1,4}\s*●\s*日皮会誌.*'
+  - '日皮会誌.*●\s*\d{1,4}'
+strip_edge:
+  # 裸のノンブル。診断基準の項目番号・投与量・発症率を守るため strip ではなく端だけ
+  lines: 3
+  patterns:
+    - '\d{1,3}'
+pdfs:
+  - file: 壊疽性膿皮症診療の手引き2022.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/pyoderma_gangrenosum2022.pdf
+    label: 壊疽性膿皮症診療の手引き2022
+    mode: raw
+  - file: 壊疽性膿皮症におけるアダリムマブの使用手引き.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/pyoderma_gangrenosum_ADA.pdf
+    label: 壊疽性膿皮症におけるアダリムマブの使用手引き
+    mode: raw
+nodes:
+  - path: 01_背景と目標
+    title: 第1章 背景と目標（1．PG 診療の手引きの位置づけと特徴／2．免責条項／3．今後の更新計画／4．利益相反／5．エビデンスの収集／6．エビデンスレベルと推奨度の決定事項）
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [1, 2]
+        until: '^(#+\s*)?第\s*2\s*章'
+  - path: 02_疾患概念
+    title: 第2章 壊疽性膿皮症の疾患概念（1．疾患の概念／2．臨床症状の概要）
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [2, 3]
+        from: '^(#+\s*)?第\s*2\s*章'
+        until: '^(#+\s*)?第\s*3\s*章'
+        allow_overlap: true
+  - path: 03_診断基準と重症度分類
+    title: 第3章 壊疽性膿皮症の診断基準と重症度分類（1．診断基準／2．重症度分類／表1 海外で提唱されている診断基準・表2 PG 診断基準の比較）
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [3, 5]
+        from: '^(#+\s*)?第\s*3\s*章'
+        until: '^(#+\s*)?第\s*4\s*章'
+        allow_overlap: true
+  - path: 04_疫学
+    title: 第4章 壊疽性膿皮症の疫学
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [5, 6]
+        from: '^(#+\s*)?第\s*4\s*章'
+        until: '^(#+\s*)?第\s*5\s*章'
+        allow_overlap: true
+  - path: 05_臨床
+    title: 第5章 壊疽性膿皮症の臨床（1．臨床的特徴／2．サブタイプ／3．Post-operative PG／4．Drug-induced PG／5．稀な部位／6．妊婦の壊疽性膿皮症／7．小児の壊疽性膿皮症／8．Pathergy／9．臨床検査所見）
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [6, 8]
+        from: '^(#+\s*)?第\s*5\s*章'
+        until: '^(#+\s*)?第\s*6\s*章'
+        allow_overlap: true
+  - path: 06_病理組織像
+    title: 第6章 壊疽性膿皮症の病理組織像
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [8, 10]
+        from: '^(#+\s*)?第\s*6\s*章'
+        until: '^(#+\s*)?第\s*7\s*章'
+        allow_overlap: true
+  - path: 07_鑑別診断
+    title: 第7章 壊疽性膿皮症の鑑別診断
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [10, 10]
+        from: '^(#+\s*)?第\s*7\s*章'
+        until: '^(#+\s*)?第\s*8\s*章'
+        allow_overlap: true
+  - path: 08_病態
+    title: 第8章 壊疽性膿皮症の病態
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [10, 12]
+        from: '^(#+\s*)?第\s*8\s*章'
+        until: '^(#+\s*)?第\s*9\s*章'
+        allow_overlap: true
+  - path: 09_基礎疾患・併存症
+    title: 第9章 壊疽性膿皮症の基礎疾患・併存症（表3 本邦 PG 患者の特徴）
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [12, 13]
+        from: '^(#+\s*)?第\s*9\s*章'
+        until: '^(#+\s*)?第\s*10\s*章'
+        allow_overlap: true
+  - path: 10_自己炎症性疾患としての壊疽性膿皮症
+    title: 第10章 自己炎症性疾患としての壊疽性膿皮症（1．自己炎症性疾患と壊疽性膿皮症／2．PAPA 症候群／3．Hz/Hc 症候群〈高亜鉛血症・高カルプロテクチン血症〉／4．PASH 症候群・その他関連疾患）
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [13, 15]
+        from: '^(#+\s*)?第\s*10\s*章'
+        until: '^(#+\s*)?第\s*11\s*章'
+        allow_overlap: true
+  - path: 11_治療
+    title: 第11章 壊疽性膿皮症の治療
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [15, 15]
+        from: '^(#+\s*)?第\s*11\s*章'
+        until: '^(#+\s*)?第\s*12\s*章'
+        allow_overlap: true
+  - path: 12_CQ
+    title: 第12章 臨床設問（CQ1〜CQ29）
+    body_text: |
+      壊疽性膿皮症の診断と治療についての 29 件の臨床設問。CQ1〜CQ6（外傷・生検・病理・
+      蛍光抗体法・ストーマ周囲型）は推奨度を付けず解説のみ、CQ7 以降は推奨度（A/B/C1/C2/D）を持つ。
+    children:
+      - path: CQ01
+        title: '[CQ1] 外傷は壊疽性膿皮症の悪化因子か？'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [15, 15]
+            from: '^(#+\s*)?第\s*12\s*章'
+            until: '^(#+\s*)?CQ2[：:]'
+            allow_overlap: true
+      - path: CQ02
+        title: '[CQ2] 生検は診断に必須か？'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [15, 15]
+            from: '^(#+\s*)?CQ2[：:]'
+            until: '^(#+\s*)?CQ3[：:]'
+            allow_overlap: true
+      - path: CQ03
+        title: '[CQ3] 生検は潰瘍を悪化させるか？'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [15, 16]
+            from: '^(#+\s*)?CQ3[：:]'
+            until: '^(#+\s*)?CQ4[：:]'
+            allow_overlap: true
+      - path: CQ04
+        title: '[CQ4] 潰瘍部〜潰瘍辺縁部の病理組織学的所見は PG の診断に有用か？'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [16, 16]
+            from: '^(#+\s*)?CQ4[：:]'
+            until: '^(#+\s*)?CQ5[：:]'
+            allow_overlap: true
+      - path: CQ05
+        title: '[CQ5] 蛍光抗体法は診断に有用か？'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [16, 16]
+            from: '^(#+\s*)?CQ5[：:]'
+            until: '^(#+\s*)?CQ6[：:]'
+            allow_overlap: true
+      - path: CQ06
+        title: '[CQ6] ストーマ周囲型 PG は炎症性腸疾患患者に多いのか？'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [16, 16]
+            from: '^(#+\s*)?CQ6[：:]'
+            until: '^(#+\s*)?CQ7[：:]'
+            allow_overlap: true
+      - path: CQ07
+        title: '[CQ7] PG の疼痛に対して NSAIDs，オピオイド系薬剤，硬膜外麻酔は有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [16, 16]
+            from: '^(#+\s*)?CQ7[：:]'
+            until: '^(#+\s*)?CQ8[：:]'
+            allow_overlap: true
+      - path: CQ08
+        title: '[CQ8] PG の創傷に対して石鹸洗浄は有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [16, 16]
+            from: '^(#+\s*)?CQ8[：:]'
+            until: '^(#+\s*)?CQ9[：:]'
+            allow_overlap: true
+      - path: CQ09
+        title: '[CQ9] 局所処置（外用，ドレッシング），弾性包帯・ストッキングの使用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [16, 17]
+            from: '^(#+\s*)?CQ9[：:]'
+            until: '^(#+\s*)?CQ10[：:]'
+            allow_overlap: true
+      - path: CQ10
+        title: '[CQ10] 局所のデブリドメンは潰瘍を悪化させるか？【推奨度：C2】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [17, 17]
+            from: '^(#+\s*)?CQ10[：:]'
+            until: '^(#+\s*)?CQ11[：:]'
+            allow_overlap: true
+      - path: CQ11
+        title: '[CQ11] 副腎皮質ステロイド薬の外用は有用か？【推奨度：B】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [17, 17]
+            from: '^(#+\s*)?CQ11[：:]'
+            until: '^(#+\s*)?CQ12[：:]'
+            allow_overlap: true
+      - path: CQ12
+        title: '[CQ12] タクロリムス外用薬は有用か？【推奨度：B】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [17, 17]
+            from: '^(#+\s*)?CQ12[：:]'
+            until: '^(#+\s*)?CQ13[：:]'
+            allow_overlap: true
+      - path: CQ13
+        title: '[CQ13] 抗菌薬の外用は有用か？【推奨度：D】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [17, 17]
+            from: '^(#+\s*)?CQ13[：:]'
+            until: '^(#+\s*)?CQ14[：:]'
+            allow_overlap: true
+      - path: CQ14
+        title: '[CQ14] 潰瘍治療薬（イソジンシュガー，ゲーベンクリーム，プロスタグランディン軟膏，アクトシン軟膏など）は有用か？【推奨度：C2】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [17, 18]
+            from: '^(#+\s*)?CQ14[：:]'
+            until: '^(#+\s*)?CQ15[：:]'
+            allow_overlap: true
+      - path: CQ15
+        title: '[CQ15] 副腎皮質ステロイド薬内服は有用か？【推奨度：A】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [18, 18]
+            from: '^(#+\s*)?CQ15[：:]'
+            until: '^(#+\s*)?CQ16[：:]'
+            allow_overlap: true
+      - path: CQ16
+        title: '[CQ16] 免疫抑制剤内服は有用か？【推奨度：A（シクロスポリン），C1〜C2（その他の免疫抑制剤）】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [18, 19]
+            from: '^(#+\s*)?CQ16[：:]'
+            until: '^(#+\s*)?CQ17[：:]'
+            allow_overlap: true
+      - path: CQ17
+        title: '[CQ17] ダプソンは有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [19, 19]
+            from: '^(#+\s*)?CQ17[：:]'
+            until: '^(#+\s*)?CQ18[：:]'
+            allow_overlap: true
+      - path: CQ18
+        title: '[CQ18] コルヒチンは有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [19, 19]
+            from: '^(#+\s*)?CQ18[：:]'
+            until: '^(#+\s*)?CQ19[：:]'
+            allow_overlap: true
+      - path: CQ19
+        title: '[CQ19] ミノサイクリンは有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [19, 19]
+            from: '^(#+\s*)?CQ19[：:]'
+            until: '^(#+\s*)?CQ20[：:]'
+            allow_overlap: true
+      - path: CQ20
+        title: '[CQ20] ヨウ化カリウムは有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [19, 19]
+            from: '^(#+\s*)?CQ20[：:]'
+            until: '^(#+\s*)?CQ21[：:]'
+            allow_overlap: true
+      - path: CQ21
+        title: '[CQ21] マクロライド系抗菌薬は PG に有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [19, 19]
+            from: '^(#+\s*)?CQ21[：:]'
+            until: '^(#+\s*)?CQ22[：:]'
+            allow_overlap: true
+      - path: CQ22
+        title: '[CQ22] 循環改善薬は有用か？【推奨度：C2】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [19, 19]
+            from: '^(#+\s*)?CQ22[：:]'
+            until: '^(#+\s*)?CQ23[：:]'
+            allow_overlap: true
+      - path: CQ23
+        title: '[CQ23] PDE4 阻害剤は有用か？【推奨度：C2】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [19, 20]
+            from: '^(#+\s*)?CQ23[：:]'
+            until: '^(#+\s*)?CQ24[：:]'
+            allow_overlap: true
+      - path: CQ24
+        title: '[CQ24] PG の創傷感染に対して抗菌薬の全身投与は有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [20, 20]
+            from: '^(#+\s*)?CQ24[：:]'
+            until: '^(#+\s*)?CQ25[：:]'
+            allow_overlap: true
+      - path: CQ25
+        title: '[CQ25] 生物学的製剤は有用か？【推奨度：A（アダリムマブ），A（インフリキシマブ），C1〜C2（その他の生物学的製剤）】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [20, 20]
+            from: '^(#+\s*)?CQ25[：:]'
+            until: '^(#+\s*)?CQ26[：:]'
+            allow_overlap: true
+      - path: CQ26
+        title: '[CQ26] 生物学的製剤以外の分子標的薬は有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [20, 21]
+            from: '^(#+\s*)?CQ26[：:]'
+            until: '^(#+\s*)?CQ27[：:]'
+            allow_overlap: true
+      - path: CQ27
+        title: '[CQ27] 顆粒球単球吸着除去療法は有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [21, 21]
+            from: '^(#+\s*)?CQ27[：:]'
+            until: '^(#+\s*)?CQ28[：:]'
+            allow_overlap: true
+      - path: CQ28
+        title: '[CQ28] 免疫グロブリン大量静注療法は有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [21, 22]
+            from: '^(#+\s*)?CQ28[：:]'
+            until: '^(#+\s*)?CQ29[：:]'
+            allow_overlap: true
+      - path: CQ29
+        title: '[CQ29] 植皮術や陰圧閉鎖療法は有用か？【推奨度：C1】'
+        body:
+          - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+            pages: [22, 22]
+            from: '^(#+\s*)?CQ29[：:]'
+            until: '^(#+\s*)?文 献'
+            allow_overlap: true
+
+  - path: 13_文献
+    title: 文献（本体）
+    body:
+      - pdf: 壊疽性膿皮症診療の手引き2022.pdf
+        pages: [22, 26]
+        from: '^(#+\s*)?文 献'
+        allow_overlap: true
+  - path: 80_アダリムマブ使用手引き
+    title: 壊疽性膿皮症におけるアダリムマブの使用手引き
+    body_text: |
+      学会が別 PDF で公開している薬剤別の手引き（11 ページ）。壊疽性膿皮症診療における
+      アダリムマブの使用手引き策定委員会が作成した。本体（診療の手引き2022）の CQ25
+      （生物学的製剤は有用か？）を薬剤単位に掘り下げた位置づけなので、子セクションにしてある。
+    children:
+      - path: 01_目的とアダリムマブの使用
+        title: '[アダリムマブ使用手引き] 1．目的／2．壊疽性膿皮症におけるアダリムマブの使用（2.1 アダリムマブについて／2.2 適応症／2.3 用法・用量／2.4 臨床成績〈国内第III相試験〉）'
+        body:
+          - pdf: 壊疽性膿皮症におけるアダリムマブの使用手引き.pdf
+            pages: [1, 2]
+            until: '^(#+\s*)?3．アダリムマブが適応になる場合'
+      - path: 02_適応になる場合
+        title: '[アダリムマブ使用手引き] 3．アダリムマブが適応になる場合（例）（3.1 既存治療抵抗性／3.2 ステロイド漸減中の再燃／3.3 炎症性腸疾患・関節リウマチの合併／3.4 ステロイド・シクロスポリンが使いにくい場合／図1 投与方法）'
+        body:
+          - pdf: 壊疽性膿皮症におけるアダリムマブの使用手引き.pdf
+            pages: [2, 2]
+            from: '^(#+\s*)?3．アダリムマブが適応になる場合'
+            until: '^(#+\s*)?4．.*アダリムマブが禁忌になる場合'
+            allow_overlap: true
+      - path: 03_禁忌になる場合・慎重な検討を要する場合
+        title: '[アダリムマブ使用手引き] 4．アダリムマブが禁忌になる場合・慎重な検討を要する場合（4.1 重篤な感染症・活動性結核／4.2 脱髄疾患／4.3 うっ血性心不全／4.4 悪性腫瘍／4.5 間質性肺炎／4.6 B 型肝炎）'
+        body:
+          - pdf: 壊疽性膿皮症におけるアダリムマブの使用手引き.pdf
+            pages: [2, 3]
+            from: '^(#+\s*)?4．.*アダリムマブが禁忌になる場合'
+            until: '^(#+\s*)?5．アダリムマブ使用にあたっての Q&A'
+            allow_overlap: true
+      - path: 04_使用にあたってのQA
+        title: '[アダリムマブ使用手引き] 5．アダリムマブ使用にあたっての Q&A（5.1〜5.19／表1 海外で提唱されている診断基準・図2 治療アルゴリズム〈案〉・表2 治療薬のエビデンス分類と推奨度の強さ）'
+        body:
+          - pdf: 壊疽性膿皮症におけるアダリムマブの使用手引き.pdf
+            pages: [3, 11]
+            from: '^(#+\s*)?5．アダリムマブ使用にあたっての Q&A'
+            allow_overlap: true
+vlm_candidates:
+  - {pdf: 壊疽性膿皮症診療の手引き2022.pdf, pages: [4, 5], why: 表1 海外で提唱されている診断基準・表2 PG 診断基準の比較（診断基準を横に並べた多列表）}
+  - {pdf: 壊疽性膿皮症診療の手引き2022.pdf, pages: [12, 12], why: 表3 本邦 PG 患者の特徴（基礎疾患・併存症の集計表）}
+  - {pdf: 壊疽性膿皮症におけるアダリムマブの使用手引き.pdf, pages: [2, 2], why: 図1 壊疽性膿皮症治療における，アダリムマブの投与方法（投与スケジュール図。用量が図中に散る）}
+  - {pdf: 壊疽性膿皮症におけるアダリムマブの使用手引き.pdf, pages: [6, 6], why: 表1 海外で提唱されている診断基準（多列表）}
+  - {pdf: 壊疽性膿皮症におけるアダリムマブの使用手引き.pdf, pages: [8, 9], why: 図2 治療アルゴリズム（案）・表2 治療薬のエビデンス分類と推奨度の強さ}
+notes: |
+  ## 版と従属文書の扱い
+  - 本体は 2022 年版。改訂版は公開されていない。
+  - 『壊疽性膿皮症におけるアダリムマブの使用手引き』(11p) は学会ページでは独立掲載だが、
+    本体の CQ25 (生物学的製剤) を薬剤単位に掘り下げた従属文書なので、同じ manifest の
+    子セクション `80_アダリムマブ使用手引き` に収めた (共通指示の「使用ガイダンス類は
+    親疾患の GL と同じ manifest の子セクション」に従った)。
+  - **化膿性汗腺炎のアダリムマブ使用上の注意 (`Adalimumab_HS_Guidance.pdf`) は別疾患**なので
+    ここには入れていない (化膿性汗腺炎の id の担当分)。
+
+  ## 抽出モード
+  - 2 本とも日皮会誌の 2 段組。既定モードは左右段の行が交互に出て文がつながらず、
+    `-layout` は 1 行に左段 + 右段が並ぶ。`-raw` だけが段ごとに上から下へ出るので
+    両方 `mode: raw` にした。
+  - 康熙部首の混入は 2 本とも 0 件なので `normalize_radicals` は付けていない。
+
+  ## strip / strip_edge
+  - 柱 (2 本それぞれの書名・委員会名) と版面フッタを `strip`。
+  - 裸のノンブルは `strip_edge` (lines: 3)。診断基準の項目番号、アダリムマブの投与量、
+    発症率などを守るため `strip` には置いていない。
+
+  ## 落としたページ
+  - 落としたページは無い。本体 26 ページ・アダリムマブ使用手引き 11 ページのすべてが
+    いずれかのノードに載る。
+
+  ## ページ内分割
+  - 本体は第 2〜12 章の章境界と CQ1〜CQ29 の境界、章末の「文 献」の開始を `from` / `until` で
+    割った。第 12 章の見出しは CQ1 のノードの冒頭に入る。
+  - アダリムマブ使用手引きは節境界 (3．／4．／5．) で割った。5．の Q&A 19 件は
+    1 ノードにまとめてある (1 項目あたり数行と短く、相互に参照し合うため)。
+  - overlay (VLM) が見出しを `## ` 付きで起こしても当たるように、境界は `^(#+\s*)?…` の形で書いてある。

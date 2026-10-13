@@ -1,0 +1,771 @@
+id: 血管炎・血管障害2016
+title: 血管炎・血管障害診療ガイドライン2016年改訂版
+guideline: 血管炎・血管障害診療ガイドライン2016年改訂版
+publisher: 日本皮膚科学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『血管炎・血管障害診療ガイドライン 2016 年改訂版』（日本皮膚科学血管炎・血管障害診療
+  ガイドライン改訂版作成委員会、委員長 古川福実。日皮会誌 127(3)：299―415、2017 年）。
+  2008 年の『血管炎・血管障害ガイドライン』（日皮会誌 118：2095―2187）の改訂版で、
+  2012 年に改訂された Chapel Hill Consensus Conference 分類（CHCC2012）に対応して
+  皮膚科の視点から作り直したもの。エビデンスレベル（I〜VI）と推奨度（A / B / C1 / C2 / D）は
+  日本皮膚科学会編『皮膚悪性腫瘍診療ガイドライン（第 2 版）』の基準に拠る。
+
+  構成は総論（作成の背景・位置づけ・免責条項・エビデンスレベルと推奨度の決定基準・
+  Chapel Hill 分類 1994 と 2012・診療アルゴリズム）と、疾患ごとの 21 章（各章は「概説」＋
+  CQ）、巻末の CQ 推奨度一覧・略語一覧表・診療アルゴリズム図（図 4〜23）からなる。
+  CQ は全 127 件。
+
+  疾患章（CHCC2012 のカテゴリー順）:
+  - 診療アルゴリズム（全身性血管炎・皮膚血管炎の分類とアルゴリズム）
+  - 大型血管炎: 巨細胞性動脈炎（GCA）
+  - 中型血管炎: 結節性多発動脈炎（PAN）
+  - ANCA 関連小型血管炎: 顕微鏡的多発血管炎（MPA）／多発血管炎性肉芽腫症（GPA）／
+    好酸球性多発血管炎性肉芽腫症（EGPA）
+  - 免疫複合体性小型血管炎: クリオグロブリン血症性血管炎（CV）／IgA 血管炎（IgAV）／
+    低補体血症性蕁麻疹様血管炎（HUV）
+  - 種々の血管を侵す血管炎: ベーチェット病（BD）
+  - 単一臓器の血管炎: 皮膚白血球破砕性血管炎（CLA）／皮膚動脈炎（CA）
+  - 全身性疾患に続発する血管炎: ループス血管炎／リウマトイド血管炎／サルコイド血管炎
+  - 誘因の推定される続発性血管炎: C 型／B 型肝炎ウイルス関連／薬剤関連／癌関連血管炎
+  - 血管障害: リベド様血管症／抗リン脂質抗体症候群（APS）
+
+  収録は 1 CQ = 1 ノード（推奨文・推奨度・解説・文献まで）。章ごとに「概説」を
+  `00_概説`（GPA のみ原本の見出しに合わせて `00_概念`）として置いた。
+
+  **『皮膚血管炎・血管障害診療ガイドライン 2023 ― IgA 血管炎，クリオグロブリン血症性
+  血管炎，結節性多発動脈炎，リベド様血管症の治療の手引き ―』（別 id
+  `皮膚血管炎・血管障害2023`）との関係**: 2023 の手引きは表題の 4 疾患の**治療**に限った
+  別建ての文書で、本 2016 年改訂版を置き換えるものではない（学会の一般公開ガイドライン
+  一覧にも両方が現行として並んでいる）。この 4 疾患の治療について引くときは 2023 の
+  手引きのほうが新しい。診断・鑑別・4 疾患以外の血管炎は本 2016 年改訂版が引き続き
+  唯一の全体ガイドライン。
+pdfs:
+  - file: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/vasculitisGL.pdf
+    label: 血管炎・血管障害診療ガイドライン2016年改訂版
+    # 学会誌の 2 段組。既定モードは左右段を 1 行ずつ交互に出して本文が読めない
+    # (p.3 で「一方，CHCC1994 には…」と右段の文が 1 行ずつ噛み合う)。
+    # `-raw` (内容ストリーム順) なら左段 → 右段の順に素直に出る
+    mode: raw
+strip_edge:
+  # ノンブル + 柱。raw ではページ**末尾**の 2 行にまとまって出る (p.1 だけ先頭にも出る)。
+  # 裸の `\d{1,3}` は置かない (推奨度の数字・表の数値・文献番号を守る)
+  lines: 3
+  patterns:
+    - '日皮会誌：127（3）\s*，299-415，2017（平成 29）●\s*\d{1,3}'
+    - '\d{1,3}\s*●\s*日皮会誌：127（3）\s*，299-415，2017（平成 29）'
+    - '血管炎・血管障害診療ガイドライン 2016 年改訂版'
+    - '日本皮膚科学血管炎・血管障害診療ガイドライン改訂版作成委員会'
+    - '日本皮膚科学会ガイドライン'
+nodes:
+  - path: 00_序
+    title: 1．ガイドライン作成の背景／2．ガイドラインの位置づけ／3．免責条項／4．エビデンスレベルと推奨度決定基準／5．はじめに Chapel Hill 分類―1994 から 2012（表 1〜3・図 1）／6．診療アルゴリズム（図 2）・文献
+    body:
+      - pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf
+        pages: [1, 6]
+        until: '^(#+\s*)?診療アルゴリズム$'
+        allow_overlap: true
+  - path: 01_診療アルゴリズム
+    title: '診療アルゴリズム（Chapel Hill 分類 1994/2012 と皮膚血管炎の診療アルゴリズム）'
+    children:
+      - path: 00_概説
+        title: '[診療アルゴリズム] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [6, 7], from: '^(#+\s*)?診療アルゴリズム$', until: '^(#+\s*)?Algolism-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[診療アルゴリズム CQ1] 全身性血管炎分類で国際的に統一したものはあるのか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [7, 8], from: '^(#+\s*)?Algolism-CQ1(?!\d)', until: '^(#+\s*)?Algolism-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[診療アルゴリズム CQ2] 全身性血管炎で一般に用いられる診療アルゴリズムはあるのか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [8, 9], from: '^(#+\s*)?Algolism-CQ2(?!\d)', until: '^(#+\s*)?Algolism-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[診療アルゴリズム CQ3] 皮膚血管炎分類で国際的に同意を得たものはあるのか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [9, 10], from: '^(#+\s*)?Algolism-CQ3(?!\d)', until: '^(#+\s*)?Algolism-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[診療アルゴリズム CQ4] 皮膚血管炎の診療アルゴリズムとして一般に認められているものはあるのか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [10, 10], from: '^(#+\s*)?Algolism-CQ4(?!\d)', until: '^(#+\s*)?巨細胞性動脈炎 Giant cell arteritis', allow_overlap: true}
+  - path: 02_巨細胞性動脈炎GCA
+    title: '巨細胞性動脈炎 Giant cell arteritis（GCA）［側頭動脈炎 Temporal arteritis（TA）］'
+    children:
+      - path: 00_概説
+        title: '[GCA] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [10, 11], from: '^(#+\s*)?巨細胞性動脈炎 Giant cell arteritis', until: '^(#+\s*)?GCA-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[GCA CQ1] どのような症状から GCA を疑うか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [11, 11], from: '^(#+\s*)?GCA-CQ1(?!\d)', until: '^(#+\s*)?GCA-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[GCA CQ2] どのような皮膚症状から GCA を疑うか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [11, 12], from: '^(#+\s*)?GCA-CQ2(?!\d)', until: '^(#+\s*)?GCA-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[GCA CQ3] GCA の診断に有用な血液検査・画像検査はあるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [12, 12], from: '^(#+\s*)?GCA-CQ3(?!\d)', until: '^(#+\s*)?GCA-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[GCA CQ4] 側頭動脈部に結節，索状結節があれば，GCA としてよいか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [12, 13], from: '^(#+\s*)?GCA-CQ4(?!\d)', until: '^(#+\s*)?GCA-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[GCA CQ5] 大動脈及びその主幹動脈に病変があれば，LV-GCA としてよいか？【推奨度 A】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [13, 14], from: '^(#+\s*)?GCA-CQ5(?!\d)', until: '^(#+\s*)?GCA-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[GCA CQ6] GCA の治療はどのようにすべきか？【推奨度 A】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [14, 15], from: '^(#+\s*)?GCA-CQ6(?!\d)', until: '^(#+\s*)?GCA-CQ7(?!\d)', allow_overlap: true}
+      - path: CQ07
+        title: '[GCA CQ7] GCA の予後で注意すべき点は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [15, 15], from: '^(#+\s*)?GCA-CQ7(?!\d)', until: '^(#+\s*)?結節性多発動脈炎 Polyarteritis nodosa', allow_overlap: true}
+  - path: 03_結節性多発動脈炎PAN
+    title: '結節性多発動脈炎 Polyarteritis nodosa（PAN）'
+    children:
+      - path: 00_概説
+        title: '[PAN] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [15, 16], from: '^(#+\s*)?結節性多発動脈炎 Polyarteritis nodosa', until: '^(#+\s*)?PAN-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[PAN CQ1] PANの診断はどのようにすべきか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [16, 16], from: '^(#+\s*)?PAN-CQ1(?!\d)', until: '^(#+\s*)?PAN-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[PAN CQ2] PAN の誘因はわかっているか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [16, 16], from: '^(#+\s*)?PAN-CQ2(?!\d)', until: '^(#+\s*)?PAN-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[PAN CQ3] PAN に対する治療ガイドラインはあるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [16, 17], from: '^(#+\s*)?PAN-CQ3(?!\d)', until: '^(#+\s*)?PAN-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[PAN CQ4] PAN の患者に対する副腎皮質ステロイドと免疫抑制薬の併用療法は，副腎皮質ステロイドの単独投与に比べて予後を改善するか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [17, 18], from: '^(#+\s*)?PAN-CQ4(?!\d)', until: '^(#+\s*)?顕微鏡的多発血管炎 Microscopic polyangi', allow_overlap: true}
+  - path: 04_顕微鏡的多発血管炎MPA
+    title: '顕微鏡的多発血管炎 Microscopic polyangiitis（MPA）'
+    children:
+      - path: 00_概説
+        title: '[MPA] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [18, 18], from: '^(#+\s*)?顕微鏡的多発血管炎 Microscopic polyangi', until: '^(#+\s*)?MPA-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[MPA CQ1] MPA の皮膚病変の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [18, 19], from: '^(#+\s*)?MPA-CQ1(?!\d)', until: '^(#+\s*)?MPA-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[MPA CQ2] MPA の全身症状の特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [19, 19], from: '^(#+\s*)?MPA-CQ2(?!\d)', until: '^(#+\s*)?MPA-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[MPA CQ3] MPAなら必ずMPO-ANCAが陽性か？また，MPO-ANCA，PR3-ANCA ともに陰性の場合，MPA を否定できるか？【推奨度 B（共に）】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [19, 20], from: '^(#+\s*)?MPA-CQ3(?!\d)', until: '^(#+\s*)?MPA-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[MPA CQ4] MPA の診断基準にはどのようなものがあるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [20, 21], from: '^(#+\s*)?MPA-CQ4(?!\d)', until: '^(#+\s*)?MPA-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[MPA CQ5] MPAの治療はどのようにすべきか？【推奨度 A】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [21, 22], from: '^(#+\s*)?MPA-CQ5(?!\d)', until: '^(#+\s*)?MPA-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[MPA CQ6] MPA では寛解導入後は維持療法に移行するべきか？また，再発危険因子を持つ患者の治療期間はどうするか？【推奨度 A また，C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [22, 22], from: '^(#+\s*)?MPA-CQ6(?!\d)', until: '^(#+\s*)?MPA-CQ7(?!\d)', allow_overlap: true}
+      - path: CQ07
+        title: '[MPA CQ7] 治療効果判定に対し ANCA は有用か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [22, 24], from: '^(#+\s*)?MPA-CQ7(?!\d)', until: '^(#+\s*)?多発血管炎性肉芽腫症 Granulomatosis with', allow_overlap: true}
+  - path: 05_多発血管炎性肉芽腫症GPA
+    title: '多発血管炎性肉芽腫症 Granulomatosis with polyangiitis（GPA）［ウエゲナー肉芽腫症 Wegener’s granulomatosis］'
+    children:
+      - path: 00_概念
+        title: '[GPA] 概念'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [24, 24], from: '^(#+\s*)?多発血管炎性肉芽腫症 Granulomatosis with', until: '^(#+\s*)?GPA-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[GPA CQ1] どのような皮膚症状が GPA の症状と考えるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [24, 25], from: '^(#+\s*)?GPA-CQ1(?!\d)', until: '^(#+\s*)?GPA-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[GPA CQ2] GPA の皮膚血管炎の病理所見の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [25, 26], from: '^(#+\s*)?GPA-CQ2(?!\d)', until: '^(#+\s*)?GPA-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[GPA CQ3] GPA の皮膚血管炎の皮疹は疾患活動性と関連するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [26, 26], from: '^(#+\s*)?GPA-CQ3(?!\d)', until: '^(#+\s*)?GPA-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[GPA CQ4] GPAを疑った場合に何をすべきか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [26, 27], from: '^(#+\s*)?GPA-CQ4(?!\d)', until: '^(#+\s*)?GPA-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[GPA CQ5] GPA において PR3-ANCA 陰性でも診断は可能か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [27, 27], from: '^(#+\s*)?GPA-CQ5(?!\d)', until: '^(#+\s*)?GPA-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[GPA CQ6] 限局型と全身型で治療を変えるべきか？【推奨度 A】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [27, 28], from: '^(#+\s*)?GPA-CQ6(?!\d)', until: '^(#+\s*)?GPA-CQ7(?!\d)', allow_overlap: true}
+      - path: CQ07
+        title: '[GPA CQ7] GPAに対し， 副腎皮質ステロイドは有効か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [28, 28], from: '^(#+\s*)?GPA-CQ7(?!\d)', until: '^(#+\s*)?GPA-CQ8(?!\d)', allow_overlap: true}
+      - path: CQ08
+        title: '[GPA CQ8] GPA に対し，CY 併用療法は副腎皮質ステロイド単独投与に比して有効か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [28, 29], from: '^(#+\s*)?GPA-CQ8(?!\d)', until: '^(#+\s*)?GPA-CQ9(?!\d)', allow_overlap: true}
+      - path: CQ09
+        title: '[GPA CQ9] CY 無効例や使用が困難な例ではどうするか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [29, 29], from: '^(#+\s*)?GPA-CQ9(?!\d)', until: '^(#+\s*)?GPA-CQ10(?!\d)', allow_overlap: true}
+      - path: CQ10
+        title: '[GPA CQ10] GPA の治療において最も注意すべき点は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [29, 30], from: '^(#+\s*)?GPA-CQ10(?!\d)', until: '^(#+\s*)?好酸球性多発血管炎性肉芽腫症 Eosinophilic', allow_overlap: true}
+  - path: 06_好酸球性多発血管炎性肉芽腫症EGPA
+    title: '好酸球性多発血管炎性肉芽腫症 Eosinophilic granulomatosis with polyangiitis（EGPA）［Churg-Strauss 症候群］'
+    children:
+      - path: 00_概説
+        title: '[EGPA] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [30, 30], from: '^(#+\s*)?好酸球性多発血管炎性肉芽腫症 Eosinophilic', until: '^(#+\s*)?EGPA-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[EGPA CQ1] EGPA の臨床所見の特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [30, 30], from: '^(#+\s*)?EGPA-CQ1(?!\d)', until: '^(#+\s*)?EGPA-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[EGPA CQ2] EGPA の検査所見の特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [30, 31], from: '^(#+\s*)?EGPA-CQ2(?!\d)', until: '^(#+\s*)?EGPA-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[EGPA CQ3] EGPA の皮膚の組織学的特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [31, 31], from: '^(#+\s*)?EGPA-CQ3(?!\d)', until: '^(#+\s*)?EGPA-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[EGPA CQ4] EGPA の診断はどのようにすべきか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [31, 32], from: '^(#+\s*)?EGPA-CQ4(?!\d)', until: '^(#+\s*)?EGPA-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[EGPA CQ5] EGPA の治療はどのようにすべきか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [32, 33], from: '^(#+\s*)?EGPA-CQ5(?!\d)', until: '^(#+\s*)?クリオグロブリン血症性血管炎 Cryoglobulin', allow_overlap: true}
+  - path: 07_クリオグロブリン血症性血管炎CV
+    title: 'クリオグロブリン血症性血管炎 Cryoglobulinemic vasculitis（CV）'
+    children:
+      - path: 00_概説
+        title: '[CV] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [33, 33], from: '^(#+\s*)?クリオグロブリン血症性血管炎 Cryoglobulin', until: '^(#+\s*)?CV-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[CV CQ1] クリオグロブリン血症に特異的な臨床所見があるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [33, 34], from: '^(#+\s*)?CV-CQ1(?!\d)', until: '^(#+\s*)?CV-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[CV CQ2] クリオグロブリン血症の型の決定は治療選択のために推奨されるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [34, 34], from: '^(#+\s*)?CV-CQ2(?!\d)', until: '^(#+\s*)?CV-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[CV CQ3] 特発性（本態性）クリオグロブリン血症に対し，標準的治療法は存在するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [34, 34], from: '^(#+\s*)?CV-CQ3(?!\d)', until: '^(#+\s*)?IgA 血管炎 IgA vasculitis', allow_overlap: true}
+  - path: 08_IgA血管炎IgAV
+    title: 'IgA 血管炎 IgA vasculitis（IgAV）［ヘノッホ―シェーンライン紫斑病］'
+    children:
+      - path: 00_概説
+        title: '[IgAV] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [34, 35], from: '^(#+\s*)?IgA 血管炎 IgA vasculitis', until: '^(#+\s*)?IgAV-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[IgAV CQ1] IgAV の診断に IgA の組織沈着を証明する必要があるか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [35, 36], from: '^(#+\s*)?IgAV-CQ1(?!\d)', until: '^(#+\s*)?IgAV-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[IgAV CQ2] 成人 IgAV に対し，とくに注意すべき点は何か？【推奨度 A】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [36, 37], from: '^(#+\s*)?IgAV-CQ2(?!\d)', until: '^(#+\s*)?IgAV-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[IgAV CQ3] IgAV における腎障害の危険因子は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [37, 37], from: '^(#+\s*)?IgAV-CQ3(?!\d)', until: '^(#+\s*)?IgAV-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[IgAV CQ4] IgAV 腎症を予防する目的で副腎皮質ステロイドを早期に投与すべきか？【推奨度 C2】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [37, 38], from: '^(#+\s*)?IgAV-CQ4(?!\d)', until: '^(#+\s*)?IgAV-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[IgAV CQ5] IgAV の消化管症状に対し，副腎皮質ステロイドを投与すべきか？【推奨度 A】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [38, 38], from: '^(#+\s*)?IgAV-CQ5(?!\d)', until: '^(#+\s*)?IgAV-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[IgAV CQ6] IgAV 腎症に対し，副腎皮質ステロイドをどのように用いるか？【推奨度 A】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [38, 39], from: '^(#+\s*)?IgAV-CQ6(?!\d)', until: '^(#+\s*)?IgAV-CQ7(?!\d)', allow_overlap: true}
+      - path: CQ07
+        title: '[IgAV CQ7] IgAV 腎症に対し，CY などの免疫抑制薬は有効か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [39, 40], from: '^(#+\s*)?IgAV-CQ7(?!\d)', until: '^(#+\s*)?IgAV-CQ8(?!\d)', allow_overlap: true}
+      - path: CQ08
+        title: '[IgAV CQ8] 重症の IgAV 腎症に対し，副腎皮質ステロイドと免疫抑制薬の併用以外にどのような治療があるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [40, 41], from: '^(#+\s*)?IgAV-CQ8(?!\d)', until: '^(#+\s*)?IgAV-CQ9(?!\d)', allow_overlap: true}
+      - path: CQ09
+        title: '[IgAV CQ9] FXIII 補充療法は IgAV のどのような症状に用いることができるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [41, 41], from: '^(#+\s*)?IgAV-CQ9(?!\d)', until: '^(#+\s*)?IgAV-CQ10(?!\d)', allow_overlap: true}
+      - path: CQ10
+        title: '[IgAV CQ10] IgAV の皮膚病変に対し，治療はどのようにすべきか？（副腎皮質ステロイド・免疫抑制薬以外）【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [41, 42], from: '^(#+\s*)?IgAV-CQ10(?!\d)', until: '^(#+\s*)?IgAV-CQ11(?!\d)', allow_overlap: true}
+      - path: CQ11
+        title: '[IgAV CQ11] IgAV の紫斑に対し，副腎皮質ステロイドの全身投与をどのように行うか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [42, 42], from: '^(#+\s*)?IgAV-CQ11(?!\d)', until: '^(#+\s*)?低補体血症性蕁麻疹様血管炎 Hypocomple', allow_overlap: true}
+  - path: 09_低補体血症性蕁麻疹様血管炎HUV
+    title: '低補体血症性蕁麻疹様血管炎 Hypocomplementemic urticarial vasculitis（HUV）（抗 C1q 血管炎）'
+    children:
+      - path: 00_概説
+        title: '[HUV] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [42, 43], from: '^(#+\s*)?低補体血症性蕁麻疹様血管炎 Hypocomple', until: '^(#+\s*)?HUV-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[HUV CQ1] UV と蕁麻疹の鑑別点は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [43, 43], from: '^(#+\s*)?HUV-CQ1(?!\d)', until: '^(#+\s*)?HUV-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[HUV CQ2] HUVとNUVで臨床像や皮膚病理組織像が異なるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [43, 44], from: '^(#+\s*)?HUV-CQ2(?!\d)', until: '^(#+\s*)?HUV-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[HUV CQ3] HUV と SLE の鑑別点は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [44, 45], from: '^(#+\s*)?HUV-CQ3(?!\d)', until: '^(#+\s*)?HUV-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[HUV CQ4] HUVに対し， 抗ヒスタミン薬は有用か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [45, 45], from: '^(#+\s*)?HUV-CQ4(?!\d)', until: '^(#+\s*)?HUV-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[HUV CQ5] HUVの皮膚症状に対し， 特異的な治療法は存在するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [45, 46], from: '^(#+\s*)?HUV-CQ5(?!\d)', until: '^(#+\s*)?UV-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[HUV CQ6] HUV の臓器障害に対し，標準的治療法は存在するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [46, 47], from: '^(#+\s*)?UV-CQ6(?!\d)', until: '^(#+\s*)?ベーチェット病 Behçet', allow_overlap: true}
+  - path: 10_ベーチェット病BD
+    title: 'ベーチェット病 Behçet’s disease（BD）'
+    children:
+      - path: 00_概説
+        title: '[BD] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [47, 47], from: '^(#+\s*)?ベーチェット病 Behçet', until: '^(#+\s*)?BD-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[BD CQ1] 血管 BD の罹患血管の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [47, 47], from: '^(#+\s*)?BD-CQ1(?!\d)', until: '^(#+\s*)?BD-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[BD CQ2] BD の皮膚病変と BD 皮膚血管炎の臨床像の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [47, 48], from: '^(#+\s*)?BD-CQ2(?!\d)', until: '^(#+\s*)?BD-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[BD CQ3] BD 皮膚血管炎の病理所見の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [48, 49], from: '^(#+\s*)?BD-CQ3(?!\d)', until: '^(#+\s*)?BD-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[BD CQ4] BD 皮膚血管炎の皮膚病変は疾患重症度と関連するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [49, 49], from: '^(#+\s*)?BD-CQ4(?!\d)', until: '^(#+\s*)?BD-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[BD CQ5] BD の皮膚粘膜病変に対し，有効な治療法は存在するか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [49, 49], from: '^(#+\s*)?BD-CQ5(?!\d)', until: '^(#+\s*)?BD-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[BD CQ6] BD の皮膚粘膜病変に対し，コルヒチン，DDS は有効か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [49, 50], from: '^(#+\s*)?BD-CQ6(?!\d)', until: '^(#+\s*)?BD-CQ7(?!\d)', allow_overlap: true}
+      - path: CQ07
+        title: '[BD CQ7] BD の皮膚症状に対し，ヨウ化カリウムは有効か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [50, 50], from: '^(#+\s*)?BD-CQ7(?!\d)', until: '^(#+\s*)?BD-CQ8(?!\d)', allow_overlap: true}
+      - path: CQ08
+        title: '[BD CQ8] BD の皮膚症状に対し，副腎皮質ステロイド内服は有効か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [50, 51], from: '^(#+\s*)?BD-CQ8(?!\d)', until: '^(#+\s*)?BD-CQ9(?!\d)', allow_overlap: true}
+      - path: CQ09
+        title: '[BD CQ9] BD 重症例の治療で注意すべき点はあるか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [51, 51], from: '^(#+\s*)?BD-CQ9(?!\d)', until: '^(#+\s*)?BD-CQ10(?!\d)', allow_overlap: true}
+      - path: CQ10
+        title: '[BD CQ10] BD のその他の治療に何があるか？【推奨度 B～C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [51, 52], from: '^(#+\s*)?BD-CQ10(?!\d)', until: '^(#+\s*)?BD-CQ11(?!\d)', allow_overlap: true}
+      - path: CQ11
+        title: '[BD CQ11] BD の予後に影響を与えうる因子は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [52, 52], from: '^(#+\s*)?BD-CQ11(?!\d)', until: '^(#+\s*)?皮膚白血球破砕性血管炎 Cutaneous leukocy', allow_overlap: true}
+  - path: 11_皮膚白血球破砕性血管炎CLA
+    title: '皮膚白血球破砕性血管炎 Cutaneous leukocytoclastic angiitis（vasculitis）（CLA）'
+    children:
+      - path: 00_概説
+        title: '[CLA] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [52, 53], from: '^(#+\s*)?皮膚白血球破砕性血管炎 Cutaneous leukocy', until: '^(#+\s*)?CLA-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[CLA CQ1] CLA の臨床所見の特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [53, 53], from: '^(#+\s*)?CLA-CQ1(?!\d)', until: '^(#+\s*)?CLA-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[CLA CQ2] CLA でみられる検査所見は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [53, 53], from: '^(#+\s*)?CLA-CQ2(?!\d)', until: '^(#+\s*)?CLA-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[CLA CQ3] CLA の病理所見の特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [53, 53], from: '^(#+\s*)?CLA-CQ3(?!\d)', until: '^(#+\s*)?CLA-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[CLA CQ4] CLA 病変部の直接蛍光抗体法所見の特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [53, 54], from: '^(#+\s*)?CLA-CQ4(?!\d)', until: '^(#+\s*)?CLA-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[CLA CQ5] CLA の診断はどのようにすべきか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [54, 54], from: '^(#+\s*)?CLA-CQ5(?!\d)', until: '^(#+\s*)?CLA-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[CLA CQ6] CLAの治療はどのようにすべきか？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [54, 54], from: '^(#+\s*)?CLA-CQ6(?!\d)', until: '^(#+\s*)?皮膚動脈炎 Cutaneous arteritis', allow_overlap: true}
+  - path: 12_皮膚動脈炎CA
+    title: '皮膚動脈炎 Cutaneous arteritis（CA）［皮膚型結節性多発動脈炎 Cutaneous polyarteritis nodosa（CPN）］'
+    children:
+      - path: 00_概説
+        title: '[CA] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [54, 55], from: '^(#+\s*)?皮膚動脈炎 Cutaneous arteritis', until: '^(#+\s*)?CA-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[CA CQ1] 皮膚症状を主体として経過する症例が， CAであるのかPANの皮膚症状であるのかを鑑別することができるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [55, 55], from: '^(#+\s*)?CA-CQ1(?!\d)', until: '^(#+\s*)?CA-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[CA CQ2] CA と PAN を鑑別するマーカーはあるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [55, 56], from: '^(#+\s*)?CA-CQ2(?!\d)', until: '^(#+\s*)?CA-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[CA CQ3] 本邦では，CA の誘因として HBV 感染症，HCV 感染症，溶連菌感染症の関与はどのくらい認められるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [56, 57], from: '^(#+\s*)?CA-CQ3(?!\d)', until: '^(#+\s*)?CA-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[CA CQ4] CA に対し，確立された治療法は存在するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [57, 57], from: '^(#+\s*)?CA-CQ4(?!\d)', until: '^(#+\s*)?CA-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[CA CQ5] CA に対し，副腎皮質ステロイドの全身投与は有効か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [57, 58], from: '^(#+\s*)?CA-CQ5(?!\d)', until: '^(#+\s*)?CA-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[CA CQ6] CA に対し，免疫抑制薬はどのような時に使用するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [58, 59], from: '^(#+\s*)?CA-CQ6(?!\d)', until: '^(#+\s*)?CA-CQ7(?!\d)', allow_overlap: true}
+      - path: CQ07
+        title: '[CA CQ7] CA に対し，生物学的製剤は有効か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [59, 59], from: '^(#+\s*)?CA-CQ7(?!\d)', until: '^(#+\s*)?ループス血管炎 Lupus vasculitis', allow_overlap: true}
+  - path: 13_ループス血管炎Lupus
+    title: 'ループス血管炎 Lupus vasculitis'
+    children:
+      - path: 00_概説
+        title: '[ループス血管炎] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [59, 60], from: '^(#+\s*)?ループス血管炎 Lupus vasculitis', until: '^(#+\s*)?Lupus-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[ループス血管炎 CQ1] ループス血管炎の皮膚病変の臨床的特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [60, 60], from: '^(#+\s*)?Lupus-CQ1(?!\d)', until: '^(#+\s*)?Lupus-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[ループス血管炎 CQ2] ループス血管炎の皮膚病変の病理所見の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [60, 61], from: '^(#+\s*)?Lupus-CQ2(?!\d)', until: '^(#+\s*)?Lupus-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[ループス血管炎 CQ3] ループス血管炎の皮膚血管炎はSLE の疾患活動性に関連するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [61, 62], from: '^(#+\s*)?Lupus-CQ3(?!\d)', until: '^(#+\s*)?Lupus-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[ループス血管炎 CQ4] ループス血管炎の皮膚血管炎を疑った時に行うべき検査は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [62, 62], from: '^(#+\s*)?Lupus-CQ4(?!\d)', until: '^(#+\s*)?Lupus-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[ループス血管炎 CQ5] ループス血管炎の内臓の血管炎の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [62, 63], from: '^(#+\s*)?Lupus-CQ5(?!\d)', until: '^(#+\s*)?Lupus-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[ループス血管炎 CQ6] ループス血管炎に対し，確立された治療法は存在するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [63, 64], from: '^(#+\s*)?Lupus-CQ6(?!\d)', until: '^(#+\s*)?リウマトイド血管炎 Rheumatoid vasculitis', allow_overlap: true}
+  - path: 14_リウマトイド血管炎Rheumatoid
+    title: 'リウマトイド血管炎 Rheumatoid vasculitis'
+    children:
+      - path: 00_概説
+        title: '[リウマトイド血管炎] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [64, 64], from: '^(#+\s*)?リウマトイド血管炎 Rheumatoid vasculitis', until: '^(#+\s*)?Rheumatoid-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[リウマトイド血管炎 CQ1] リウマトイド血管炎の皮膚病変の臨床的特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [64, 65], from: '^(#+\s*)?Rheumatoid-CQ1(?!\d)', until: '^(#+\s*)?Rheumatoid-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[リウマトイド血管炎 CQ2] リウマトイド血管炎の皮膚病変の病理所見の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [65, 66], from: '^(#+\s*)?Rheumatoid-CQ2(?!\d)', until: '^(#+\s*)?Rheumatoid-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[リウマトイド血管炎 CQ3] リウマトイド血管炎の診断はどのようにすべきか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [66, 66], from: '^(#+\s*)?Rheumatoid-CQ3(?!\d)', until: '^(#+\s*)?Rheumatoid-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[リウマトイド血管炎 CQ4] RA の下腿潰瘍の原因にはどのようなものがあるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [66, 67], from: '^(#+\s*)?Rheumatoid-CQ4(?!\d)', until: '^(#+\s*)?Rheumatoid-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[リウマトイド血管炎 CQ5] RA の足部潰瘍の原因にはどのようなものがあるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [67, 67], from: '^(#+\s*)?Rheumatoid-CQ5(?!\d)', until: '^(#+\s*)?Rheumatoid-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[リウマトイド血管炎 CQ6] リウマトイド血管炎に対し，標準的治療法は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [67, 68], from: '^(#+\s*)?Rheumatoid-CQ6(?!\d)', until: '^(#+\s*)?Rheumatoid-CQ7(?!\d)', allow_overlap: true}
+      - path: CQ07
+        title: '[リウマトイド血管炎 CQ7] リウマトイド血管炎に対し，生物学的製剤は有効か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [68, 68], from: '^(#+\s*)?Rheumatoid-CQ7(?!\d)', until: '^(#+\s*)?サルコイド血管炎 Sarcoid vasculitis', allow_overlap: true}
+  - path: 15_サルコイド血管炎Sarcoid
+    title: 'サルコイド血管炎 Sarcoid vasculitis'
+    children:
+      - path: 00_概説
+        title: '[サルコイド血管炎] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [68, 69], from: '^(#+\s*)?サルコイド血管炎 Sarcoid vasculitis', until: '^(#+\s*)?Sarcoid-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[サルコイド血管炎 CQ1] サルコイド血管炎の皮膚病変の臨床的特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [69, 69], from: '^(#+\s*)?Sarcoid-CQ1(?!\d)', until: '^(#+\s*)?Sarcoid-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[サルコイド血管炎 CQ2] サルコイド血管炎の皮膚病変の病理所見の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [69, 70], from: '^(#+\s*)?Sarcoid-CQ2(?!\d)', until: '^(#+\s*)?Sarcoid-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[サルコイド血管炎 CQ3] サルコイド血管炎に対し， 有用な治療法は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [70, 71], from: '^(#+\s*)?Sarcoid-CQ3(?!\d)', until: '^(#+\s*)?C 型肝炎ウイルス関連クリオグロブリン血症性血', allow_overlap: true}
+  - path: 16_C型肝炎ウイルス関連クリオグロブリン血症性血管炎HCV
+    title: 'C 型肝炎ウイルス関連クリオグロブリン血症性血管炎 Hepatitis C virus-associated cryoglobulinemic vasculitis'
+    children:
+      - path: 00_概説
+        title: '[HCV関連CV] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [71, 71], from: '^(#+\s*)?C 型肝炎ウイルス関連クリオグロブリン血症性血', until: '^(#+\s*)?HCV-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[HCV関連CV CQ1] C 型肝炎ウイルス関連クリオグロブリン血症性血管炎の診断において HCV-RNA 量の測定は推奨されるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [71, 72], from: '^(#+\s*)?HCV-CQ1(?!\d)', until: '^(#+\s*)?HCV-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[HCV関連CV CQ2] C 型肝炎ウイルス関連クリオグロブリン血症性血管炎に対し， 抗HCV療法は有効か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [72, 72], from: '^(#+\s*)?HCV-CQ2(?!\d)', until: '^(#+\s*)?HCV-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[HCV関連CV CQ3] C 型肝炎ウイルス関連クリオグロブリン血症性血管炎に対し，標準的治療法は存在するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [72, 73], from: '^(#+\s*)?HCV-CQ3(?!\d)', until: '^(#+\s*)?B 型肝炎ウイルス関連血管炎 Hepatitis B', allow_overlap: true}
+  - path: 17_B型肝炎ウイルス関連血管炎HBV
+    title: 'B 型肝炎ウイルス関連血管炎 Hepatitis B virus-associated vasculitis'
+    children:
+      - path: 00_概説
+        title: '[HBV関連血管炎] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [73, 73], from: '^(#+\s*)?B 型肝炎ウイルス関連血管炎 Hepatitis B', until: '^(#+\s*)?HBV-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[HBV関連血管炎 CQ1] B 型肝炎ウイルス関連血管炎に特異的な臨床所見があるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [73, 74], from: '^(#+\s*)?HBV-CQ1(?!\d)', until: '^(#+\s*)?HBV-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[HBV関連血管炎 CQ2] B型肝炎ウイルス関連血管炎の診断において HB 抗原，抗体および DNA 量の測定は推奨されるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [74, 74], from: '^(#+\s*)?HBV-CQ2(?!\d)', until: '^(#+\s*)?HBV-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[HBV関連血管炎 CQ3] B 型肝炎ウイルス関連血管炎に対し，HBV に対する治療は有効か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [74, 74], from: '^(#+\s*)?HBV-CQ3(?!\d)', until: '^(#+\s*)?薬剤関連血管炎 Drug-induced vasculitis', allow_overlap: true}
+  - path: 18_薬剤関連血管炎Drug
+    title: '薬剤関連血管炎 Drug-induced vasculitis'
+    children:
+      - path: 00_概説
+        title: '[薬剤関連血管炎] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [74, 75], from: '^(#+\s*)?薬剤関連血管炎 Drug-induced vasculitis', until: '^(#+\s*)?Drug-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[薬剤関連血管炎 CQ1] 薬剤関連血管炎の発症における危険因子は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [75, 76], from: '^(#+\s*)?Drug-CQ1(?!\d)', until: '^(#+\s*)?Drug-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[薬剤関連血管炎 CQ2] 薬剤関連 ANCA 関連血管炎で証明される ANCA の特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [76, 77], from: '^(#+\s*)?Drug-CQ2(?!\d)', until: '^(#+\s*)?Drug-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[薬剤関連血管炎 CQ3] 薬剤関連 ANCA 関連血管炎の臨床的特徴は何か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [77, 77], from: '^(#+\s*)?Drug-CQ3(?!\d)', until: '^(#+\s*)?Drug-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[薬剤関連血管炎 CQ4] ロイコトリエン受容体拮抗薬は薬剤性 EGPA の原因薬か？【推奨度 B】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [77, 78], from: '^(#+\s*)?Drug-CQ4(?!\d)', until: '^(#+\s*)?Drug-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[薬剤関連血管炎 CQ5] 薬剤関連血管炎は ANCA の関与以外にどのような機序で発症するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [78, 78], from: '^(#+\s*)?Drug-CQ5(?!\d)', until: '^(#+\s*)?Drug-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[薬剤関連血管炎 CQ6] 薬剤関連免疫複合体性血管炎の臨床的特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [78, 79], from: '^(#+\s*)?Drug-CQ6(?!\d)', until: '^(#+\s*)?Drug-CQ7(?!\d)', allow_overlap: true}
+      - path: CQ07
+        title: '[薬剤関連血管炎 CQ7] 生物学的製剤による薬剤関連血管炎はどのような機序で発症するか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [79, 80], from: '^(#+\s*)?Drug-CQ7(?!\d)', until: '^(#+\s*)?Drug-CQ8(?!\d)', allow_overlap: true}
+      - path: CQ08
+        title: '[薬剤関連血管炎 CQ8] 薬剤関連血管炎の診断に用いられる検査法は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [80, 80], from: '^(#+\s*)?Drug-CQ8(?!\d)', until: '^(#+\s*)?Drug-CQ9(?!\d)', allow_overlap: true}
+      - path: CQ09
+        title: '[薬剤関連血管炎 CQ9] 薬剤関連血管炎の診断はどのようにすべきか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [80, 81], from: '^(#+\s*)?Drug-CQ9(?!\d)', until: '^(#+\s*)?Drug-CQ10(?!\d)', allow_overlap: true}
+      - path: CQ10
+        title: '[薬剤関連血管炎 CQ10] 薬剤関連血管炎の治療はどのようにすべきか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [81, 81], from: '^(#+\s*)?Drug-CQ10(?!\d)', until: '^(#+\s*)?癌関連血管炎 Cancer-associated vasculitis', allow_overlap: true}
+  - path: 19_癌関連血管炎Cancer
+    title: '癌関連血管炎 Cancer-associated vasculitis'
+    children:
+      - path: 00_概説
+        title: '[癌関連血管炎] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [81, 82], from: '^(#+\s*)?癌関連血管炎 Cancer-associated vasculitis', until: '^(#+\s*)?Cancer-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[癌関連血管炎 CQ1] 癌関連血管炎の皮膚症状の特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [82, 82], from: '^(#+\s*)?Cancer-CQ1(?!\d)', until: '^(#+\s*)?Cancer-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[癌関連血管炎 CQ2] 癌関連血管炎で合併する癌の種類は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [82, 83], from: '^(#+\s*)?Cancer-CQ2(?!\d)', until: '^(#+\s*)?Cancer-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[癌関連血管炎 CQ3] 癌関連血管炎に対し，血管炎の治療法は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [83, 83], from: '^(#+\s*)?Cancer-CQ3(?!\d)', until: '^(#+\s*)?リベド様血管症 Livedoid vasculopathy', allow_overlap: true}
+  - path: 20_リベド様血管症Livedoid
+    title: 'リベド様血管症 Livedoid vasculopathy'
+    children:
+      - path: 00_概説
+        title: '[リベド様血管症] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [83, 83], from: '^(#+\s*)?リベド様血管症 Livedoid vasculopathy', until: '^(#+\s*)?Livedoid-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[リベド様血管症 CQ1] Livedoid vasculopathy にはどのような歴史的背景があるのか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [83, 84], from: '^(#+\s*)?Livedoid-CQ1(?!\d)', until: '^(#+\s*)?Livedoid-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[リベド様血管症 CQ2] Livedoid vasculopathy の臨床的特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [84, 84], from: '^(#+\s*)?Livedoid-CQ2(?!\d)', until: '^(#+\s*)?Livedoid-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[リベド様血管症 CQ3] Livedoid vasculopathy で必要な検査は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [84, 85], from: '^(#+\s*)?Livedoid-CQ3(?!\d)', until: '^(#+\s*)?Livedoid-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[リベド様血管症 CQ4] Livedoid vasculopathy の組織学的な特徴は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [85, 85], from: '^(#+\s*)?Livedoid-CQ4(?!\d)', until: '^(#+\s*)?Livedoid-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[リベド様血管症 CQ5] Livedoid vasculopathy に対し，有用な治療法は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [85, 86], from: '^(#+\s*)?Livedoid-CQ5(?!\d)', until: '^(#+\s*)?抗リン脂質抗体症候群 Antiphospholipid syn', allow_overlap: true}
+  - path: 21_抗リン脂質抗体症候群APS
+    title: '抗リン脂質抗体症候群 Antiphospholipid syndrome（APS）'
+    children:
+      - path: 00_概説
+        title: '[APS] 概説'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [86, 87], from: '^(#+\s*)?抗リン脂質抗体症候群 Antiphospholipid syn', until: '^(#+\s*)?APS-CQ1(?!\d)', allow_overlap: true}
+      - path: CQ01
+        title: '[APS CQ1] 一過性あるいは，低力価の aPL に臨床的意義はあるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [87, 87], from: '^(#+\s*)?APS-CQ1(?!\d)', until: '^(#+\s*)?APS-CQ2(?!\d)', allow_overlap: true}
+      - path: CQ02
+        title: '[APS CQ2] APSで， 皮膚病変は重要な初発症状となるか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [87, 87], from: '^(#+\s*)?APS-CQ2(?!\d)', until: '^(#+\s*)?APS-CQ3(?!\d)', allow_overlap: true}
+      - path: CQ03
+        title: '[APS CQ3] 血栓症の既往のない APS の患者において，少量アスピリンは血栓の予防に有効か？【推奨度 C2】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [87, 88], from: '^(#+\s*)?APS-CQ3(?!\d)', until: '^(#+\s*)?APS-CQ4(?!\d)', allow_overlap: true}
+      - path: CQ04
+        title: '[APS CQ4] APSに対し， 有用な治療法は何か？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [88, 89], from: '^(#+\s*)?APS-CQ4(?!\d)', until: '^(#+\s*)?APS-CQ5(?!\d)', allow_overlap: true}
+      - path: CQ05
+        title: '[APS CQ5] 血栓症，特に静脈血栓症の予防に対し，ワルファリンは有効か？【推奨度 A（両カッコ以外の記載について）】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [89, 89], from: '^(#+\s*)?APS-CQ5(?!\d)', until: '^(#+\s*)?APS-CQ6(?!\d)', allow_overlap: true}
+      - path: CQ06
+        title: '[APS CQ6] 血栓症の予防に対し，抗凝固療法はどの程度の期間続けるべきか？【推奨度 C1】'
+        body:
+          - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [89, 90], from: '^(#+\s*)?APS-CQ6(?!\d)', allow_overlap: true}
+  - path: 90_CQ推奨度一覧
+    title: 全 CQ の推奨度・推奨文一覧（診療アルゴリズム〜抗リン脂質抗体症候群の 21 章分）
+    body:
+      - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [91, 99]}
+  - path: 91_略語一覧表
+    title: 略語一覧表（略語・名称・日本語訳）
+    body:
+      - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [100, 101]}
+  - path: 92_診療アルゴリズム図
+    title: 巻末 診療アルゴリズム図（図 4 巨細胞性動脈炎〜図 23 抗リン脂質抗体症候群）
+    body_text: |
+      巻末に置かれた疾患別の診療アルゴリズム図（図 4〜23）。ページの中身は図だけで、
+      以下のテキストは図中の語がばらけて出たもの。**図の読み取りは原本 PDF を参照**
+      （ページ画像から起こした再現テキストで補っている）。各図が対応する疾患章の CQ 番号が図中に書き込まれている。
+    body:
+      - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [102, 117]}
+vlm_candidates:
+  - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [102, 117], why: 巻末の診療アルゴリズム図 図 4〜23（1 ページに 1〜2 図）。図だけのページで、raw では語がばらける}
+  - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [2, 2], why: 表 1 CHCC1994 の分類と疾患名。raw では表のセルが 1 行ずつに割れて分類と疾患名の対応が読めない}
+  - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [3, 3], why: 図 1 CHCC2012 の血管の太さを基にした分類}
+  - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [4, 5], why: 表 2 CHCC2012 の分類と疾患名／表 3 日本医学会用語委員会に承認された CHCC2012 の日本語訳。いずれも 2 列の対応表}
+  - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [6, 6], why: 図 2 血管炎の皮膚症状と罹患血管レベル（皮疹の深さと血管レベルの対応図）}
+  - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [9, 9], why: 図 3 皮膚血管炎の診療アルゴリズム}
+  - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [35, 36], why: 表 4 小児 IgAV の分類基準（EULAR/PreS）／表 5 IgAV の分類基準（Helander）。診断項目の表}
+  - {pdf: 血管炎・血管障害診療ガイドライン2016年改訂版.pdf, pages: [75, 75], why: 表 6 薬剤関連血管炎の原因薬一覧／表 7 薬剤関連血管炎の治療・管理計画。多列の薬剤表}
+notes: |
+  - 抽出モードは `raw`。学会誌の 2 段組で、既定モードは左右の段を 1 行ずつ交互に出して
+    本文が読めなくなる（p.3 で確認）。`-raw`（内容ストリーム順）なら左段 → 右段の順に
+    素直に出る。引き換えに表はセルが 1 行ずつに割れるので、表・図のあるページを
+    `vlm_candidates` に挙げた。
+  - `strip_edge` は柱とノンブル（raw ではページ末尾の 2 行にまとまって出る）を狙う。
+    窓は 3 行。裸の `\d{1,3}` は置いていない（推奨度・表の数値・文献番号を巻き添えにする）。
+  - CQ の見出しは原本が `GCA-CQ1` のように**疾患の略号 + CQ 番号**で刷っているので、
+    ページ内分割（`from` / `until`）の境界にそのまま使った。1 ページに 2〜4 個の CQ が
+    始まる版面が多く、章の切れ目も同じページに来るため、ほぼ全ノードで
+    `allow_overlap: true` を付けている（隣接する CQ が境界ページを共有するのは意図した形）。
+  - 原本の CQ 番号には誤りが 1 つある。低補体血症性蕁麻疹様血管炎（HUV）章の第 6 問だけ
+    `UV-CQ6` と刷られている（他は `HUV-CQ1`〜`HUV-CQ5`）。`from` / `until` は原本どおり
+    `UV-CQ6` で書き、ノードの path と title は章に合わせて CQ6 / HUV としてある。
+  - GPA 章だけ総論の見出しが「概説」ではなく「概念」なので、ノード名も `00_概念` にした。
+  - 全 117 ページを収めた。落としたページは無い。
+  - 本文に康熙部首の混入は無い（`normalize_radicals` は付けていない）。
+  - **2023 年の『皮膚血管炎・血管障害診療ガイドライン 2023』（IgA 血管炎・クリオグロブリン
+    血症性血管炎・結節性多発動脈炎・リベド様血管症の治療の手引き）は本書の改訂版ではなく、
+    4 疾患の治療に限った別文書**なので、両方を収録している（別 id
+    `皮膚血管炎・血管障害2023`）。学会の一般公開ガイドライン一覧でも 2016 年改訂版が
+    アーカイブでなく現行として掲載され続けている。

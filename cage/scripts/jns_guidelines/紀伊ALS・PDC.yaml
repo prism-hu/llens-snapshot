@@ -1,0 +1,133 @@
+id: 紀伊ALS・PDC
+title: 紀伊 ALS／ALS-parkinsonism-dementia complex（PDC） 診断基準・診療マニュアル
+guideline: 紀伊 ALS／PDC の診断基準・紀伊半島南部に多発する ALS と ALS-parkinsonism-dementia complex に関する診療マニュアル
+publisher: 厚生労働省 難治性疾患政策研究事業「神経変性疾患領域における基盤的調査研究」班（研究代表者 中島健二／日本神経学会協力）
+source: https://www.neurology-jp.org/guidelinem/kii_als/kii_als.pdf
+retrieved_at: '2026-09-05'
+description: |
+  紀伊半島南部（和歌山県田辺市〜三重県松阪市を結ぶライン以南、牟婁郡とその周辺）に多発する
+  筋萎縮性側索硬化症（紀伊 ALS）と、パーキンソニズム・認知症を単独または複合して示す
+  ALS-parkinsonism-dementia complex（ALS/PDC）に関する、日本神経学会掲載の 2 文書を 1 つのディレクトリ (`{{DOC_BASE}}/診療ガイドライン/神経疾患/紀伊ALS・PDC/`) にまとめたもの。
+
+  収録した 2 文書:
+  1. **紀伊 ALS/PDC の診断基準**（2 ページ、日本神経学会承認日 2014年1月24日）。疾患概念（地域性・臨床病型・神経病理学的所見）、
+     診断基準（Possible / Probable / Definite）、重症度分類Ⅰ〜Ⅴ。作成は厚生労働省の研究班。
+  2. **紀伊半島南部に多発する ALS と ALS-parkinsonism-dementia complex に関する診療マニュアル**（31 ページ、
+     日本神経学会承認日 2019年11月23日）。編集は厚生労働省 難治性疾患政策研究事業「神経変性疾患領域における基盤的調査研究」班
+     （研究代表者 中島健二、(独)国立病院機構松江医療センター院長）、協力 一般社団法人 日本神経学会。
+     執筆担当は小久保康昌（三重大学）、森本悟、金井数明、佐々木良元、岡本和士、紀平為子、監修 葛原茂樹。
+     第1章「紀伊 ALS」と第2章「紀伊 ALS-parkinsonism-dementia 症候群」の 2 章立てで、各章が
+     Ⅰ．定義・疫学・経過・リスクファクター／Ⅱ．診断／Ⅲ．対応・治療の原則と選択肢 の 3 節に分かれる Q&A 形式。
+     第1章は紀伊半島南部の様々な ALS を、第2章は特徴的なタウ病理を示す疾患を扱うため、
+     タウ病理を伴う ALS は両章に含まれる（マニュアル本文の記載）。
+
+  収録範囲: 診断基準は全 2 ページを 1 ノード。診療マニュアルは背景（用語・作成の背景）と 2 章 6 節をノードにした。
+  表紙・研究班名簿・目次・白ページは収録しない。Ⅲ節の回答はエビデンスに基づくものではなくエキスパートオピニオンである旨が原文に明記されている。
+strip:
+  - '紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル'
+strip_edge:
+  # ノンブル。**ページの先頭/末尾 2 非空行だけ**に効かせる
+  # (この 2 本には数値だけの行が端に 2 つ並ぶページは無いので窓は 2 で足りる)
+  lines: 2
+  patterns:
+  - '\d{1,3}'
+pdfs:
+  - file: 紀伊ALS／PDCの診断基準_紀伊半島に多発する筋萎縮性側索硬化症＿パーキンソン認知症複合.pdf
+    url: https://www.neurology-jp.org/guidelinem/kii_als/kii_als.pdf
+    label: 紀伊 ALS／PDC の診断基準
+  - file: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf
+    url: https://www.neurology-jp.org/guidelinem/pdf/als_pdc.pdf
+    label: 紀伊半島南部に多発する ALS と ALS/PDC に関する診療マニュアル
+nodes:
+  - path: 01_診断基準
+    title: 紀伊 ALS/PDC の疾患概念・診断基準・重症度分類（日本神経学会承認 2014年1月24日）
+    body:
+      - {pdf: 紀伊ALS／PDCの診断基準_紀伊半島に多発する筋萎縮性側索硬化症＿パーキンソン認知症複合.pdf, pages: [1, 2]}
+  - path: 02_診療マニュアル
+    title: 紀伊半島南部に多発する ALS と ALS-parkinsonism-dementia complex に関する診療マニュアル（2019）
+    body_text: |
+      「紀伊半島南部に多発する ALS と ALS-parkinsonism-dementia complex に関する診療マニュアル」（31 ページ、日本神経学会承認 2019年11月23日）。第1章が紀伊半島南部の様々な ALS（紀伊 ALS）、第2章が特徴的なタウ病理を示す ALS-parkinsonism-dementia complex を扱う。
+      タウ病理を伴う ALS は両章に含まれる（原文の「本マニュアル作成の背景」に明記されている）。
+    children:
+      - path: 00_本マニュアル作成の背景
+        title: 用語・本マニュアル作成の背景（第1章と第2章の書き分け）
+        body:
+          - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [5, 5]}
+      - path: 01_紀伊ALS
+        title: 第1章 紀伊 ALS
+        body_text: |
+          第1章。紀伊半島南部の出身者ないし居住歴のある ALS 患者を「紀伊 ALS」として扱う。孤発性 ALS、特徴的なタウ病理を示す ALS、C9orf72・optineurin・SOD1 変異例などを含む。
+          Ⅰ（定義・疫学・経過・リスクファクター）、Ⅱ（診断）、Ⅲ（対応・治療の原則と選択肢）の 3 節構成。
+        children:
+          - path: 01_定義・疫学・経過・リスクファクター
+            title: '[第1章 紀伊ALS／Ⅰ] 定義・疫学・経過・リスクファクター（QⅠ-1〜QⅠ-5：定義、多発地域と多発の程度、他地域の特徴的タウ病理例、自然史・経過）'
+            body:
+              - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [7, 11]}
+          - path: 02_診断
+            title: '[第1章 紀伊ALS／Ⅱ] 診断（QⅡ-1〜QⅡ-8：発見の手がかり、臨床像、検査所見、神経病理学的特徴、危険因子・防御因子）'
+            body:
+              - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [12, 16]}
+          - path: 03_対応・治療の原則と選択肢
+            title: '[第1章 紀伊ALS／Ⅲ] 対応・治療の原則と選択肢（QⅢ-1〜QⅢ-2-2：通常の ALS との差異、難病申請、公的援助）'
+            body:
+              - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [17, 18]}
+      - path: 02_紀伊ALS-PDC
+        title: 第2章 紀伊 ALS-parkinsonism-dementia complex（ALS/PDC）
+        body_text: |
+          第2章。紀伊半島南部に存在し、認知症・パーキンソニズム・ALS 症状を単独あるいは複合して示し、特徴的なタウ病理を示す ALS-parkinsonism-dementia complex を扱う。
+          Ⅰ（定義・疫学・経過・リスクファクター）、Ⅱ（診断）、Ⅲ（対応・治療の原則と選択肢）の 3 節構成。Ⅲ節の回答はエビデンスに基づくものではなくエキスパートオピニオンである旨が原文に明記されている。
+        children:
+          - path: 01_定義・疫学・経過・リスクファクター
+            title: '[第2章 紀伊ALS/PDC／Ⅰ] 定義・疫学・経過・リスクファクター（QⅠ-1〜：定義、地域外の存在、有病率、経過、リスクファクター）'
+            body:
+              - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [19, 22]}
+          - path: 02_診断
+            title: '[第2章 紀伊ALS/PDC／Ⅱ] 診断（QⅡ-1〜：気づき方、診断基準、臨床的特徴と 7 病型、検査、タウイメージング、鑑別診断〈AD・MSA など〉）'
+            body:
+              - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [23, 28]}
+          - path: 03_対応・治療の原則と選択肢
+            title: '[第2章 紀伊ALS/PDC／Ⅲ] 対応・治療の原則と選択肢（パーキンソン症状への薬物治療とケア、認知症合併時の意思決定、転倒・褥瘡の予防）'
+            body:
+              - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [29, 31]}
+vlm_candidates:
+  - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [8, 8], why: QⅠ-2 の疫学表（地区×年×有病率・罹患率の多列表。テキスト層では列が縦に潰れる）}
+  - {pdf: 紀伊半島南部に多発するALSとALS-parkinsonism-dementia complex に関する診療マニュアル.pdf, pages: [23, 23], why: QⅡ-2 紀伊 ALS/PDC 診断基準（Possible/Probable/Definite の組み合わせ条件。表ではなく本文中の箇条書きだが、診断基準 PDF と同じ内容で条件の対応関係が原文レイアウトに依存するため VLM で突き合わせたい）}
+  - {pdf: 紀伊ALS／PDCの診断基準_紀伊半島に多発する筋萎縮性側索硬化症＿パーキンソン認知症複合.pdf, pages: [1, 2], why: 診断カテゴリー（Possible/Probable/Definite の組み合わせ条件）と重症度分類Ⅰ〜Ⅴ。テキスト層は素直だが、条件の対応関係が原文レイアウトに依存するため VLM で突き合わせたい}
+notes: |
+  ## 発行主体（1 ページ目・奥付で確認）
+  - 診断基準（2p）: 「作成者」の記載はなく、末尾に「日本神経学会承認日 ２０１４年１月２４日」のみ。
+    内容・体裁は診療マニュアル（同じ研究班）と一致するため、publisher は研究班とした。
+  - 診療マニュアル（31p）: 表紙に「協力 一般社団法人 日本神経学会（日本神経学会承認日 2019年11月23日）」、
+    p2-3 に「神経変性疾患領域における基盤的調査研究班 研究代表者 中島健二」以下の班員・研究分担者・執筆担当者・監修者。
+    したがって発行主体は厚生労働省 難治性疾患政策研究事業の研究班で、日本神経学会は協力・承認の立場。
+
+  ## 落としたページ
+  - 診療マニュアル p1: 表紙（書名・協力・承認日。description に転記済み）。
+  - 診療マニュアル p2-3: 研究班名簿（研究代表者・班員・研究分担者・執筆担当者・監修）。主要人名は description に転記済み。
+  - 診療マニュアル p4: 目次。p6: 白ページ。
+  - 診断基準 PDF は 2 ページとも収録（欠落なし）。
+
+  ## ページ境界の確認
+  - 章・節の境界（p7 第1章Ⅰ / p12 Ⅱ診断 / p17 Ⅲ対応・治療 / p19 第2章Ⅰ / p23 Ⅱ診断 / p29 Ⅲ対応・治療）は
+    すべて当該ページ本文の見出し行（「Ⅱ 診断」「Ⅲ 対応・治療の原則と選択肢」等）を確認して決めた。
+  - このマニュアルには目次に印字ページ番号が振られておらず、目次とのページずれは発生しない。
+
+  ## strip / strip_edge・章 _index の本文
+  - 診療マニュアルの柱 (書名 1 行) を `strip`、ノンブルを `strip_edge` (lines: 2) に置いた。
+    この 2 本には端に数値だけの行が 2 つ並ぶページが無いので、表の数値セルの巻き添えは起きない。
+  - 章 (`01_紀伊ALS` / `02_紀伊ALS-PDC`) と `02_診療マニュアル` の `_index.md` は、原本の該当ページを
+    収録していないので `body_text` で書いた案内文と子の一覧だけになる。
+
+  ## その他
+  - 診療マニュアルの Ⅲ 節は冒頭に「以下の回答は、エビデンスに基づいたものではなく経験に基づいたエキスパートオピニオンである。」
+    と明記されている。ノード本文にその 1 行が含まれる。
+  - 診断基準 PDF のファイル名（「紀伊ALS／PDCの診断基準_…」）は download_log の Guideline 列＋PDF 列の連結で、
+    中身は 1 文書（疾患概念＋診断基準＋重症度分類）。ファイル名と実体のずれはない。
+  - vlm_candidates は 5 ページ。診断カテゴリー (Possible / Probable / Definite の組み合わせ) と重症度分類、
+    疫学の多列表が対象で、overlay 待ち。
+  - 診療マニュアル p20（QⅠ-3〜5）と p24（QⅡ-3〜4）はいずれも実ページを確認したところ表・図が無い
+    平文で、pdftotext の抽出も乱れていない（穂原地区の粗有病率・7 サブタイプの説明もすべて 1 段組の
+    地の文）。以前の why は「古座川地区の粗有病率表」「QⅡ-3 の 7 臨床型の一覧」など実在しない表を
+    指しており誤りだったため、vlm_candidates から外した。QⅡ-2（p23）の診断基準は表ではないが、
+    診断基準 PDF と同一内容で Possible/Probable/Definite の組み合わせがレイアウトに依存するため
+    候補として残し、why を実体（箇条書きであり表ではない）に合わせて書き直した。

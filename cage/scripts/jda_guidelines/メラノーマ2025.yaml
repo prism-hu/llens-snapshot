@@ -1,0 +1,1316 @@
+id: メラノーマ2025
+title: メラノーマ診療ガイドライン2025（皮膚がん診療ガイドライン第4版）
+guideline: メラノーマ診療ガイドライン2025（皮膚がん診療ガイドライン第4版）
+publisher: 日本皮膚科学会・日本皮膚悪性腫瘍学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『皮膚がん診療ガイドライン第 4 版 メラノーマ診療ガイドライン 2025』
+  （公益社団法人日本皮膚科学会・一般社団法人日本皮膚悪性腫瘍学会 皮膚がん診療ガイドライン
+  策定委員会（メラノーマ診療ガイドライングループ）編、日皮会誌 134(13): 3149-3265, 2024（令和 6）、
+  2025 年 2 月 20 日更新版）。2007 年の「皮膚悪性腫瘍診療ガイドライン」に始まり、2015 年 第 2 版、
+  2019 年 第 3 版を経た改訂版で、メラノーマ分冊は第 4 版にあたる。推奨は Minds 2020 ver.3.0 準拠。
+
+  構成（全 3 章 + 文献）:
+  - 第 1 章 メラノーマ診療ガイドラインについて（目的・対象・文献検索・SR の方法・推奨決定の方法・COI）
+  - 第 2 章 メラノーマ総論（疫学と病因、診断、病期と治療方針・経過観察、手術療法、センチネル
+    リンパ節生検・領域リンパ節郭清、放射線療法、周術期薬物療法、進行期治療（殺細胞性抗がん剤・
+    分子標的薬 / 免疫チェックポイント阻害薬）、ICI と分子標的薬の併用・逐次投与）
+  - 第 3 章 クリニカルクエスチョン（CQ）と推奨（CQ1〜CQ12）
+  - 文献
+
+  本体のほかに、学会ページの「推奨作成関連資料DL」zip に同梱されている **CQ ごとの推奨決定資料**
+  （CQ1〜CQ12、Minds 様式の RC-4〜RC-7 / SR-1〜SR-15）を `95_推奨決定資料/CQ01`〜`CQ12` に、
+  **スコープ**（SC-1〜SC-4）を `96_スコープ` に子セクションとして収めた。本体の CQ ノードと
+  推奨決定資料の CQ ノードは同じ title を持たせてあるので、本体 → 推奨決定資料と辿れる。
+normalize_radicals: true
+strip:
+  # 推奨決定資料・スコープの各ページ先頭に入る目次リンク（本体には出ない）
+  - '目次に戻る'
+strip_edge:
+  # 本体（学会誌組版）の柱とノンブル。**raw 抽出ではページ末尾 2 行に固まって出る**ので端だけに効かせる
+  # （'\d{1,3}' は置かない。本体は裸のノンブル行を持たず、表の数値を巻き添えにするだけなので）
+  lines: 3
+  patterns:
+    - '.*日皮会誌：134（13）.*'
+    - '皮膚がん診療ガイドライン策定委員会（メラノーマ診療ガイドライングループ）'
+    - '皮膚がん診療ガイドライン第 4 版 メラノーマ診療ガイドライン 2025.*'
+pdfs:
+  - file: メラノーマ診療ガイドライン2025.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/melanoma2025_250220.pdf
+    label: 本体（全 117 ページ）
+    # 学会誌の 2 段組。既定モードは左右の段を 1 行ずつ交互に出し、-layout は段を横に並べたまま
+    # 出すのでどちらも読み順が壊れる。-raw だけが「左段を通し → 右段を通し」の順に出る
+    mode: raw
+  - file: MM_CQ1_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq1_rec.pdf
+    label: CQ1 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ2_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq2_rec.pdf
+    label: CQ2 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ3_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq3_rec.pdf
+    label: CQ3 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ4_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq4_rec.pdf
+    label: CQ4 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ5_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq5_rec.pdf
+    label: CQ5 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ6_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq6_rec.pdf
+    label: CQ6 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ7_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq7_rec.pdf
+    label: CQ7 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ8_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq8_rec.pdf
+    label: CQ8 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ9_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq9_rec.pdf
+    label: CQ9 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ10_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq10_rec.pdf
+    label: CQ10 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ11_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq11_rec.pdf
+    label: CQ11 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_CQ12_推奨決定資料.pdf
+    slug: jda_melanoma_2025_cq12_rec.pdf
+    label: CQ12 推奨決定資料
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+  - file: MM_SC-1～4.pdf
+    slug: jda_melanoma_2025_sc.pdf
+    label: スコープ（SC-1〜SC-4）
+    mode: layout   # 1 段組の Minds 様式 (表主体)。他の皮膚がん GL の推奨決定資料と同じ
+nodes:
+  - path: 00_表紙・目次
+    title: 表紙・作成委員・目次
+    body_text: |
+      表紙（書名・版・作成主体・策定委員の所属）と目次。版・発行年・作成委員会の根拠になるので収録した。
+    body:
+      - pdf: メラノーマ診療ガイドライン2025.pdf
+        pages: [1, 3]
+        until: '^(#+\s*)?第1章 メラノーマ診療ガイドラインについて'
+  - path: 01_ガイドラインについて
+    title: 第1章 メラノーマ診療ガイドラインについて
+    children:
+      - path: 01_目的・対象・注意事項・改訂の特徴
+        title: '[第1章] 1〜5 本ガイドラインの目的／改訂の目的／適用が想定される対象者・利用対象者／使用する場合の注意事項／改訂ガイドラインの特徴'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [3, 4]
+            from: '^(#+\s*)?第1章 メラノーマ診療ガイドラインについて'
+            allow_overlap: true
+      - path: 02_エビデンス収集方法
+        title: '[第1章] 6 エビデンス収集方法（文献検索）'
+        body:
+          - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [5, 5]}
+      - path: 03_システマティックレビューと推奨決定の方法
+        title: '[第1章] 7〜8 システマティックレビューの方法／推奨決定の方法（推奨の強さ・エビデンスの強さ・パネル会議・CQ 担当者）'
+        body:
+          - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [6, 7]}
+      - path: 04_CQ番号の変更・改訂作業・外部評価
+        title: '[第1章] 9〜12 作成過程における CQ 番号の変更／ガイドライン改訂作業の実際／外部評価・パブリックコメント／今後の改訂と目指すべき改訂のあり方'
+        body:
+          - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [8, 8]}
+      - path: 05_モニタリング・資金・利益相反
+        title: '[第1章] 13〜15 出版後のガイドラインのモニタリング／資金／利益相反（COI の申告と対応）'
+        body:
+          - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [9, 9]}
+  - path: 02_メラノーマ総論
+    title: 第2章 メラノーマ総論
+    children:
+      - path: 01_メラノーマの疫学と病因
+        title: '[第2章] 1 メラノーマの疫学と病因（1.1 疫学／1.2 病因，危険因子）'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [10, 15]
+            until: '^(#+\s*)?2[．.]メラノーマの診断'
+      - path: 02_メラノーマの診断
+        title: '[第2章] 2 メラノーマの診断（肉眼による視診／ダーモスコピー／生検／病理診断／スクリーニング画像検査）'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [15, 17]
+            from: '^(#+\s*)?2[．.]メラノーマの診断'
+            allow_overlap: true
+            until: '^(#+\s*)?3[．.]病期と治療方針'
+      - path: 03_病期と治療方針・経過観察方針
+        title: '[第2章] 3 病期と治療方針，経過観察方針（3.1 病期別の治療アルゴリズム／3.2 病期別の経過観察指針）'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [17, 25]
+            from: '^(#+\s*)?3[．.]病期と治療方針'
+            allow_overlap: true
+            until: '^(#+\s*)?4[．.]手術療法'
+      - path: 04_手術療法
+        title: '[第2章] 4 手術療法（原発巣切除，転移巣切除の適応と目的／原発巣切除／オリゴ転移・in-transit 転移の転移巣切除）'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [25, 29]
+            from: '^(#+\s*)?4[．.]手術療法'
+            allow_overlap: true
+            until: '^(#+\s*)?5[．.].{0,4}手術療法：センチネルリンパ節'
+      - path: 05_センチネルリンパ節生検・領域リンパ節郭清
+        title: '[第2章] 5 手術療法：センチネルリンパ節生検（SLNB）・領域リンパ節郭清（CLND）'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [29, 34]
+            from: '^(#+\s*)?5[．.].{0,4}手術療法：センチネルリンパ節'
+            allow_overlap: true
+            until: '^(#+\s*)?6[．.]放射線療法'
+      - path: 06_放射線療法
+        title: '[第2章] 6 放射線療法（術後補助放射線療法／根治的放射線療法／特殊な放射線／緩和的放射線療法）'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [34, 39]
+            from: '^(#+\s*)?6[．.]放射線療法'
+            allow_overlap: true
+            until: '^(#+\s*)?7[．.]周術期薬物療法'
+      - path: 07_周術期薬物療法
+        title: '[第2章] 7 周術期薬物療法（Interferon／分子標的薬／免疫チェックポイント阻害薬／術前補助療法）'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [39, 46]
+            from: '^(#+\s*)?7[．.]周術期薬物療法'
+            allow_overlap: true
+            until: '^(#+\s*)?8[．.].{0,4}進行期治療：殺細胞性抗がん剤'
+      - path: 08_進行期治療_殺細胞性抗がん剤と分子標的薬
+        title: '[第2章] 8 進行期治療：殺細胞性抗がん剤と分子標的薬．有害事象，脳転移治療などを含めて'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [46, 52]
+            from: '^(#+\s*)?8[．.].{0,4}進行期治療：殺細胞性抗がん剤'
+            allow_overlap: true
+            until: '^(#+\s*)?9[．.].{0,4}進行期治療：免疫チェックポイント阻害'
+      - path: 09_進行期治療_免疫チェックポイント阻害薬
+        title: '[第2章] 9 進行期治療：免疫チェックポイント阻害薬．有害事象，脳転移治療などを含めて'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [52, 60]
+            from: '^(#+\s*)?9[．.].{0,4}進行期治療：免疫チェックポイント阻害'
+            allow_overlap: true
+            until: '^(#+\s*)?10[．.].{0,4}免疫チェックポイント阻害薬と分子標的'
+      - path: 10_ICIと分子標的薬の併用療法および逐次投与
+        title: '[第2章] 10 免疫チェックポイント阻害薬と分子標的薬の併用療法および逐次投与'
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [60, 65]
+            from: '^(#+\s*)?10[．.].{0,4}免疫チェックポイント阻害薬と分子標的'
+            allow_overlap: true
+            until: '^(#+\s*)?第\s?3\s?章'
+  - path: 03_クリニカルクエスチョンと推奨
+    title: 第3章 メラノーマ診療ガイドライン クリニカルクエスチョン（CQ）と推奨
+    children:
+      - path: CQ01
+        title: '[CQ1] 爪部浸潤性メラノーマに対する指趾切断術は勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ01`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [65, 67]
+            from: '^(#+\s*)?第\s?3\s?章'
+            allow_overlap: true
+      - path: CQ02
+        title: '[CQ2] センチネルリンパ節（SLN）転移陽性例に対して早期リンパ節郭清を行うことは勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ C（弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ02`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [68, 69]
+      - path: CQ03
+        title: '[CQ3] 根治切除後の BRAF 変異陰性メラノーマに対する術後補助療法として抗 PD-1 抗体は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ03`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [70, 72]
+      - path: CQ04
+        title: '[CQ4] 根治切除後の BRAF 変異陽性メラノーマに対する術後補助療法は BRAF/MEK 阻害薬と抗 PD-1 抗体のいずれが勧められるか？【推奨の強さ 5（推奨なし）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ04`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [73, 74]
+      - path: CQ05
+        title: '[CQ5] 臨床的に明らかな領域リンパ節転移を有するメラノーマに対して術前補助療法は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ05`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [75, 78]
+      - path: CQ06
+        title: '[CQ6] 領域リンパ節郭清を行った皮膚メラノーマに術後放射線療法は勧められるか？【推奨の強さ 5（推奨なし）／エビデンスの強さ B（中）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ06`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [79, 81]
+            until: '^(#+\s*)?CQ7'
+      - path: CQ07
+        title: '[CQ7] 根治切除不能な BRAF 変異陰性メラノーマの一次治療は抗 PD-1 抗体，抗 PD-1 抗体＋抗 CTLA-4 抗体のいずれが勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ07`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [81, 83]
+            from: '^(#+\s*)?CQ7'
+            allow_overlap: true
+      - path: CQ08
+        title: '[CQ8] 根治切除不能な BRAF 変異陽性例の一次治療は BRAF/MEK 阻害薬，抗 PD-1 抗体，ないしは抗 PD-1 抗体＋抗 CTLA-4 抗体併用療法のいずれが勧められるか？【推奨の強さ 5（推奨なし）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ08`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [84, 87]
+      - path: CQ09
+        title: '[CQ9] 脳転移に対して，BRAF/MEK 阻害薬，抗 PD-1 抗体，抗 PD-1 抗体＋抗 CTLA-4 抗体は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ09`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [88, 90]
+      - path: CQ10
+        title: '[CQ10] BRAF/MEK 阻害薬や免疫チェックポイント阻害薬に放射線療法を併用することは勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ10`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [91, 93]
+            until: '^(#+\s*)?CQ11'
+      - path: CQ11
+        title: '[CQ11] BRAF/MEK 阻害薬や免疫チェックポイント阻害薬で病勢コントロールが得られた際に投薬を中止することは勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ11`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [93, 97]
+            from: '^(#+\s*)?CQ11'
+            until: '^(#+\s*)?CQ12'
+            allow_overlap: true
+      - path: CQ12
+        title: '[CQ12] BRAF/MEK 阻害薬や免疫チェックポイント阻害薬で増悪した際に投薬を継続することは勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ12`。
+        body:
+          - pdf: メラノーマ診療ガイドライン2025.pdf
+            pages: [97, 100]
+            from: '^(#+\s*)?CQ12'
+            until: '^文\s?献\s*$'
+            allow_overlap: true
+  - path: 04_文献
+    title: 文献（本体の引用文献 1〜462）
+    body:
+      - pdf: メラノーマ診療ガイドライン2025.pdf
+        pages: [100, 117]
+        from: '^(#+\s*)?文\s?献\s*$'
+        allow_overlap: true
+  - path: 95_推奨決定資料
+    title: 推奨決定資料（CQ1〜CQ12）
+    body_text: |
+      学会ページの「推奨作成関連資料DL」zip に同梱されている、CQ ごとの推奨決定資料。
+      Minds 診療ガイドライン作成マニュアル 2020 の様式で、推奨提示（RC-4）・推奨作成の経過（RC-5）・
+      一般向けサマリー（RC-6）・EtD フレームワーク（RC-7）と、システマティックレビューレポート
+      （SR-1 データベース検索結果 〜 SR-15 Future Research Question）から成る。
+      各 CQ のノードの title は本体（`03_クリニカルクエスチョンと推奨/CQnn`）と揃えてある。
+    children:
+      - path: CQ01
+        title: '[CQ1] 爪部浸潤性メラノーマに対する指趾切断術は勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ01`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ1 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ1 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [2, 3]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ1 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [4, 4]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ1 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [5, 11]}
+          - path: 05_SR-1_データベース検索結果
+            title: '[CQ1 推奨決定資料] SR-1 データベース検索結果'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [12, 12]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ1 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [13, 13]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ1 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [14, 14]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ1 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [15, 15]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ1 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [16, 18]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ1 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [19, 19]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ1 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [20, 20]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ1 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [21, 21]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ1 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [22, 22]}
+      - path: CQ02
+        title: '[CQ2] センチネルリンパ節（SLN）転移陽性例に対して早期リンパ節郭清を行うことは勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ C（弱い）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ02`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ2 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ2 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ2 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ2 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [4, 9]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ2 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [10, 10]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ2 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [11, 11]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ2 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [12, 12]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ2 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [13, 18]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ2 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [19, 24]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ2 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [25, 25]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ2 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [26, 26]}
+          - path: 14_SR-10_メタアナリシス
+            title: '[CQ2 推奨決定資料] SR-10 メタアナリシス'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [27, 27]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ2 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [28, 28]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ2 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [29, 29]}
+      - path: CQ03
+        title: '[CQ3] 根治切除後の BRAF 変異陰性メラノーマに対する術後補助療法として抗 PD-1 抗体は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ03`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ3 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ3 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [2, 4]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ3 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [5, 5]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ3 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [6, 11]}
+          - path: 05_SR-1_データベース検索結果
+            title: '[CQ3 推奨決定資料] SR-1 データベース検索結果'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [12, 14]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ3 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [15, 15]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ3 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [16, 16]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ3 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [17, 17]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ3 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [18, 18]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ3 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [19, 19]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ3 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [20, 20]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ3 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [21, 21]}
+          - path: 14_SR-10_メタアナリシス
+            title: '[CQ3 推奨決定資料] SR-10 メタアナリシス'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [22, 22]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ3 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [23, 23]}
+          - path: 16_SR-12_SoF表_ペア比較のメタアナリシス
+            title: '[CQ3 推奨決定資料] SR-12 SoF表 ペア比較のメタアナリシス'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [24, 24]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ3 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [25, 25]}
+      - path: CQ04
+        title: '[CQ4] 根治切除後の BRAF 変異陽性メラノーマに対する術後補助療法は BRAF/MEK 阻害薬と抗 PD-1 抗体のいずれが勧められるか？【推奨の強さ 5（推奨なし）／エビデンスの強さ C（弱）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ04`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ4 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ4 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ4 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ4 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [4, 9]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ4 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [10, 10]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ4 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [11, 11]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ4 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [12, 12]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ4 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [13, 15]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ4 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [16, 16]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ4 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [17, 17]}
+          - path: 12_SR-8_評価シート
+            title: '[CQ4 推奨決定資料] SR-8 評価シート'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [18, 18]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ4 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [19, 19]}
+          - path: 14_SR-10_メタアナリシス
+            title: '[CQ4 推奨決定資料] SR-10 メタアナリシス'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [20, 20]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ4 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [21, 21]}
+          - path: 16_SR-12_SoF表_ペア比較のメタアナリシス
+            title: '[CQ4 推奨決定資料] SR-12 SoF表 ペア比較のメタアナリシス'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [22, 22]}
+          - path: 17_SR-13_SoF表_ネットワークメタアナリシス様式1
+            title: '[CQ4 推奨決定資料] SR-13 SoF表 ネットワークメタアナリシス様式1'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [23, 23]}
+          - path: 18_SR-14_SoF表_ネットワークメタアナリシス様式2
+            title: '[CQ4 推奨決定資料] SR-14 SoF表 ネットワークメタアナリシス様式2'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [24, 24]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ4 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [25, 25]}
+      - path: CQ05
+        title: '[CQ5] 臨床的に明らかな領域リンパ節転移を有するメラノーマに対して術前補助療法は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ05`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ5 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ5 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ5 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ5 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [4, 11]}
+          - path: 05_SR-1_データベース検索結果
+            title: '[CQ5 推奨決定資料] SR-1 データベース検索結果'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [12, 12]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ5 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [13, 13]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ5 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [14, 16]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ5 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [17, 17]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ5 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [18, 20]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ5 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [21, 23]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ5 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [24, 24]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ5 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [25, 31]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ5 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [32, 36]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ5 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [37, 37]}
+      - path: CQ06
+        title: '[CQ6] 領域リンパ節郭清を行った皮膚メラノーマに術後放射線療法は勧められるか？【推奨の強さ 5（推奨なし）／エビデンスの強さ B（中）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ06`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ6 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ6 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ6 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ6 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [4, 4]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ6 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [5, 5]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ6 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [6, 6]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ6 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [7, 7]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ6 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [8, 8]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ6 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [9, 9]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ6 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [10, 10]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ6 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [11, 13]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ6 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [14, 14]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ6 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [15, 20]}
+      - path: CQ07
+        title: '[CQ7] 根治切除不能な BRAF 変異陰性メラノーマの一次治療は抗 PD-1 抗体，抗 PD-1 抗体＋抗 CTLA-4 抗体のいずれが勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ07`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ7 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ7 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ7 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ7 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [4, 8]}
+          - path: 05_SR-1_データベース検索結果
+            title: '[CQ7 推奨決定資料] SR-1 データベース検索結果'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [9, 11]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ7 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [12, 13]}
+          - path: 08_SR-4_引用文献リスト_01
+            title: '[CQ7 推奨決定資料] SR-4 引用文献リスト（1/2）'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [14, 14]}
+          - path: 08_SR-4_引用文献リスト_02
+            title: '[CQ7 推奨決定資料] SR-4 引用文献リスト（2/2）'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [15, 15]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ7 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [16, 28]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ7 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [29, 32]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ7 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [33, 34]}
+          - path: 12_SR-8_評価シート
+            title: '[CQ7 推奨決定資料] SR-8 評価シート'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [35, 35]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ7 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [36, 36]}
+          - path: 14_SR-10_メタアナリシス
+            title: '[CQ7 推奨決定資料] SR-10 メタアナリシス'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [37, 39]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ7 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [40, 40]}
+          - path: 16_SR-12_SoF表_ペア比較のメタアナリシス
+            title: '[CQ7 推奨決定資料] SR-12 SoF表 ペア比較のメタアナリシス'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [41, 41]}
+          - path: 17_SR-13_SoF表_ネットワークメタアナリシス様式1
+            title: '[CQ7 推奨決定資料] SR-13 SoF表 ネットワークメタアナリシス様式1'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [42, 42]}
+          - path: 18_SR-14_SoF表_ネットワークメタアナリシス様式2
+            title: '[CQ7 推奨決定資料] SR-14 SoF表 ネットワークメタアナリシス様式2'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [43, 43]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ7 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [44, 44]}
+      - path: CQ08
+        title: '[CQ8] 根治切除不能な BRAF 変異陽性例の一次治療は BRAF/MEK 阻害薬，抗 PD-1 抗体，ないしは抗 PD-1 抗体＋抗 CTLA-4 抗体併用療法のいずれが勧められるか？【推奨の強さ 5（推奨なし）／エビデンスの強さ C（弱）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ08`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ8 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ8 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ8 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ8 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [4, 12]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ8 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [13, 13]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ8 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [14, 14]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ8 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [15, 15]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ8 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [16, 19]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ8 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [20, 24]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ8 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [25, 26]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ8 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [27, 27]}
+          - path: 14_SR-10_メタアナリシス
+            title: '[CQ8 推奨決定資料] SR-10 メタアナリシス'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [28, 28]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ8 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [29, 29]}
+          - path: 16_SR-12_SoF表_ペア比較のメタアナリシス
+            title: '[CQ8 推奨決定資料] SR-12 SoF表 ペア比較のメタアナリシス'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [30, 30]}
+          - path: 17_SR-13_SoF表_ネットワークメタアナリシス様式1
+            title: '[CQ8 推奨決定資料] SR-13 SoF表 ネットワークメタアナリシス様式1'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [31, 37]}
+          - path: 18_SR-14_SoF表_ネットワークメタアナリシス様式2
+            title: '[CQ8 推奨決定資料] SR-14 SoF表 ネットワークメタアナリシス様式2'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [38, 43]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ8 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [44, 44]}
+      - path: CQ09
+        title: '[CQ9] 脳転移に対して，BRAF/MEK 阻害薬，抗 PD-1 抗体，抗 PD-1 抗体＋抗 CTLA-4 抗体は勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ09`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ9 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ9 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ9 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ9 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [4, 10]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ9 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [11, 11]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ9 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [12, 12]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ9 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [13, 13]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ9 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [14, 25]}
+          - path: 10_SR-6_評価シート_観察研究_01
+            title: '[CQ9 推奨決定資料] SR-6 評価シート 観察研究（1/5）'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [26, 28]}
+          - path: 10_SR-6_評価シート_観察研究_02
+            title: '[CQ9 推奨決定資料] SR-6 評価シート 観察研究（2/5）'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [29, 30]}
+          - path: 10_SR-6_評価シート_観察研究_03
+            title: '[CQ9 推奨決定資料] SR-6 評価シート 観察研究（3/5）'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [31, 33]}
+          - path: 10_SR-6_評価シート_観察研究_04
+            title: '[CQ9 推奨決定資料] SR-6 評価シート 観察研究（4/5）'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [34, 35]}
+          - path: 10_SR-6_評価シート_観察研究_05
+            title: '[CQ9 推奨決定資料] SR-6 評価シート 観察研究（5/5）'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [36, 38]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ9 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [39, 46]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ9 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [47, 53]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ9 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [54, 54]}
+      - path: CQ10
+        title: '[CQ10] BRAF/MEK 阻害薬や免疫チェックポイント阻害薬に放射線療法を併用することは勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ10`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ10 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ10 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ10 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ10 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [4, 4]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ10 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [5, 5]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ10 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [6, 6]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ10 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [7, 7]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ10 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [8, 14]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ10 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [15, 15]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ10 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [16, 16]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ10 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [17, 17]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ10 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [18, 18]}
+      - path: CQ11
+        title: '[CQ11] BRAF/MEK 阻害薬や免疫チェックポイント阻害薬で病勢コントロールが得られた際に投薬を中止することは勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ11`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ11 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ11 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ11 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ11 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [4, 4]}
+          - path: 05_SR-1_データベース検索結果
+            title: '[CQ11 推奨決定資料] SR-1 データベース検索結果'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [5, 7]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ11 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [8, 8]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ11 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [9, 9]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ11 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [10, 10]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ11 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [11, 11]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ11 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [12, 16]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ11 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [17, 18]}
+          - path: 12_SR-8_評価シート
+            title: '[CQ11 推奨決定資料] SR-8 評価シート'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [19, 19]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ11 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [20, 21]}
+          - path: 14_SR-10_メタアナリシス
+            title: '[CQ11 推奨決定資料] SR-10 メタアナリシス'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [22, 22]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ11 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [23, 23]}
+          - path: 16_SR-12_SoF表_ペア比較のメタアナリシス
+            title: '[CQ11 推奨決定資料] SR-12 SoF表 ペア比較のメタアナリシス'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [24, 24]}
+          - path: 17_SR-13_SoF表_ネットワークメタアナリシス様式1
+            title: '[CQ11 推奨決定資料] SR-13 SoF表 ネットワークメタアナリシス様式1'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [25, 25]}
+          - path: 18_SR-14_SoF表_ネットワークメタアナリシス様式2
+            title: '[CQ11 推奨決定資料] SR-14 SoF表 ネットワークメタアナリシス様式2'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [26, 26]}
+          - path: 19_SR-15_FutureResearchQuestion
+            title: '[CQ11 推奨決定資料] SR-15 FutureResearchQuestion'
+            body:
+              - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [27, 27]}
+      - path: CQ12
+        title: '[CQ12] BRAF/MEK 阻害薬や免疫チェックポイント阻害薬で増悪した際に投薬を継続することは勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          本体の CQ ノードは `03_クリニカルクエスチョンと推奨/CQ12`。
+        children:
+          - path: 01_RC-4_推奨提示
+            title: '[CQ12 推奨決定資料] RC-4 推奨提示'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [1, 1]}
+          - path: 02_RC-5_推奨作成の経過
+            title: '[CQ12 推奨決定資料] RC-5 推奨作成の経過'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [2, 2]}
+          - path: 03_RC-6_一般向けサマリー
+            title: '[CQ12 推奨決定資料] RC-6 一般向けサマリー'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [3, 3]}
+          - path: 04_RC-7_EtDフレームワーク
+            title: '[CQ12 推奨決定資料] RC-7 EtDフレームワーク'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [4, 4]}
+          - path: 06_SR-2_文献検索フローチャート
+            title: '[CQ12 推奨決定資料] SR-2 文献検索フローチャート'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [5, 5]}
+          - path: 07_SR-3_二次スクリーニング後の一覧表
+            title: '[CQ12 推奨決定資料] SR-3 二次スクリーニング後の一覧表'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [6, 6]}
+          - path: 08_SR-4_引用文献リスト
+            title: '[CQ12 推奨決定資料] SR-4 引用文献リスト'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [7, 8]}
+          - path: 09_SR-5_評価シート_介入研究
+            title: '[CQ12 推奨決定資料] SR-5 評価シート 介入研究'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [9, 9]}
+          - path: 10_SR-6_評価シート_観察研究
+            title: '[CQ12 推奨決定資料] SR-6 評価シート 観察研究'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [10, 14]}
+          - path: 11_SR-7_評価シート_エビデンス総体
+            title: '[CQ12 推奨決定資料] SR-7 評価シート エビデンス総体'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [15, 15]}
+          - path: 12_SR-8_評価シート
+            title: '[CQ12 推奨決定資料] SR-8 評価シート'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [16, 16]}
+          - path: 13_SR-9_定性的システマティックレビュー
+            title: '[CQ12 推奨決定資料] SR-9 定性的システマティックレビュー'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [17, 17]}
+          - path: 15_SR-11_システマティックレビューレポートのまとめ
+            title: '[CQ12 推奨決定資料] SR-11 システマティックレビューレポートのまとめ'
+            body:
+              - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [18, 18]}
+  - path: 96_スコープ
+    title: スコープ（SC-1〜SC-4）
+    body_text: |
+      学会ページの「推奨作成関連資料DL」zip に同梱されているスコープ。疾患トピックの基本的特徴
+      （SC-1）・診療アルゴリズム（SC-2）・スコープ本体（SC-3、作成目的・利用者・作成方法・
+      スケジュール）・CQ の設定（SC-4、重要臨床課題と PICO）から成る。
+    children:
+      - path: 01_SC-1_疾患トピックの基本的特徴
+        title: '[スコープ] SC-1 疾患トピックの基本的特徴（病態・疫学・診療の全体的な流れ）'
+        body:
+          - {pdf: MM_SC-1～4.pdf, pages: [1, 1]}
+      - path: 02_SC-2_診療アルゴリズム
+        title: '[スコープ] SC-2 診療アルゴリズム'
+        body_text: |
+          このページは診療アルゴリズムの図だけで、テキスト層はキャプションしか無い。**図の読み取りは
+          原本 PDF を参照**（ページ画像から起こした再現テキストで補っている）。
+        body:
+          - {pdf: MM_SC-1～4.pdf, pages: [2, 2]}
+      - path: 03_SC-3_スコープ
+        title: '[スコープ] SC-3 スコープ（作成目的・利用者・作成方法・スケジュール・COI）'
+        body:
+          - {pdf: MM_SC-1～4.pdf, pages: [3, 3]}
+      - path: 04_SC-4_CQの設定
+        title: '[スコープ] SC-4 CQ の設定（重要臨床課題 1-1〜3-6 と CQ の構成要素（PICO））'
+        body_text: |
+          重要臨床課題と本体の CQ の対応は 1-1→CQ1、1-2→CQ2、2-1→CQ3、2-2→CQ4、2-3→CQ5、
+          2-4→CQ6、3-1→CQ7、3-2→CQ8、3-3→CQ9、3-4→CQ10、3-5→CQ11、3-6→CQ12。
+        body:
+          - {pdf: MM_SC-1～4.pdf, pages: [4, 15]}
+vlm_candidates:
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [5, 5], why: '表1 改訂委員会委員一覧'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [6, 7], why: '表2 エビデンス総体の総括／表3 パネル会議の投票の棄権'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [10, 10], why: '表4 紫外線曝露量・部位・遺伝子異常に基づいたメラノーマの分類'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [12, 14], why: '表5〜表8 TNM 分類（cTNM/pTNM）・臨床病期・病理学的病期'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [18, 23], why: '図1〜図7 病期別の NCCN 診療アルゴリズム・全身治療アルゴリズム・経過観察方針'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [26, 26], why: '表9・表10 側方マージンの RCT／NCCN 推奨切除マージン'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [30, 35], why: '図8〜図13 SLNB の手技（RI 法・ICG 蛍光法）・リンパ節の部位とリンパ流・郭清時所見／表11 術後補助放射線療法'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [40, 41], why: '表12 周術期治療の第Ⅲ相試験（2 ページに分割された大表）'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [47, 47], why: '表13 殺細胞性抗がん剤・分子標的療法の臨床効果'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [50, 50], why: '図14 BRAF/MEK 阻害薬の代表的な臨床試験の関連図'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [53, 57], why: '表14〜表17 進行期メラノーマの欧米臨床試験・本邦リアルワールドデータ・脳転移'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [61, 64], why: '表18〜表22 ICI と分子標的薬の併用・逐次投与の臨床試験／東アジア・本邦の RWD'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [65, 65], why: 'CQ1 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [68, 68], why: 'CQ2 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [70, 70], why: 'CQ3 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [73, 73], why: 'CQ4 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [75, 75], why: 'CQ5 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [79, 79], why: 'CQ6 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [81, 81], why: 'CQ7 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [84, 84], why: 'CQ8 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [88, 88], why: 'CQ9 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [91, 91], why: 'CQ10 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [93, 93], why: 'CQ11 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: メラノーマ診療ガイドライン2025.pdf, pages: [97, 97], why: 'CQ12 の推奨・推奨の強さ・投票結果の表'}
+  - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [5, 11], why: 'CQ1 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [13, 13], why: 'CQ1 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [14, 14], why: 'CQ1 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [16, 18], why: 'CQ1 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ1_推奨決定資料.pdf, pages: [19, 19], why: 'CQ1 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [4, 9], why: 'CQ2 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [10, 10], why: 'CQ2 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [11, 11], why: 'CQ2 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [13, 18], why: 'CQ2 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [19, 24], why: 'CQ2 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [25, 25], why: 'CQ2 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ2_推奨決定資料.pdf, pages: [27, 27], why: 'CQ2 推奨決定資料 SR-10 メタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [6, 11], why: 'CQ3 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [15, 15], why: 'CQ3 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [16, 16], why: 'CQ3 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [18, 18], why: 'CQ3 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [19, 19], why: 'CQ3 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [20, 20], why: 'CQ3 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [22, 22], why: 'CQ3 推奨決定資料 SR-10 メタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ3_推奨決定資料.pdf, pages: [24, 24], why: 'CQ3 推奨決定資料 SR-12 SoF表 ペア比較のメタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [4, 9], why: 'CQ4 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [10, 10], why: 'CQ4 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [11, 11], why: 'CQ4 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [13, 15], why: 'CQ4 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [16, 16], why: 'CQ4 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [17, 17], why: 'CQ4 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [18, 18], why: 'CQ4 推奨決定資料 SR-8 評価シート（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [20, 20], why: 'CQ4 推奨決定資料 SR-10 メタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [22, 22], why: 'CQ4 推奨決定資料 SR-12 SoF表 ペア比較のメタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [23, 23], why: 'CQ4 推奨決定資料 SR-13 SoF表 ネットワークメタアナリシス様式1（フォーム形式の表）'}
+  - {pdf: MM_CQ4_推奨決定資料.pdf, pages: [24, 24], why: 'CQ4 推奨決定資料 SR-14 SoF表 ネットワークメタアナリシス様式2（フォーム形式の表）'}
+  - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [4, 11], why: 'CQ5 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [13, 13], why: 'CQ5 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [14, 16], why: 'CQ5 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [18, 20], why: 'CQ5 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [21, 23], why: 'CQ5 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ5_推奨決定資料.pdf, pages: [24, 24], why: 'CQ5 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [4, 4], why: 'CQ6 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [5, 5], why: 'CQ6 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [6, 6], why: 'CQ6 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [8, 8], why: 'CQ6 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [9, 9], why: 'CQ6 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ6_推奨決定資料.pdf, pages: [10, 10], why: 'CQ6 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [4, 8], why: 'CQ7 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [12, 13], why: 'CQ7 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [16, 28], why: 'CQ7 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [29, 32], why: 'CQ7 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [33, 34], why: 'CQ7 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [35, 35], why: 'CQ7 推奨決定資料 SR-8 評価シート（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [37, 39], why: 'CQ7 推奨決定資料 SR-10 メタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [41, 41], why: 'CQ7 推奨決定資料 SR-12 SoF表 ペア比較のメタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [42, 42], why: 'CQ7 推奨決定資料 SR-13 SoF表 ネットワークメタアナリシス様式1（フォーム形式の表）'}
+  - {pdf: MM_CQ7_推奨決定資料.pdf, pages: [43, 43], why: 'CQ7 推奨決定資料 SR-14 SoF表 ネットワークメタアナリシス様式2（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [4, 12], why: 'CQ8 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [13, 13], why: 'CQ8 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [14, 14], why: 'CQ8 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [16, 19], why: 'CQ8 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [20, 24], why: 'CQ8 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [25, 26], why: 'CQ8 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [28, 28], why: 'CQ8 推奨決定資料 SR-10 メタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [30, 30], why: 'CQ8 推奨決定資料 SR-12 SoF表 ペア比較のメタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [31, 37], why: 'CQ8 推奨決定資料 SR-13 SoF表 ネットワークメタアナリシス様式1（フォーム形式の表）'}
+  - {pdf: MM_CQ8_推奨決定資料.pdf, pages: [38, 43], why: 'CQ8 推奨決定資料 SR-14 SoF表 ネットワークメタアナリシス様式2（フォーム形式の表）'}
+  - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [4, 10], why: 'CQ9 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [11, 11], why: 'CQ9 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [12, 12], why: 'CQ9 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [14, 25], why: 'CQ9 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [26, 38], why: 'CQ9 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ9_推奨決定資料.pdf, pages: [39, 46], why: 'CQ9 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [4, 4], why: 'CQ10 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [5, 5], why: 'CQ10 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [6, 6], why: 'CQ10 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [8, 14], why: 'CQ10 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ10_推奨決定資料.pdf, pages: [15, 15], why: 'CQ10 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [4, 4], why: 'CQ11 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [8, 8], why: 'CQ11 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [9, 9], why: 'CQ11 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [11, 11], why: 'CQ11 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [12, 16], why: 'CQ11 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [17, 18], why: 'CQ11 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [19, 19], why: 'CQ11 推奨決定資料 SR-8 評価シート（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [22, 22], why: 'CQ11 推奨決定資料 SR-10 メタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [24, 24], why: 'CQ11 推奨決定資料 SR-12 SoF表 ペア比較のメタアナリシス（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [25, 25], why: 'CQ11 推奨決定資料 SR-13 SoF表 ネットワークメタアナリシス様式1（フォーム形式の表）'}
+  - {pdf: MM_CQ11_推奨決定資料.pdf, pages: [26, 26], why: 'CQ11 推奨決定資料 SR-14 SoF表 ネットワークメタアナリシス様式2（フォーム形式の表）'}
+  - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [4, 4], why: 'CQ12 推奨決定資料 RC-7 EtDフレームワーク（フォーム形式の表）'}
+  - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [5, 5], why: 'CQ12 推奨決定資料 SR-2 文献検索フローチャート（フォーム形式の表）'}
+  - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [6, 6], why: 'CQ12 推奨決定資料 SR-3 二次スクリーニング後の一覧表（フォーム形式の表）'}
+  - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [9, 9], why: 'CQ12 推奨決定資料 SR-5 評価シート 介入研究（フォーム形式の表）'}
+  - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [10, 14], why: 'CQ12 推奨決定資料 SR-6 評価シート 観察研究（フォーム形式の表）'}
+  - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [15, 15], why: 'CQ12 推奨決定資料 SR-7 評価シート エビデンス総体（フォーム形式の表）'}
+  - {pdf: MM_CQ12_推奨決定資料.pdf, pages: [16, 16], why: 'CQ12 推奨決定資料 SR-8 評価シート（フォーム形式の表）'}
+  - {pdf: MM_SC-1～4.pdf, pages: [2, 2], why: 'SC-2 診療アルゴリズムの図（テキスト層はキャプションのみ）'}
+notes: |
+  - **抽出モードは本体だけ `raw`**。学会誌の 2 段組で、既定モードは左右の段を 1 行ずつ交互に
+    吐き、`-layout` は段を横に並べたまま出す（どちらも読み順が壊れる）。`-raw` だけが
+    「左段を通し → 右段を通し」の順になる。副作用として図表のキャプションと柱がページ末尾に
+    回るが、柱はそこで `strip_edge` に当たるので都合がよい。推奨決定資料とスコープは 1 段組の
+    フォームなので既定モードのまま。
+  - **`normalize_radicals: true`**。原本に康熙部首の字形が混ざる（本体の図キャプション
+    `センチネルリンパ節⽣検`・`⾏い`、推奨決定資料の `⽖部`・`⽂献`・`⽤`・`⽩人`・`⻑い`、
+    スコープの `⽬次に戻る` 等）。`strip` / `from` / `until` は正規化後の字形で書いてある。
+  - **`strip_edge` に `\d{1,3}` を置いていない**。本体の柱は
+    `3178 ● 日皮会誌：134（13），3149-3265，2024（令和 6）`（偶数ページ）と
+    `日皮会誌：…● 3179`（奇数ページ）の形で、裸のノンブル行が無い。全 117 ページで
+    柱が末尾 2 行に固まることを確認した（`strip_edge` の `lines: 3` で足りる）。
+    推奨決定資料・スコープにはノンブルも柱も無く、目次リンクの `目次に戻る` だけが
+    各ページ先頭に出るので、これを `strip` に入れた。
+  - **ページ内分割（`from` / `until`）**は 6 箇所。p.3（目次の続き｜第 1 章）、p.15 / p.17 /
+    p.25 / p.29 / p.34 / p.39 / p.46 / p.52 / p.60（第 2 章の節境界）、p.65（第 2 章 10.3｜
+    第 3 章＋CQ1）、p.81（CQ6 の文献検索式｜CQ7）、p.93（CQ10 の文献検索式｜CQ11）、
+    p.97（CQ11 の文献検索式｜CQ12）、p.100（CQ12 の文献検索式｜文献）。overlay が当たっても
+    効くよう、すべて `^(#+\s*)?…` の形で書いた。境界ページを共有する側（`from` を持つ後ろの
+    ノード）には `allow_overlap: true` を付けてあるので、二重掲載の警告は出ない。
+  - **推奨決定資料の割り方**：1 PDF = 1 ノードだと 24,000〜130,000 字になるので、原本が
+    そのまま持っている Minds の様式区分（RC-4〜RC-7、SR-1〜SR-15）ごとに割った。
+    様式の見出しは必ずページ先頭に来る（全 12 本 344 ページで確認）ので、`from` / `until` は
+    使わず物理ページだけで切れている。同じ様式が何ページも続く塊は 1 ノードにまとめ、
+    それでも 22,000 字を超える 2 箇所（CQ9 の SR-6 評価シート 観察研究 13 ページ、
+    CQ7 の SR-4 引用文献リスト 2 ページ）だけページで分割した。
+  - **本体 CQ と推奨決定資料 CQ の title を揃えた**（`[CQ1] …【推奨の強さ …／エビデンスの強さ …】`）。
+    本体 CQ の `body_text` に `95_推奨決定資料/CQnn` の 1 行を置いてある。
+  - **推奨決定資料・スコープの `url` は無い**（学会ページの「推奨作成関連資料DL」zip 同梱で
+    単独 URL が無い）。カタログの `slug`（`jda_melanoma_2025_cq1_rec.pdf` 等）を `slug:` に書いた。
+  - 原本の誤植 2 件はそのまま収録した（直していない）: CQ10 の「文献検索式と文献選択」の
+    タイトル欄が `CQ6` になっている（p.92）、CQ12 の合意率が `90/0%` と印字されている（p.97）。
+  - **落としたページは無い**。表紙・目次（p.1-3）も版・発行年・作成委員会の根拠になるので
+    `00_表紙・目次` に入れた。文献（p.100-117）も `04_文献` として収録した。
+  - 旧版の扱い: 本ガイドラインは「皮膚悪性腫瘍診療ガイドライン」(2007) / 第 2 版 (2015) /
+    第 3 版 (2019) の改訂版だが、**旧版 PDF はカタログに無い**ので落とすものは無い。
+    第 4 版はメラノーマ以外に有棘細胞癌・基底細胞癌・メルケル細胞癌・乳房外パジェット病・
+    皮膚血管肉腫・皮膚リンパ腫の分冊があり、それぞれ別 id（別担当）で収録される。
+
+  ## 原本の誤記への注記 (2026-10-06)
+  - 原本の誤記・原本内の食い違いのうち臨床的に読み違えを招くものは、本文を原本の印字どおり残したまま、
+    該当箇所の直後 (表は直前) に `（注記：…）` の段落を足した。この段落は収録時に足したもので原本には無い。
+    正しい値は断定せず、根拠 (同じ文書の別ページ・表の構造・原典の分類) を添えて「と思われる」に留めた。
+  - 本体 p.97 CQ12 の合意率 `90/0%`
+  - 推奨決定資料 CQ1 / CQ2 / CQ8 / CQ10 の EtD 個別基準と「判断の要約」の食い違い

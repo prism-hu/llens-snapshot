@@ -1,0 +1,188 @@
+id: 眼皮膚白皮症
+title: 眼皮膚白皮症診療ガイドライン
+guideline: 眼皮膚白皮症診療ガイドライン
+publisher: 日本皮膚科学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『眼皮膚白皮症診療ガイドライン』(日本皮膚科学会ガイドライン / 眼皮膚白皮症診療ガイドライン
+  作成委員会 編 / 日本皮膚科学会雑誌 124(10), 1897-1911, 2014 年) と、その
+  『補遺』(同 127(2), 133-135, 2017 年)。
+
+  眼皮膚白皮症 (oculocutaneous albinism：OCA) はメラニン生合成経路の異常による先天性の
+  低色素症で、皮膚・毛髪・眼の低色素、視力障害・眼振を呈する。ヘルマンスキー・パドラック
+  症候群、チェディアック・東症候群、グリセリ症候群などの症候型を含む。
+
+  本体は 12 の通し見出し (背景・位置づけ・免責条項 / 定義・概念 / 疫学 / 病因・病態 / 症状 /
+  診断 / 検査 / 生活指導 / 治療に関する Clinical Question / 眼科的側面) からなり、
+  Clinical Question は治療に関する CQ1〜6 と眼科領域の CQ7〜8 の計 8 問 (推奨度 A〜D)。
+  1 CQ = 1 ノードで切り、それ以外は見出し 1 節 = 1 ノード (短い節は隣と束ねた)。
+
+  『補遺』は 2015 年の指定難病化にともなって示された診断基準 (表 1・表 2)、
+  病型診断の診断基準 (表 3・表 4)、医療費助成のための重症度基準 (表 5) を取り込んだもので、
+  子セクション `90_補遺2017` に収めた。
+strip_edge:
+  # 日皮会誌の柱とノンブル。raw モードではページ末尾の 2 行に来る
+  # (柱は「診療」と「診断」の 2 通りが混在する。原本のとおり)
+  lines: 3
+  patterns:
+  - '\d{1,4} ● 日皮会誌：12[47]（\d{1,2}）\s*，[\d-]+，20\d\d（(平成|令和) \d{1,2}）'
+  - '日皮会誌：12[47]（\d{1,2}）\s*，[\d-]+，20\d\d（(平成|令和) \d{1,2}）● \d{1,4}'
+  - '眼皮膚白皮症診(療|断)ガイドライン作成委員会'
+  - '眼皮膚白皮症診(療|断)ガイドライン( 補遺)?( 日本皮膚科学会ガイドライン)?'
+pdfs:
+  - file: 眼皮膚白皮症診療ガイドライン.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/guideline_oca.pdf
+    label: 本体 (全 15 ページ)
+    # 学会誌組版の 2 段組。既定モードは左右の段を 1 行ずつ交互に出すので raw を使う
+    mode: raw
+  - file: 眼皮膚白皮症診療ガイドライン補遺.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/OCA_guideline.pdf
+    label: 補遺 (2017 年。全 3 ページ)
+    # 補遺は診断基準・重症度基準の**表が主体**で 1 段組。桁を保つ layout のほうが読める
+    mode: layout
+nodes:
+  - path: 01_背景・位置づけ・免責条項
+    title: ガイドライン作成の背景／ガイドラインの位置づけ／免責条項
+    body:
+      - {pdf: 眼皮膚白皮症診療ガイドライン.pdf, pages: [1, 2], until: '^(#+\s*)?4．定義・概念'}
+  - path: 02_定義・概念・疫学・病因・病態
+    title: 定義・概念／疫学／病因・病態
+    body:
+      - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+        pages: [2, 4]
+        from: '^(#+\s*)?4．定義・概念'
+        until: '^(#+\s*)?7．症状'
+        allow_overlap: true
+  - path: 03_症状
+    title: 症状 (皮膚・毛髪・眼の症状と症候型ごとの全身症状)
+    body:
+      - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+        pages: [4, 6]
+        from: '^(#+\s*)?7．症状'
+        until: '^(#+\s*)?8．診断'
+        allow_overlap: true
+  - path: 04_診断・検査
+    title: 診断／検査 (遺伝子検査・鑑別診断)
+    body:
+      - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+        pages: [6, 8]
+        from: '^(#+\s*)?8．診断'
+        until: '^(#+\s*)?10．生活指導'
+        allow_overlap: true
+  - path: 05_生活指導
+    title: 生活指導 (遮光・皮膚癌の早期発見)
+    body:
+      - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+        pages: [8, 10]
+        from: '^(#+\s*)?10．生活指導'
+        until: '^(#+\s*)?Clinical Question 1'
+        allow_overlap: true
+  - path: 06_治療に関するClinical_Question
+    title: 治療に関する Clinical Question (CQ1〜CQ6)
+    children:
+      - path: CQ1
+        title: '[治療] Nitisinone は OCA1B の白皮症の色素再生に有効か？【推奨度 C2】'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: 10
+            from: '^(#+\s*)?Clinical Question 1'
+            until: '^(#+\s*)?Clinical Question 2'
+            allow_overlap: true
+      - path: CQ2
+        title: '[治療] Hermansky-Pudlak 症候群の出血傾向に対する治療は何が有効か？'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: 10
+            from: '^(#+\s*)?Clinical Question 2'
+            until: '^(#+\s*)?Clinical Question 3'
+            allow_overlap: true
+      - path: CQ3
+        title: '[治療] Hermansky-Padlak 症候群の間質性肺炎・肺線維症に対する治療は何が有効か？'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: [10, 11]
+            from: '^(#+\s*)?Clinical Question 3'
+            until: '^(#+\s*)?Clinical Question 4'
+            allow_overlap: true
+      - path: CQ4
+        title: '[治療] Chédiak-Higashi syndrome の accelerated phase に対する治療は何が有効か？'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: 11
+            from: '^(#+\s*)?Clinical Question 4'
+            until: '^(#+\s*)?Clinical Question 5'
+            allow_overlap: true
+      - path: CQ5
+        title: '[治療] Chédiak-Higashi syndrome に対する造血幹細胞移植は有効か？'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: 11
+            from: '^(#+\s*)?Clinical Question 5'
+            until: '^(#+\s*)?Clinical Question 6'
+            allow_overlap: true
+      - path: CQ6
+        title: '[治療] Griscelli syndrome に対する造血幹細胞移植は有効か？'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: [11, 12]
+            from: '^(#+\s*)?Clinical Question 6'
+            until: '^(#+\s*)?12．眼科的側面'
+            allow_overlap: true
+  - path: 07_眼科的側面
+    title: 眼科的側面 (眼白皮症の分類・眼科所見・眼科的症状・対応および治療・生活指導・眼科領域 CQ)
+    children:
+      - path: 01_分類・所見・症状・対応・生活指導
+        title: '[眼科的側面] 眼白皮症の分類／白皮症における眼科所見／眼科的症状／対応及び治療／生活指導'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: [12, 14]
+            from: '^(#+\s*)?12．眼科的側面'
+            until: '^(#+\s*)?6）眼科領域クリニカル・クエスション'
+            allow_overlap: true
+      - path: CQ7
+        title: '[眼科的側面] 白皮症患者の視力回復を目的とした治療法は有効か？'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: 14
+            from: '^(#+\s*)?6）眼科領域クリニカル・クエスション'
+            until: '^(#+\s*)?Clinical Question 8'
+            allow_overlap: true
+      - path: CQ8
+        title: '[眼科的側面] 白皮症患者の羞明予防の方法として何が有効か？'
+        body:
+          - pdf: 眼皮膚白皮症診療ガイドライン.pdf
+            pages: [14, 15]
+            from: '^(#+\s*)?Clinical Question 8'
+            allow_overlap: true
+  - path: 90_補遺2017
+    title: 補遺 (2017) — 指定難病の診断基準・病型診断の診断基準・重症度基準
+    body_text: |
+      2015 (平成 27) 年に眼皮膚白皮症が医療費助成対象疾患 (指定難病) に含まれたことを受け、
+      示された診断基準・病型診断の診断基準・重症度基準を本ガイドラインに取り込んだ補遺
+      (日皮会誌 127(2), 133-135, 2017)。表 1 診断基準、表 2 診断のカテゴリー、
+      表 3 病型診断のための診断基準、表 4 症候型白皮症の診断基準、表 5 重症度を判定する基準。
+    body:
+      # p.1 は 2 段組の地の文なので raw、p.2〜3 は診断基準・重症度基準の表なので layout
+      - {pdf: 眼皮膚白皮症診療ガイドライン補遺.pdf, pages: 1, mode: raw}
+      - {pdf: 眼皮膚白皮症診療ガイドライン補遺.pdf, pages: [2, 3]}
+vlm_candidates:
+  - {pdf: 眼皮膚白皮症診療ガイドライン.pdf, pages: 2, why: 表 1 眼皮膚白皮症を呈する疾患の病因遺伝子による分類}
+  - {pdf: 眼皮膚白皮症診療ガイドライン.pdf, pages: 3, why: 表 2 本邦における白斑を呈する先天性疾患に関するアンケート結果}
+  - {pdf: 眼皮膚白皮症診療ガイドライン.pdf, pages: 7, why: 図 1 Silver hair syndrome の診断アルゴリズム}
+  - {pdf: 眼皮膚白皮症診療ガイドライン.pdf, pages: 8, why: 図 2 本邦における白斑を呈する先天性疾患に関するアンケート結果 (グラフ)}
+  - {pdf: 眼皮膚白皮症診療ガイドライン.pdf, pages: 13, why: 表 3 Guidelines for prescribing glasses}
+  - {pdf: 眼皮膚白皮症診療ガイドライン.pdf, pages: 14, why: 表 4 問い合わせ内容と対応期間}
+  - {pdf: 眼皮膚白皮症診療ガイドライン補遺.pdf, pages: [1, 3], why: 補遺は全 3 ページが診断基準・重症度基準のチェックボックス表}
+notes: |
+  - **原本 (本体) は日本皮膚科学会雑誌の 2 段組**。既定モードは左段と右段を 1 行ずつ交互に
+    出して読めなくなるため `mode: raw` (内容ストリーム順) にした。
+    **補遺は 1 段組で全ページが表**なので、桁を保つ `mode: layout` に分けた。
+  - 柱 (`眼皮膚白皮症診療ガイドライン` / `…診断ガイドライン作成委員会` — 原本で「診療」と
+    「診断」が混在する) とノンブル (`日皮会誌：124（10）…● 1897` 形式) を `strip_edge`
+    (lines: 3) で落とした。**p.1 冒頭の書名行も柱と同じ文字列**なので巻き添えで消える。
+  - 各節の末尾に節ごとの「文 献」が付く体裁なので、文献は節のノードに含めた
+    (文献だけのノードは作っていない)。
+  - 本体 15 ページ・補遺 3 ページの全ページがどれかのノードに載っている。
+  - 補遺は「改訂」ではなく**本体に追加する別文書**なので、本体を落とさず
+    子セクション `90_補遺2017` として両方収録した。

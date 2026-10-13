@@ -1,0 +1,1162 @@
+id: パーキンソン病2018
+title: パーキンソン病診療ガイドライン2018
+guideline: パーキンソン病診療ガイドライン2018
+publisher: 日本神経学会
+source: https://www.neurology-jp.org/guidelinem/parkinson_2018.html
+retrieved_at: '2026-09-05'
+description: |
+  日本神経学会監修『パーキンソン病診療ガイドライン2018』（編集: 「パーキンソン病診療ガイドライン」作成委員会，発行: 医学書院，2018年）の全文。
+  「パーキンソン病治療ガイドライン2011」の改訂版で，2018年版から書名が「治療ガイドライン」→「診療ガイドライン」に変わった。
+  文献検索は原則 1983-01-01〜2015-12-31（一部 2016 年以降の追加検索あり）。
+
+  構成は 3 編:
+  - 序章 パーキンソン病とは — 診断（MDS 診断基準 2015）・疫学・遺伝子・環境因子・運動症状と非運動症状
+  - 第Ⅰ編 抗パーキンソン病薬，外科手術，リハビリテーションの有効性と安全性 — 薬剤別/術式別に「2008年10月以降のエビデンス」「ガイドライン作成委員会の結論（有効性・安全性・臨床への応用・今後検討されるべき事項）」を記載する全12章。冒頭に資料1（各薬剤の特徴）・資料2（L‑ドパ換算用量）
+  - 第Ⅱ編 Evidence Based Medicine の手法を用いた推奨 — GRADE システムによる CQ 2 本（CQ 1 早期パーキンソン病の治療 / CQ 2 運動合併症に対する治療）。各 CQ にエビデンスプロファイル・フォレストプロット・Evidence‑to‑Decision テーブルの supplementary data が付く
+  - 第Ⅲ編 パーキンソン病診療に関する Q&A — 6章 60 項目（診断・予後 / 治療総論 / 運動症状 / 非薬物療法 / 非運動症状 / 将来の治療）。各項目は「回答」「背景・目的」「解説」「臨床に用いる際の注意点」「文献」「検索式・参考にした二次資料」の構成
+
+  注意: 第Ⅰ編（薬剤別）と第Ⅲ編（Q&A）で「第N章」の番号が独立して振られており，原本の分冊 PDF もその両系列を同じ「第N章」名で配布している。本ツリーでは編ごとに分けて配置している。
+strip:
+- 第
+- 章
+- 編
+- 序章
+- 第 [IVX]+ 編／第 \d{1,2} 章
+- Q and A
+- Q and A \d{1,2}[–—-]\d{1,2}(?:[–—-]\d{1,2})?
+- CQ
+- CQ \d{1,2}[–—-]\d{1,2}(?:[–—-]\d{1,2})?
+- '[–—‑]{1,2}'
+- L ドパ
+- 診断︑予後
+- 治療総論
+- 運動症状の治療
+- 非薬物療法
+- 非運動症状の治療
+- 将来の治療などの可能性
+- '[1-5] ｜(?:パーキンソン病の診断|パーキンソン病の疫学|パーキンソン病と遺伝子|パーキンソン病と環境因子|パーキンソン病の運動症状と非運動症状)'
+strip_edge:
+  lines: 3
+  patterns:
+  - \d{1,3}
+pdfs:
+- file: パーキンソン病診療ガイドライン2018_神経疾患疾患診療ガイドラインの発刊にあたって.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_03.pdf
+  label: 神経疾患診療ガイドラインの発行にあたって
+- file: パーキンソン病診療ガイドライン2018_序.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_04.pdf
+  label: 序
+- file: パーキンソン病診療ガイドライン2018_略語一覧.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_06.pdf
+  label: 略語一覧
+- file: パーキンソン病診療ガイドライン2018_序章.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_07.pdf
+  label: 序章 パーキンソン病とは
+- file: パーキンソン病診療ガイドライン2018_資料.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_08.pdf
+  label: 第Ⅰ編 資料 1・2
+- file: パーキンソン病診療ガイドライン2018_第1章 L-ドパ.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_09.pdf
+  label: 第Ⅰ編 第1章 L‑ドパ
+  strip:
+  - '1'
+- file: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_10.pdf
+  label: 第Ⅰ編 第2章 ドパミンアゴニスト
+  strip:
+  - '2'
+- file: パーキンソン病診療ガイドライン2018_第3章 モノアミン酸化酵素B（MAOB）阻害薬.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_11.pdf
+  label: 第Ⅰ編 第3章 MAOB 阻害薬
+  strip:
+  - '3'
+- file: パーキンソン病診療ガイドライン2018_第4章 カテコール-O-メチル基転移酵素（COMT）阻害薬.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_12.pdf
+  label: 第Ⅰ編 第4章 COMT 阻害薬
+  strip:
+  - '4'
+- file: パーキンソン病診療ガイドライン2018_第5章 アマンタジン.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_13.pdf
+  label: 第Ⅰ編 第5章 アマンタジン
+  strip:
+  - '5'
+- file: パーキンソン病診療ガイドライン2018_第6章 抗コリン薬.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_14.pdf
+  label: 第Ⅰ編 第6章 抗コリン薬
+  strip:
+  - '6'
+- file: パーキンソン病診療ガイドライン2018_第7章 ドロキシドパ.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_15.pdf
+  label: 第Ⅰ編 第7章 ドロキシドパ
+  strip:
+  - '7'
+- file: パーキンソン病診療ガイドライン2018_第8章 ゾニサミド.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_16.pdf
+  label: 第Ⅰ編 第8章 ゾニサミド
+  strip:
+  - '8'
+- file: パーキンソン病診療ガイドライン2018_第9章 イストラデフィリン.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_17.pdf
+  label: 第Ⅰ編 第9章 イストラデフィリン
+  strip:
+  - '9'
+- file: パーキンソン病診療ガイドライン2018_第10章 手術療法.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_18.pdf
+  label: 第Ⅰ編 第10章 手術療法
+  strip:
+  - '10'
+- file: パーキンソン病診療ガイドライン2018_第11章 パーキンソン病のリハビリテーション.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_19.pdf
+  label: 第Ⅰ編 第11章 リハビリテーション
+  strip:
+  - '11'
+- file: パーキンソン病診療ガイドライン2018_第12章 公的制度・費用対効果.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_20.pdf
+  label: 第Ⅰ編 第12章 公的制度・費用対効果
+  strip:
+  - '12'
+- file: パーキンソン病診療ガイドライン2018_第1章 GRADEシステムを用いたエビデンスの質と推奨.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_21.pdf
+  label: 第Ⅱ編 第1章 GRADE システム
+  strip:
+  - '1'
+- file: パーキンソン病診療ガイドライン2018_第2章 CQ1早期パーキンソン病の治療はどのとうに行うべきか.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_22.pdf
+  label: 第Ⅱ編 第2章 CQ 1
+  strip:
+  - '2'
+- file: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_23.pdf
+  label: 第Ⅱ編 第3章 CQ 2
+  strip:
+  - '3'
+- file: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_24.pdf
+  label: 第Ⅲ編 第1章 診断，予後
+  strip:
+  - '1'
+- file: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_25.pdf
+  label: 第Ⅲ編 第2章 治療総論
+  strip:
+  - '2'
+- file: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_26.pdf
+  label: 第Ⅲ編 第3章 運動症状の治療
+  strip:
+  - '3'
+- file: パーキンソン病診療ガイドライン2018_第4章 非薬物療法.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_27.pdf
+  label: 第Ⅲ編 第4章 非薬物療法
+  strip:
+  - '4'
+- file: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_28.pdf
+  label: 第Ⅲ編 第5章 非運動症状の治療
+  strip:
+  - '5'
+- file: パーキンソン病診療ガイドライン2018_第6章 将来の治療などの可能性.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_29.pdf
+  label: 第Ⅲ編 第6章 将来の治療などの可能性
+  strip:
+  - '6'
+- file: パーキンソン病診療ガイドライン2018_第Ⅱ編 第2章 CQ 1 【supplementary data】.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_01.pdf
+  label: 第Ⅱ編 第2章 CQ 1 supplementary data
+- file: パーキンソン病診療ガイドライン2018_第Ⅱ編 第3章 CQ 2 【supplementary data】.pdf
+  url: https://www.neurology-jp.org/guidelinem/pdgl/parkinson_2018_02.pdf
+  label: 第Ⅱ編 第3章 CQ 2 supplementary data
+nodes:
+- path: 00_発刊にあたって
+  title: 神経疾患診療ガイドラインの発行にあたって（日本神経学会 ガイドライン統括委員会）
+  body:
+  - pdf: パーキンソン病診療ガイドライン2018_神経疾患疾患診療ガイドラインの発刊にあたって.pdf
+    pages:
+    - 1
+    - 2
+- path: 01_序
+  title: 序（改訂の背景・目的・対象・作成手順・利害関係者・GRADE の採用・アルゴリズムの位置づけ）
+  body:
+  - pdf: パーキンソン病診療ガイドライン2018_序.pdf
+    pages:
+    - 1
+    - 6
+- path: 02_略語一覧
+  title: 略語一覧
+  body:
+  - pdf: パーキンソン病診療ガイドライン2018_略語一覧.pdf
+    pages:
+    - 1
+    - 1
+- path: 03_序章_パーキンソン病とは
+  title: 序章 パーキンソン病とは
+  children:
+  - path: 01_パーキンソン病の診断
+    title: 1｜パーキンソン病の診断（MDS 診断基準 2015・英国ブレインバンク診断基準）
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+      pages:
+      - 1
+    - pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+      pages:
+      - 2
+      mode: layout
+  - path: 02_パーキンソン病の疫学
+    title: 2｜パーキンソン病の疫学（罹患率・有病率・本邦の患者数）
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+      pages:
+      - 3
+      - 4
+  - path: 03_パーキンソン病と遺伝子
+    title: 3｜パーキンソン病と遺伝子（遺伝性パーキンソン病・GWAS）
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+      pages:
+      - 5
+      - 7
+  - path: 04_パーキンソン病と環境因子
+    title: 4｜パーキンソン病と環境因子（年齢・人種・性別・喫煙・農薬など）
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+      pages:
+      - 8
+      - 9
+  - path: 05_パーキンソン病の運動症状と非運動症状
+    title: 5｜パーキンソン病の運動症状と非運動症状
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+      pages:
+      - 10
+      - 16
+- path: 10_第I編_抗パーキンソン病薬・外科手術・リハビリテーションの有効性と安全性
+  title: 第Ⅰ編 抗パーキンソン病薬，外科手術，リハビリテーションの有効性と安全性
+  children:
+  - path: 00_資料
+    title: 資料（各薬剤の特徴・L‑ドパ換算用量）
+    children:
+    - path: 01_各薬剤の特徴
+      title: 資料 1｜各薬剤の特徴（適応・投与量・有効性・安全性の一覧表）
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_資料.pdf
+        pages:
+        - 1
+        - 4
+        mode: layout
+    - path: 02_L-ドパ換算用量
+      title: 資料 2｜L‑ドパ換算用量（levodopa equivalent dose 相当量表）
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_資料.pdf
+        pages:
+        - 5
+        mode: layout
+  - path: 01_L-ドパ
+    title: 第 1 章 L‑ドパ
+    children:
+    - path: 01_L-ドパ単剤
+      title: '[第I編/L‑ドパ] 1．L‑ドパ単剤'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 L-ドパ.pdf
+        pages:
+        - 1
+        - 1
+    - path: 02_L-ドパ_DCI配合剤
+      title: '[第I編/L‑ドパ] 2．L‑ドパ/DCI 配合剤'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 L-ドパ.pdf
+        pages:
+        - 2
+        - 3
+    - path: 03_長時間作用型L-ドパ_DCI配合剤
+      title: '[第I編/L‑ドパ] 3．長時間作用型 L‑ドパ/DCI 配合剤'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 L-ドパ.pdf
+        pages:
+        - 4
+        - 5
+    - path: 04_L-ドパ_DCI_COMT阻害薬配合剤
+      title: '[第I編/L‑ドパ] 4．L‑ドパ/DCI/COMT 阻害薬配合剤'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 L-ドパ.pdf
+        pages:
+        - 6
+        - 6
+    - path: 05_空腸投与用L-ドパ_カルビドパ配合剤
+      title: '[第I編/L‑ドパ] 5．空腸投与用 L‑ドパ/カルビドパ配合剤（L‑ドパ持続経腸療法）'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 L-ドパ.pdf
+        pages:
+        - 7
+        - 9
+  - path: 02_ドパミンアゴニスト
+    title: 第 2 章 ドパミンアゴニスト
+    children:
+    - path: 01_ブロモクリプチン
+      title: '[第I編/ドパミンアゴニスト] 1．ブロモクリプチン'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+        pages:
+        - 1
+        - 2
+    - path: 02_ペルゴリド
+      title: '[第I編/ドパミンアゴニスト] 2．ペルゴリド'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+        pages:
+        - 3
+        - 4
+    - path: 03_タリペキソール
+      title: '[第I編/ドパミンアゴニスト] 3．タリペキソール'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+        pages:
+        - 5
+        - 5
+    - path: 04_カベルゴリン
+      title: '[第I編/ドパミンアゴニスト] 4．カベルゴリン'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+        pages:
+        - 6
+        - 7
+    - path: 05_プラミペキソール
+      title: '[第I編/ドパミンアゴニスト] 5．プラミペキソール（速放剤，徐放剤）'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+        pages:
+        - 8
+        - 12
+    - path: 06_ロピニロール
+      title: '[第I編/ドパミンアゴニスト] 6．ロピニロール（速放剤，徐放剤）'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+        pages:
+        - 13
+        - 16
+    - path: 07_ロチゴチン
+      title: '[第I編/ドパミンアゴニスト] 7．ロチゴチン'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+        pages:
+        - 17
+        - 21
+    - path: 08_アポモルヒネ
+      title: '[第I編/ドパミンアゴニスト] 8．アポモルヒネ'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 ドパミンアゴニスト.pdf
+        pages:
+        - 22
+        - 24
+  - path: 03_MAOB阻害薬
+    title: 第 3 章 モノアミン酸化酵素 B（MAOB）阻害薬
+    children:
+    - path: 01_セレギリン
+      title: '[第I編/MAOB 阻害薬] 1．セレギリン'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 モノアミン酸化酵素B（MAOB）阻害薬.pdf
+        pages:
+        - 1
+        - 2
+    - path: 02_ラサギリン
+      title: '[第I編/MAOB 阻害薬] 2．ラサギリン'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 モノアミン酸化酵素B（MAOB）阻害薬.pdf
+        pages:
+        - 3
+        - 5
+  - path: 04_COMT阻害薬
+    title: 第 4 章 カテコール‑O‑メチル基転移酵素（COMT）阻害薬（エンタカポン）
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_第4章 カテコール-O-メチル基転移酵素（COMT）阻害薬.pdf
+      pages:
+      - 1
+      - 2
+  - path: 05_アマンタジン
+    title: 第 5 章 アマンタジン
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_第5章 アマンタジン.pdf
+      pages:
+      - 1
+      - 3
+  - path: 06_抗コリン薬
+    title: 第 6 章 抗コリン薬（トリヘキシフェニジルなど）
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_第6章 抗コリン薬.pdf
+      pages:
+      - 1
+      - 2
+  - path: 07_ドロキシドパ
+    title: 第 7 章 ドロキシドパ
+    children:
+    - path: 01_すくみ足・無動に対する効果
+      title: '[第I編/ドロキシドパ] 1．すくみ足・無動に対する効果'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第7章 ドロキシドパ.pdf
+        pages:
+        - 1
+        - 1
+    - path: 02_起立性低血圧に対する効果
+      title: '[第I編/ドロキシドパ] 2．起立性低血圧に対する効果'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第7章 ドロキシドパ.pdf
+        pages:
+        - 2
+        - 3
+  - path: 08_ゾニサミド
+    title: 第 8 章 ゾニサミド
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_第8章 ゾニサミド.pdf
+      pages:
+      - 1
+      - 2
+  - path: 09_イストラデフィリン
+    title: 第 9 章 イストラデフィリン
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_第9章 イストラデフィリン.pdf
+      pages:
+      - 1
+      - 2
+  - path: 10_手術療法
+    title: 第 10 章 手術療法
+    children:
+    - path: 01_視床腹中間核破壊術
+      title: '[第I編/手術療法/Ⅰ．破壊術] 1．視床腹中間核破壊術'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第10章 手術療法.pdf
+        pages:
+        - 1
+        - 2
+    - path: 02_淡蒼球内節破壊術
+      title: '[第I編/手術療法/Ⅰ．破壊術] 2．淡蒼球内節破壊術'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第10章 手術療法.pdf
+        pages:
+        - 3
+        - 3
+    - path: 03_視床下核破壊術
+      title: '[第I編/手術療法/Ⅰ．破壊術] 3．視床下核破壊術'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第10章 手術療法.pdf
+        pages:
+        - 4
+        - 4
+    - path: 04_視床腹中間核刺激療法
+      title: '[第I編/手術療法/Ⅱ．脳深部刺激療法（DBS）] 4．視床腹中間核刺激療法'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第10章 手術療法.pdf
+        pages:
+        - 5
+        - 5
+    - path: 05_淡蒼球内節刺激療法
+      title: '[第I編/手術療法/Ⅱ．脳深部刺激療法（DBS）] 5．淡蒼球内節刺激療法'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第10章 手術療法.pdf
+        pages:
+        - 6
+        - 7
+    - path: 06_視床下核刺激療法
+      title: '[第I編/手術療法/Ⅱ．脳深部刺激療法（DBS）] 6．視床下核刺激療法'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第10章 手術療法.pdf
+        pages:
+        - 8
+        - 10
+  - path: 11_リハビリテーション
+    title: 第 11 章 パーキンソン病のリハビリテーション
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_第11章 パーキンソン病のリハビリテーション.pdf
+      pages:
+      - 1
+      - 3
+  - path: 12_公的制度・費用対効果
+    title: 第 12 章 公的制度・費用対効果
+    children:
+    - path: 01_公的制度
+      title: '[第I編/公的制度・費用対効果] 1．公的制度（難病医療費助成制度・高額療養費・介護保険・身体障害者福祉法）'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第12章 公的制度・費用対効果.pdf
+        pages:
+        - 1
+        - 3
+    - path: 02_費用対効果
+      title: '[第I編/公的制度・費用対効果] 2．費用対効果'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第12章 公的制度・費用対効果.pdf
+        pages:
+        - 4
+        - 5
+- path: 20_第II編_EBMの手法を用いた推奨
+  title: 第Ⅱ編 Evidence Based Medicine の手法を用いた推奨
+  children:
+  - path: 01_GRADEシステム
+    title: '[第II編] 第 1 章 GRADE システムを用いたエビデンスの質と推奨'
+    body:
+    - pdf: パーキンソン病診療ガイドライン2018_第1章 GRADEシステムを用いたエビデンスの質と推奨.pdf
+      pages:
+      - 1
+      - 3
+  - path: 02_CQ1_早期パーキンソン病の治療
+    title: 第 2 章 CQ 1 早期パーキンソン病の治療はどのように行うべきか
+    children:
+    - path: 01_CQ1-1
+      title: '[第II編/CQ 1 早期パーキンソン病の治療] CQ 1‑1 早期パーキンソン病は，診断後できるだけ早期に薬物療法を開始すべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 CQ1早期パーキンソン病の治療はどのとうに行うべきか.pdf
+        pages:
+        - 1
+        - 4
+    - path: 02_CQ1-2
+      title: '[第II編/CQ 1 早期パーキンソン病の治療] CQ 1‑2 早期パーキンソン病の治療は L‑ドパと L‑ドパ以外の薬物療法（ドパミンアゴニストおよび MAOB 阻害薬）のどちらで開始すべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 CQ1早期パーキンソン病の治療はどのとうに行うべきか.pdf
+        pages:
+        - 5
+        - 8
+    - path: 03_資料_CQ1
+      title: '[第II編/CQ 1] 資料 CQ 1 治療アルゴリズムと PRISMA flow・章末文献・検索式'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 CQ1早期パーキンソン病の治療はどのとうに行うべきか.pdf
+        pages:
+        - 9
+        - 11
+    - path: 04_supplement_CQ1-1
+      title: '[第II編/CQ 1 supplementary data] CQ 1‑1 のフォレストプロット・エビデンスプロファイル・Evidence‑to‑Decision テーブル'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第2章 CQ 1 【supplementary data】.pdf
+        pages:
+        - 1
+        - 6
+    - path: 05_supplement_CQ1-2
+      title: '[第II編/CQ 1 supplementary data] CQ 1‑2 のフォレストプロット・エビデンスプロファイル・Evidence‑to‑Decision テーブル'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第2章 CQ 1 【supplementary data】.pdf
+        pages:
+        - 7
+        - 13
+  - path: 03_CQ2_運動合併症に対する治療
+    title: 第 3 章 CQ 2 運動合併症に対する治療について
+    children:
+    - path: 01_CQ2-1
+      title: '[第II編/CQ 2 運動合併症に対する治療] CQ 2‑1 ウェアリングオフを呈する進行期パーキンソン病患者においてL‑ドパ製剤にドパミンアゴニストを加えるべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+        pages:
+        - 1
+        - 3
+    - path: 02_CQ2-2
+      title: '[第II編/CQ 2 運動合併症に対する治療] CQ 2‑2 ウェアリングオフを呈する進行期パーキンソン病患者においてドパミン附随薬（COMT 阻害薬，MAOB 阻害薬群，イストラデフィリン，ゾニサミド）を加えるべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+        pages:
+        - 4
+        - 4
+    - path: 03_CQ2-2-1
+      title: '[第II編/CQ 2 運動合併症に対する治療] CQ 2‑2‑1 ウェアリングオフを呈する進行期パーキンソン病患者においてCOMT 阻害薬を加えるべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+        pages:
+        - 5
+        - 6
+    - path: 04_CQ2-2-2
+      title: '[第II編/CQ 2 運動合併症に対する治療] CQ 2‑2‑2 ウェアリングオフを呈する進行期パーキンソン病患者においてMAOB 阻害薬を加えるべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+        pages:
+        - 7
+        - 8
+    - path: 05_CQ2-2-3
+      title: '[第II編/CQ 2 運動合併症に対する治療] CQ 2‑2‑3 ウェアリングオフを呈する進行期パーキンソン病患者においてイストラデフィリンを加えるべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+        pages:
+        - 9
+        - 10
+    - path: 06_CQ2-2-4
+      title: '[第II編/CQ 2 運動合併症に対する治療] CQ 2‑2‑4 ウェアリングオフを呈する進行期パーキンソン病患者においてゾニサミドを加えるべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+        pages:
+        - 11
+        - 12
+    - path: 07_CQ2-3
+      title: '[第II編/CQ 2 運動合併症に対する治療] CQ 2‑3 ウェアリングオフを呈する進行期パーキンソン病患者において脳深部刺激療法を行うべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+        pages:
+        - 13
+        - 15
+    - path: 08_資料_CQ2
+      title: '[第II編/CQ 2] 資料 CQ 2 治療アルゴリズムと DAT の特徴と PRISMA flow・章末文献・検索式'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+        pages:
+        - 16
+        - 20
+    - path: 09_supplement_CQ2-1
+      title: '[第II編/CQ 2 supplementary data] CQ 2‑1 ドパミンアゴニストのフォレストプロット・Evidence‑to‑Decision テーブル'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第3章 CQ 2 【supplementary data】.pdf
+        pages:
+        - 1
+        - 7
+    - path: 10_supplement_CQ2-2-1
+      title: '[第II編/CQ 2 supplementary data] CQ 2‑2／2‑2‑1 COMT 阻害薬のフォレストプロット・Evidence‑to‑Decision テーブル'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第3章 CQ 2 【supplementary data】.pdf
+        pages:
+        - 8
+        - 13
+    - path: 11_supplement_CQ2-2-2
+      title: '[第II編/CQ 2 supplementary data] CQ 2‑2‑2 MAOB 阻害薬のフォレストプロット・Evidence‑to‑Decision テーブル'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第3章 CQ 2 【supplementary data】.pdf
+        pages:
+        - 14
+        - 19
+    - path: 12_supplement_CQ2-2-3
+      title: '[第II編/CQ 2 supplementary data] CQ 2‑2‑3 イストラデフィリンのフォレストプロット・Evidence‑to‑Decision テーブル'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第3章 CQ 2 【supplementary data】.pdf
+        pages:
+        - 20
+        - 25
+    - path: 13_supplement_CQ2-2-4
+      title: '[第II編/CQ 2 supplementary data] CQ 2‑2‑4 ゾニサミドのフォレストプロット・Evidence‑to‑Decision テーブル'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第3章 CQ 2 【supplementary data】.pdf
+        pages:
+        - 26
+        - 30
+    - path: 14_supplement_CQ2-3
+      title: '[第II編/CQ 2 supplementary data] CQ 2‑3 脳深部刺激療法のフォレストプロット・Evidence‑to‑Decision テーブル'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第3章 CQ 2 【supplementary data】.pdf
+        pages:
+        - 31
+        - 37
+- path: 30_第III編_QandA
+  title: 第Ⅲ編 パーキンソン病診療に関する Q&A
+  children:
+  - path: 01_診断_予後
+    title: 第 1 章 診断，予後
+    children:
+    - path: Q1-01
+      title: '[第III編/診断，予後] Q and A 1‑1 レム睡眠行動障害，嗅覚低下，便秘はパーキンソン病の診断に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+        pages:
+        - 1
+        - 5
+    - path: Q1-02
+      title: '[第III編/診断，予後] Q and A 1‑2 画像検査はパーキンソン病の診断に有用か（総論）'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+        pages:
+        - 6
+        # p.6 は Q and A 1-2 の全文と 1-2-1 の冒頭が同居する。pdftotext (既定) は
+        # 見出し帯を `1 2 1` の 1 行に崩すが、overlay (p.6) は帯を
+        # `Q and A 1–2–1` と起こすので、**両方に当たる**書き方にしてある
+        until: '^(?:1 2 1|(?:#+\s*)?Q and A 1[–—−-]2[–—−-]1)$'
+        allow_overlap: true
+    - path: Q1-02-01
+      title: '[第III編/診断，予後] Q and A 1‑2‑1 MRI はパーキンソン病の診断に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+        pages:
+        - 6
+        - 8
+        from: '^(?:1 2 1|(?:#+\s*)?Q and A 1[–—−-]2[–—−-]1)$'
+        allow_overlap: true
+    - path: Q1-02-02
+      title: '[第III編/診断，予後] Q and A 1‑2‑2 MIBG 心筋シンチグラフィはパーキンソン病の診断に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+        pages:
+        - 9
+        - 11
+    - path: Q1-02-03
+      title: '[第III編/診断，予後] Q and A 1‑2‑3 ドパミントランスポーター（DAT）シンチグラフィはパーキンソン病の診断に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+        pages:
+        - 12
+        - 14
+    - path: Q1-02-04
+      title: '[第III編/診断，予後] Q and A 1‑2‑4 脳血流シンチグラフィはパーキンソン病の診断に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+        pages:
+        - 15
+        - 16
+    - path: Q1-02-05
+      title: '[第III編/診断，予後] Q and A 1‑2‑5 経頭蓋超音波検査はパーキンソン病の診断に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+        pages:
+        - 17
+        - 18
+  - path: 02_治療総論
+    title: 第 2 章 治療総論
+    children:
+    - path: Q2-01
+      title: '[第III編/治療総論] Q and A 2‑1 L‑ドパはドパミン神経の変性を促進するか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 1
+        - 2
+    - path: Q2-02
+      title: '[第III編/治療総論] Q and A 2‑2 運動合併症の発現に影響する因子は何か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 3
+        - 5
+    - path: Q2-03
+      title: '[第III編/治療総論] Q and A 2‑3 パーキンソン病の予後に影響を与える因子は何か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 6
+        - 8
+    - path: Q2-04
+      title: '[第III編/治療総論] Q and A 2‑4 パーキンソニズムを出現・悪化させる薬物は何か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 9
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 10
+        - 11
+        mode: layout
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 12
+    - path: Q2-05
+      title: '[第III編/治療総論] Q and A 2‑5 悪性症候群の予防・治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 13
+        - 14
+    - path: Q2-06
+      title: '[第III編/治療総論] Q and A 2‑6 外科手術や全身状態の悪化に伴い絶食しなくてはならないときにどう治療するか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 15
+        - 17
+    - path: Q2-07
+      title: '[第III編/治療総論] Q and A 2‑7 妊娠した場合，抗パーキンソン病薬はどのように調整するか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 18
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 19
+        mode: layout
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 20
+    - path: Q2-08
+      title: '[第III編/治療総論] Q and A 2‑8 終末期を踏まえた医療およびケアはどうあるべきか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+        pages:
+        - 21
+        - 24
+  - path: 03_運動症状の治療
+    title: 第 3 章 運動症状の治療
+    children:
+    - path: Q3-01
+      title: '[第III編/運動症状の治療] Q and A 3‑1 振戦の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 1
+        - 3
+    - path: Q3-02
+      title: '[第III編/運動症状の治療] Q and A 3‑2 peak‑dose ジスキネジアの治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 4
+        - 7
+    - path: Q3-03
+      title: '[第III編/運動症状の治療] Q and A 3‑3 オン/オフの治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 8
+        - 9
+    - path: Q3-04
+      title: '[第III編/運動症状の治療] Q and A 3‑4 no on, delayed on の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 10
+        - 11
+    - path: Q3-05
+      title: '[第III編/運動症状の治療] Q and A 3‑5 off period ジストニアの治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 12
+        - 14
+    - path: Q3-06
+      title: '[第III編/運動症状の治療] Q and A 3‑6 すくみ足の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 15
+        - 18
+    - path: Q3-07
+      title: '[第III編/運動症状の治療] Q and A 3‑7 diphasic ジスキネジアの治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 19
+        - 20
+    - path: Q3-08
+      title: '[第III編/運動症状の治療] Q and A 3‑8 姿勢異常の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 21
+        - 24
+    - path: Q3-09
+      title: '[第III編/運動症状の治療] Q and A 3‑9 嚥下障害の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+        pages:
+        - 25
+        - 26
+  - path: 04_非薬物療法
+    title: 第 4 章 非薬物療法
+    children:
+    - path: Q4-01
+      title: '[第III編/非薬物療法] Q and A 4‑1 手術療法の適応基準は何か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第4章 非薬物療法.pdf
+        pages:
+        - 1
+        until: ^4 2$
+        allow_overlap: true
+    - path: Q4-02
+      title: '[第III編/非薬物療法] Q and A 4‑2 手術療法を考慮するタイミングはいつか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第4章 非薬物療法.pdf
+        pages:
+        - 1
+        - 4
+        from: ^4 2$
+        allow_overlap: true
+    - path: Q4-03
+      title: '[第III編/非薬物療法] Q and A 4‑3 視床下核脳深部刺激療法（STN‑DBS）と淡蒼球内節脳深部刺激療法（GPi‑DBS）の使い分けはどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第4章 非薬物療法.pdf
+        pages:
+        - 5
+        - 11
+    - path: Q4-04
+      title: '[第III編/非薬物療法] Q and A 4‑4 運動療法は運動症状改善に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第4章 非薬物療法.pdf
+        pages:
+        - 12
+        - 14
+    - path: Q4-05
+      title: '[第III編/非薬物療法] Q and A 4‑5 教育，カウンセリング，食事，サプリメントなどの非薬物療法は症状の進行予防や運動症状改善に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第4章 非薬物療法.pdf
+        pages:
+        - 15
+        - 17
+  - path: 05_非運動症状の治療
+    title: 第 5 章 非運動症状の治療
+    children:
+    - path: Q5-01
+      title: '[第III編/非運動症状の治療] Q and A 5‑1 日中過眠の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 1
+        - 3
+    - path: Q5-02
+      title: '[第III編/非運動症状の治療] Q and A 5‑2 突発的睡眠の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 4
+        - 5
+    - path: Q5-03
+      title: '[第III編/非運動症状の治療] Q and A 5‑3 夜間不眠に対する治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 6
+        - 8
+    - path: Q5-04
+      title: '[第III編/非運動症状の治療] Q and A 5‑4 レム睡眠行動障害の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 9
+        - 11
+    - path: Q5-05
+      title: '[第III編/非運動症状の治療] Q and A 5‑5 下肢静止不能症候群（むずむず脚症候群）の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 12
+        - 13
+    - path: Q5-06
+      title: '[第III編/非運動症状の治療] Q and A 5‑6 うつ症状の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 14
+        - 17
+    - path: Q5-07
+      title: '[第III編/非運動症状の治療] Q and A 5‑7 不安の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 18
+        - 20
+    - path: Q5-08
+      title: '[第III編/非運動症状の治療] Q and A 5‑8 アパシーの治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 21
+        - 24
+    - path: Q5-09
+      title: '[第III編/非運動症状の治療] Q and A 5‑9 疲労の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 25
+        - 28
+    - path: Q5-10
+      title: '[第III編/非運動症状の治療] Q and A 5‑10 幻覚・妄想の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 29
+        - 33
+    - path: Q5-11
+      title: '[第III編/非運動症状の治療] Q and A 5‑11 衝動制御障害，ドパミン調節障害の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 34
+        - 37
+    - path: Q5-12
+      title: '[第III編/非運動症状の治療] Q and A 5‑12 認知症が合併した場合の薬物療法はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 38
+        - 40
+    - path: Q5-13
+      title: '[第III編/非運動症状の治療] Q and A 5‑13 抗コリン薬はパーキンソン病患者の認知機能を悪化させるか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 41
+        - 42
+    - path: Q5-14
+      title: '[第III編/非運動症状の治療] Q and A 5‑14 起立性低血圧の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 43
+        - 45
+    - path: Q5-15
+      title: '[第III編/非運動症状の治療] Q and A 5‑15 排尿障害の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 46
+        - 48
+    - path: Q5-16
+      title: '[第III編/非運動症状の治療] Q and A 5‑16 便秘の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 49
+        - 51
+    - path: Q5-17
+      title: '[第III編/非運動症状の治療] Q and A 5‑17 性機能障害の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 52
+        - 53
+    - path: Q5-18
+      title: '[第III編/非運動症状の治療] Q and A 5‑18 発汗発作の治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 54
+        - 55
+    - path: Q5-19
+      title: '[第III編/非運動症状の治療] Q and A 5‑19 痛みの治療はどうするか'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+        pages:
+        - 56
+        - 57
+  - path: 06_将来の治療などの可能性
+    title: 第 6 章 将来の治療などの可能性
+    children:
+    - path: Q6-01
+      title: '[第III編/将来の治療などの可能性] Q and A 6‑1 磁気刺激，修正型電気痙攣療法は症状改善に有効か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第6章 将来の治療などの可能性.pdf
+        pages:
+        - 1
+        - 3
+    - path: Q6-02
+      title: '[第III編/将来の治療などの可能性] Q and A 6‑2 細胞移植は症状改善に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第6章 将来の治療などの可能性.pdf
+        pages:
+        - 4
+        - 6
+    - path: Q6-03
+      title: '[第III編/将来の治療などの可能性] Q and A 6‑3 遺伝子治療は症状改善に有用か'
+      body:
+      - pdf: パーキンソン病診療ガイドライン2018_第6章 将来の治療などの可能性.pdf
+        pages:
+        - 7
+        - 8
+vlm_candidates:
+- pdf: パーキンソン病診療ガイドライン2018_序.pdf
+  pages:
+  - 4
+  why: 図 1 GRADE システムによるエビデンスの質評価
+- pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+  pages:
+  - 2
+  why: 表 1 MDS 診断基準（2015）
+- pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+  pages:
+  - 5
+  - 7
+  why: 表 1 遺伝性パーキンソン病・図 1 GWAS
+- pdf: パーキンソン病診療ガイドライン2018_序章.pdf
+  pages:
+  - 13
+  why: 表 1 パーキンソン病の非運動症状
+- pdf: パーキンソン病診療ガイドライン2018_資料.pdf
+  pages:
+  - 1
+  - 5
+  why: 資料 1 各薬剤の特徴・資料 2 L‑ドパ換算用量（全ページが大判の表）
+- pdf: パーキンソン病診療ガイドライン2018_第12章 公的制度・費用対効果.pdf
+  pages:
+  - 1
+  - 2
+  why: 表 1 難病医療費助成制度自己負担上限額・表 2 介護保険サービス利用限度額
+- pdf: パーキンソン病診療ガイドライン2018_第1章 GRADEシステムを用いたエビデンスの質と推奨.pdf
+  pages:
+  - 2
+  why: 表 1 推奨の強さ・エビデンスの質／図 1 臨床決断の閾値
+- pdf: パーキンソン病診療ガイドライン2018_第2章 CQ1早期パーキンソン病の治療はどのとうに行うべきか.pdf
+  pages:
+  - 9
+  - 10
+  why: 図 1 早期パーキンソン病治療のアルゴリズム・図 2 PRISMA flow
+- pdf: パーキンソン病診療ガイドライン2018_第3章 CQ2運動合併症に対する治療について.pdf
+  pages:
+  - 16
+  - 18
+  why: 図 1 治療アルゴリズム・表 1 device aided therapy・図 2〜5 PRISMA flow
+- pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第2章 CQ 1 【supplementary data】.pdf
+  pages:
+  - 1
+  - 13
+  why: 全ページがフォレストプロット/エビデンスプロファイル/EtD テーブルの画像・表
+- pdf: パーキンソン病診療ガイドライン2018_第Ⅱ編 第3章 CQ 2 【supplementary data】.pdf
+  pages:
+  - 1
+  - 37
+  why: 全ページがフォレストプロット/エビデンスプロファイル/EtD テーブルの画像・表
+- pdf: パーキンソン病診療ガイドライン2018_第1章 診断，予後.pdf
+  pages:
+  - 10
+  why: 図 1 パーキンソン病の MIBG 心筋シンチグラフィ
+- pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+  pages:
+  - 10
+  why: 表 1 パーキンソニズムの主な原因薬品（薬剤名・主な商品名・薬物の種類の 3 列表。p10 で完結する）
+- pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+  pages:
+  - 13
+  why: 図 1 悪性症候群の治療アルゴリズム
+- pdf: パーキンソン病診療ガイドライン2018_第2章 治療総論.pdf
+  pages:
+  - 19
+  why: 表 1 抗パーキンソン病薬の妊婦・授乳婦への投与の際の禁忌・警告・注意事項
+- pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+  pages:
+  - 6
+  why: 図 1 peak‑dose ジスキネジア治療アルゴリズム
+- pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+  pages:
+  - 13
+  why: 図 1 早朝ジストニアの治療アルゴリズム
+- pdf: パーキンソン病診療ガイドライン2018_第3章 運動症状の治療.pdf
+  pages:
+  - 16
+  why: 図 1 すくみ足の治療アルゴリズム
+- pdf: パーキンソン病診療ガイドライン2018_第4章 非薬物療法.pdf
+  pages:
+  - 7
+  - 8
+  why: 図 1 RCT におけるオフ時 UPDRS part Ⅲ改善率の比較・表 1 CSP468/NSTAPS 患者群比較
+- pdf: パーキンソン病診療ガイドライン2018_第4章 非薬物療法.pdf
+  pages:
+  - 10
+  why: 表 2 病態による STN‑DBS と GPi‑DBS の有用性
+- pdf: パーキンソン病診療ガイドライン2018_第5章 非運動症状の治療.pdf
+  pages:
+  - 32
+  why: 図 1 幻覚・妄想の治療アルゴリズム
+notes: |
+  収録は原本 30 分冊のうち 28 本。落としたのは以下 2 本（いずれも本文を持たないナビゲーション用）:
+  - パーキンソン病診療ガイドライン2018_目次.pdf（5p, parkinson_2018_05.pdf）— 目次
+  - パーキンソン病診療ガイドライン2018_索引.pdf（7p, parkinson_2018_30.pdf）— 索引
+  収録した 28 本については全ページがいずれかのノードに載っている（欠落なし）。
+
+  ファイル名と実体:
+  - 分冊名の「第N章」が第Ⅰ編（薬剤・手術・リハビリ）系列と第Ⅲ編（Q&A）系列で重複している。
+    たとえば「第5章 アマンタジン」= 第Ⅰ編第5章，「第5章 非運動症状の治療」= 第Ⅲ編第5章。URL 番号でも区別でき，
+    第Ⅰ編が parkinson_2018_09〜20，第Ⅱ編が _21〜23（supplementary data は _01/_02），第Ⅲ編が _24〜29。
+  - 「第1章 GRADEシステムを用いたエビデンスの質と推奨」(_21) は第Ⅱ編第1章。
+  - 「第2章 CQ1早期パーキンソン病の治療はどのとうに行うべきか」(_22) はファイル名が原本の誤植（「どのとうに」= どのように）。本文・目次は「どのように」。
+  - supplementary data 2 本のファイル名にある「第Ⅱ編 第2章 / 第3章」は第Ⅱ編の章立てを指す（本体分冊の _22/_23 に対応）。
+
+  ページ割りの判断:
+  - 第Ⅲ編第1章の Q and A 1‑2（画像検査は有用か）の総論と Q and A 1‑2‑1（MRI）は同一ページに始まるので，
+    `until` / `from`（境界は Q 番号の飾り行 `1 2 1`）でページ内分割して 1 CQ = 1 ノードにした。
+  - 第Ⅲ編第4章の Q and A 4‑1 と 4‑2 も同一ページ（分冊 p.1 = 印刷 200 頁）に並ぶので，同じく `4 2` を境に分割した。
+  - 第Ⅱ編の章末文献・検索式は CQ 個別ではなく章末にまとまっているので，「資料 CQ 1」「資料 CQ 2」ノードの末尾に含めた。
+  - 目次の印字ページと物理ページのオフセットは分冊ごとに一定（例: 第Ⅲ編第5章は 物理 = 印字 − 216）。全境界を本文で確認済み。
+
+  テキスト層とヘッダ/フッタ:
+  - 章扉は「第 / N / 章 / 章題」のように 1 文字ずつ改行される縦組み。strip の `第` `章` `編`，ノンブルは strip_edge の
+    `\d{1,3}` がこれを落とす。
+  - 小口の柱（章番号だけの数字）はページの端に来ないので strip_edge では取れない。分冊ごとに `pdfs[].strip` で
+    その章の番号だけを落としている（例: 第Ⅲ編第5章の PDF は `'5'`）。他の分冊の表の数値セルは巻き込まない。
+  - Q&A 番号の飾り（`Q and A` / `–` / `5 2` の 3 行）も分解されて出る。`5 2` のような「数字 空白 数字」の行は
+    strip していない（表のセルと区別できないため）。ノード title に Q 番号があるので実害は小さく，
+    Q and A 1‑2/1‑2‑1 と 4‑1/4‑2 のページ内分割ではこの行を境界に使っている。
+  - 全ページが表の箇所（資料 1・2，序章の MDS 診断基準表，治療総論の原因薬品表・妊婦授乳婦表）は範囲ごとに
+    `mode: layout` にして桁を保った。それ以外は既定モード。
+  - 序章の柱（`1 ｜パーキンソン病の診断` など 5 本）は節見出しと同じ文字列なので，節タイトル 5 本だけを exact に strip した。
+    節 5 の下位見出し `1 ｜運動症状` `2 ｜非運動症状` は残る。

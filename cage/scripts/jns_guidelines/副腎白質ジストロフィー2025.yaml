@@ -1,0 +1,305 @@
+id: 副腎白質ジストロフィー2025
+title: 副腎白質ジストロフィー（ALD）診療ガイドライン2025
+guideline: 副腎白質ジストロフィー（ALD）診療ガイドライン2025
+publisher: 厚生労働科学研究費補助金 難治性疾患政策研究事業「ライソゾーム病、ペルオキシソーム病（副腎白質ジストロフィーを含む）における早期診断・早期治療を可能とする診療提供体制の確立に関する研究」研究班（日本先天代謝異常学会・日本神経学会 共同編集）
+source: http://www.japan-lsd-mhlw.jp/doc/ald2025_guideline.pdf
+retrieved_at: '2026-09-05'
+description: |
+  『副腎白質ジストロフィー（ALD）診療ガイドライン2025』（Practical guideline for the management of
+  adrenoleukodystrophy (ALD) 2025、2025年10月、研究班版、日経印刷）の全文、148 ページ。
+  監修は厚生労働科学研究費補助金 難治性疾患政策研究事業「ライソゾーム病、ペルオキシソーム病
+  （副腎白質ジストロフィーを含む）における早期診断・早期治療を可能とする診療提供体制の確立に関する研究」研究班
+  （研究代表者 奥山虎之、課題番号 23FC1032）、編集は ALD 診療ガイドライン2025作成委員会（委員長 下澤伸行）。
+  日本先天代謝異常学会（診断基準・診療ガイドライン委員長 小林弘典）と**日本神経学会**（ガイドライン統括委員長 小野寺理）の
+  共同編集で、日本神経学会のガイドライン掲載ページから配布されている。
+
+  『副腎白質ジストロフィー診療ガイドライン 2017（研究班版）／2019（学会版）』の改訂版。
+  ALD 患者の約半数が成人以降に発症することを踏まえ、今回から成人領域の日本神経学会が共同編集に加わった。
+  『Minds 診療ガイドライン作成マニュアル 2020 Ver.3.0』に準拠。前版の 44 ページから 110 ページ以上に増補されている。
+
+  構成:
+  - 巻頭（刊行にあたって、序文、診療ガイドラインの作成方法、編集組織、Introduction）
+  - I. 副腎白質ジストロフィーの概要 — 疾患概要（定義・疫学・疾患の歴史・病態・臨床症状・予後）、診断（診断基準）、
+    治療（ロレンツォオイル、造血幹細胞移植、AMN および女性発症者、副腎皮質ホルモン補充療法）、遺伝カウンセリング、文献
+  - II. 疾患に関するバックグラウンドクエスチョン（BQ）— BQ1-1〜BQ14 の 15 項目
+  - III. 診療に関するクリニカルクエスチョン（CQ）— CQ1〜CQ4 の推奨文と解説（各 CQ はサブクエスチョン CQn-1〜n-6 に分かれる）
+  - IV. システマティックレビュー（SR）ダイジェスト — CQ ごとの文献検索式・定性的 SR・SR レポート・RC-7 EtD フレームワーク
+  - V. 最新のトピックス — 新生児スクリーニングの国内外動向、遺伝子治療、AMN・女性発症者に対する治療戦略、病態解明とバイオマーカー
+  - 関連資料・リンク先、診療支援・相談に関する情報
+
+  推奨の強さは 1（強い推奨）／2（弱い推奨・提案）／なし、エビデンスの強さは A〜D で、
+  「1A」のように併記される。希少疾患のため文献的エビデンスが少ない項目では GRADE の
+  RC-7 evidence to decisions framework（Clinical recommendation：Individual perspective）を用い、
+  国内移植拠点病院エキスパートの合意と作成委員会の投票で推奨度を決定している。
+strip:
+  - '[IVXivxl]{1,5}'
+  - '副腎白質ジストロフィーの概要'
+  - '\d+\s*疾患概要'
+  - '\d+\s*診\s*断?'
+  - '\d+\s*治\s*療?'
+  - '[診断治療]'
+  - '\d+\s*遺伝カウンセリング'
+  - 'II 疾患に関するバックグラウンドクエスチョン（BQ）'
+  - 'III 診療に関するクリニカルクエスチョン'
+  - '（CQ）'
+  - 'IV システマティックレビュー（SR）ダイジェスト'
+  - 'V 最新のトピックス'
+strip_edge:
+  # ノンブル等。**ページの先頭/末尾 3 非空行だけ**に効かせる
+  # (全行 fullmatch だと表の数値セル・文献番号を巻き添えにするため)
+  lines: 3
+  patterns:
+  - '\d{1,3}'
+pdfs:
+  - file: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf
+    url: http://www.japan-lsd-mhlw.jp/doc/ald2025_guideline.pdf
+    label: 副腎白質ジストロフィー（ALD）診療ガイドライン2025
+nodes:
+  - path: 00_巻頭
+    title: 刊行にあたって・序文・作成方法・編集組織・Introduction
+    children:
+      - path: 01_刊行にあたって・序文
+        title: 診療ガイドライン改訂版の刊行にあたって（研究代表者 奥山虎之）／序文（作成委員長 下澤伸行）
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [3, 4]}
+      - path: 02_診療ガイドラインの作成方法
+        title: 診療ガイドラインの作成方法 — CQ の決定、文献検索、システマティックレビュー、エビデンスの強さ（表1）、推奨の強さ（表2）、投票、希少疾患での留意点、外部評価
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [5, 7]}
+      - path: 03_編集組織
+        title: 編集組織 — 監修・編集、総括委員、学会推薦委員、作成委員、システマティックレビュー委員、外部評価
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [8, 9]}
+      - path: 04_Introduction
+        title: Introduction — 使用上の注意、ガイドラインの対象と利用者、ALD の健康上の課題、資金源と利益相反、今後の課題
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [10]}
+  - path: 10_概要
+    title: I. 副腎白質ジストロフィーの概要
+    body:
+      - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [14]}
+    children:
+      - path: 01_定義・疫学・疾患の歴史
+        title: '[概要/疾患概要] ALD の定義、疫学（国内の病型別頻度、アジソン病の原因としての ALD）、疾患の歴史'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [15, 16]}
+      - path: 02_疾患の病態
+        title: '[概要/疾患概要] ALD の病態 — ABCD1／ALDP、極長鎖脂肪酸の蓄積、脱髄と炎症、遺伝子型と表現型、Abcd1 ノックアウトマウス'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [17, 19]}
+      - path: 03_臨床症状
+        title: '[概要/疾患概要] ALD の臨床症状 — 小児大脳型・思春期大脳型・成人大脳型・AMN・小脳脳幹型・アジソン型・女性発症者の病型分類（表1）'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [20, 21]}
+      - path: 04_予後
+        title: '[概要/疾患概要] ALD の予後 — 病型別の自然歴、AMN から大脳型への移行'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [22, 23]}
+      - path: 05_診断
+        title: '[概要] ALD の診断 — 診断基準、主要症状および臨床所見、参考となる検査所見、鑑別診断、確定診断'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [24, 27]}
+      - path: 06_治療
+        title: '[概要] ALD の治療 — ロレンツォオイル、造血幹細胞移植（適応・Loes score・移植後フォロー、表2〜表4）、AMN および女性発症者、副腎皮質ホルモン補充療法'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [28, 32]}
+      - path: 07_遺伝カウンセリング
+        title: '[概要] ALD の遺伝カウンセリング — X 連鎖遺伝、女性保因者、発症前診断'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [33]}
+      - path: 08_文献
+        title: '[概要] 文献（I. 副腎白質ジストロフィーの概要）'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [34, 36]}
+  - path: 20_BQ
+    title: II. 疾患に関するバックグラウンドクエスチョン（BQ1-1〜BQ14）
+    body:
+      - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [38]}
+    children:
+      - path: BQ1-1
+        title: '[BQ/早期診断] 小児大脳型発症の早期診断ポイントは？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [39]}
+      - path: BQ1-2
+        title: '[BQ/早期診断] 成人大脳型発症の早期診断ポイントは？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [40]}
+      - path: BQ02
+        title: '[BQ/早期診断] AMN、女性発症の早期診断ポイントは？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [41]}
+      - path: BQ03
+        title: '[BQ/早期診断] 小脳・脳幹型の早期診断ポイントは？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [42]}
+      - path: BQ04
+        title: '[BQ/検査] 極長鎖脂肪酸リゾリン脂質（C26:0-LPC）の診断的意義は？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [43, 44]}
+      - path: BQ05
+        title: '[BQ/検査] 遺伝学的検査（ABCD1 遺伝子解析）の診断的意義は？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [45]}
+      - path: BQ06
+        title: '[BQ/検査] ガドリニウム造影や MRS 検査の必要性は？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [46]}
+      - path: BQ07
+        title: '[BQ/検査] どのような神経生理・神経心理学的検査を選択するか、その評価ポイントは？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [47, 49]}
+      - path: BQ08
+        title: '[BQ/副腎不全] 副腎不全の発症頻度・年齢、症状、検査、治療はどうするか？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [50, 52]}
+      - path: BQ09
+        title: '[BQ/治療] AMN や女性保因者発症に対してどのような治療法が存在するか？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [53]}
+      - path: BQ10
+        title: '[BQ/治療] 小脳・脳幹型に対してどのような治療法が存在するか？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [54]}
+      - path: BQ11
+        title: '[BQ/発症前] 発症前に診断された男性患者の検査はいつから開始するか？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [55, 56]}
+      - path: BQ12
+        title: '[BQ/遺伝カウンセリング] 患者診断時の本人とご家族への遺伝カウンセリングはいつどのように行うか？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [57, 58]}
+      - path: BQ13
+        title: '[BQ/遺伝カウンセリング] at risk の患者への遺伝カウンセリングはいつどのように行うか？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [59, 60]}
+      - path: BQ14
+        title: '[BQ/遺伝カウンセリング] 新生児スクリーニング受検前、精密検査、診断時の保護者への遺伝カウンセリングはどのように行うか？'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [61, 63]}
+  - path: 30_CQ
+    title: III. 診療に関するクリニカルクエスチョン（CQ1〜CQ4）推奨文と解説
+    body:
+      - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [64]}
+    children:
+      - path: CQ1
+        title: '[CQ/造血幹細胞移植] 小児・思春期大脳型に対する造血幹細胞移植は有効か？（CQ1-1〜1-6 の推奨文と解説：生存率、神経症状の進行、Loes score 9 点以上、前処置、移植関連死・有害事象）'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [65, 72]}
+      - path: CQ2
+        title: '[CQ/造血幹細胞移植] 成人大脳型に対する造血幹細胞移植は有効か？（CQ2-1〜2-6 の推奨文と解説）'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [73, 80]}
+      - path: CQ3
+        title: '[CQ/ロレンツォオイル] ロレンツォオイルは ALD の治療・予防に有効か？（CQ3-1〜3-4 の推奨文と解説：発症予防、中枢神経障害の進行、頭部 MRI 所見、副腎不全、表5）'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [81, 88]}
+      - path: CQ4
+        title: '[CQ/発症前診断] 男性患者の発症前診断は有効か？（CQ4-1〜4-2 の推奨文と解説）'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [89, 92]}
+  - path: 40_SRダイジェスト
+    title: IV. システマティックレビュー（SR）ダイジェスト
+    body:
+      - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [94]}
+    children:
+      - path: CQ1
+        title: '[SR ダイジェスト] CQ1（小児・思春期大脳型の造血幹細胞移植）文献検索式 / 定性的システマティックレビュー / SR レポート / RC-7 EtD フレームワーク'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [95, 105]}
+      - path: CQ2
+        title: '[SR ダイジェスト] CQ2（成人大脳型の造血幹細胞移植）文献検索式 / 定性的システマティックレビュー / SR レポート / RC-7 EtD フレームワーク'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [106, 118]}
+      - path: CQ3
+        title: '[SR ダイジェスト] CQ3（ロレンツォオイル）文献検索式 / 定性的システマティックレビュー / SR レポート'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [119, 124]}
+      - path: CQ4
+        title: '[SR ダイジェスト] CQ4（男性患者の発症前診断）文献検索式 / 定性的システマティックレビュー / SR レポート'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [125, 128]}
+  - path: 50_最新のトピックス
+    title: V. 最新のトピックス
+    body:
+      - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [130]}
+    children:
+      - path: 01_新生児スクリーニング
+        title: '[トピックス] 新生児スクリーニングの諸外国の動向と国内の状況（米国・台湾・オランダ・国内の取組み）'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [131, 133]}
+      - path: 02_遺伝子治療
+        title: '[トピックス] 遺伝子治療の最新の動向（Skysona® と骨髄異形成症候群、造血幹細胞遺伝子治療）'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [134, 135]}
+      - path: 03_AMN・女性発症者に対する治療戦略
+        title: '[トピックス] AMN ならびに女性発症者に対する治療戦略：海外の動向を中心に'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [136, 137]}
+      - path: 04_病態解明・治療薬開発・バイオマーカー
+        title: '[トピックス] 最新の病態解明と治療薬開発、ならびにバイオマーカー探索研究の動向'
+        body:
+          - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [138, 141]}
+  - path: 60_関連資料・リンク先
+    title: 関連資料・リンク先（研究班・患者会・関連学会の Web サイト）
+    body:
+      - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [142]}
+  - path: 61_診療支援・相談に関する情報
+    title: 副腎白質ジストロフィー診療支援・相談に関する情報（検査・移植・頭部 MRI セントラルレビューの問い合わせ先、公的助成制度）
+    body:
+      - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [143, 145]}
+  - path: 62_奥付
+    title: 奥付（副腎白質ジストロフィー（ALD）診療ガイドライン2025 研究班版、2025年10月）
+    body:
+      - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [147]}
+vlm_candidates:
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [6], why: 表1 エビデンスの質の確実性（強さ）、表2 推奨の強さ}
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [17], why: 図1 極長鎖脂肪酸の β 酸化とペルオキシソーム（模式図）}
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [19], why: 図2 病態の模式図}
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [21, 22], why: 表1 ALD の病型分類（発症年齢・症状・経過）。行が縦に分解されて対応が崩れる}
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [24, 27], why: 診断基準（主要症状および臨床所見、参考となる検査所見、診断のカテゴリー）。箇条書きが列崩れする}
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [30, 31], why: 表2〜表4 造血幹細胞移植の適応・前処置・移植後フォローアップ}
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [55], why: 発症前診断された男性患者の検査スケジュール表}
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [87], why: 表5 ロレンツォオイルのエビデンス一覧}
+  - {pdf: 副腎白質ジストロフィー（ALD）診療ガイドライン2025_http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf, pages: [95, 128], why: SR ダイジェストは全編が文献検索式・SR テーブル・EtD フレームワークの表組みで、テキスト層ではセル対応が崩れる。CQ ごとの結論を引くには VLM が要る}
+notes: |
+  ## ページ対応
+
+  印刷ページ番号と物理ページ番号がずれる。巻頭はローマ数字 i〜xi が物理 p3〜p13、
+  本文は **物理ページ = 印刷ページ + 13**（印刷 p2 = 物理 p15、印刷 p130 = 物理 p143）。
+  manifest の pages はすべて物理ページ。
+
+  ## ノード分割
+
+  - BQ は 1 項目 = 1 ノード（15 ノード）。
+  - CQ は「推奨文と解説」を CQ 単位で 1 ノード（4 ノード）とした。原本ではさらに CQ1-1〜CQ1-6 の
+    サブクエスチョンに分かれるが、サブ CQ が同一ページ内で切り替わるため物理ページで割ると
+    どちらのノードにも半端が出る。1 CQ = 8 ページ前後（約 1.1 万字）で分量的にも 1 ノードに収まる。
+  - SR ダイジェストも CQ 単位で 1 ノード。CQ2 が 13 ページと最大だが約 1.6 万字で上限内。
+  - 部の中扉ページ（物理 p14 / p38 / p64 / p94 / p130）は、その部のディレクトリノードの body に入れた。
+
+  ## 落としたページ
+
+  - p1-2（表紙・標題紙）… 書名・監修・編集のみ。description に転記した。
+  - p11-13（CONTENTS＝目次）… 計画書の方針どおり目次は収録しない。
+  - p146 / p148 … 完全な白ページ。
+  - p37 / p93 / p129 … 部の切れ目の白ページ。テキスト層に印刷ページ番号（24 / 80 / 116）が
+    1 行あるだけで本文が無く、`strip_edge` を掛ければ空になる。以前は直前のノードの末尾に
+    含めていたが、【p.N】マーカーだけが並んで本文が読めないページに見えるためノード範囲から
+    外した（該当ノードの pages は 34-36 / 89-92 / 125-128 に縮めてある）。
+  - 上記以外の全ページはいずれかのノードに載っている。
+
+  ## 版・関係
+
+  - 前版は『副腎白質ジストロフィー診療ガイドライン 2017（研究班版）／2019（学会版、日本先天代謝異常学会編集）』。
+    今回収録したのは 2025 年版のみで、旧版は同じ束に無いため落としてもいない。
+  - この PDF は「研究班版」。学会版（日本先天代謝異常学会・日本神経学会の承認を経た市販版）は
+    別途刊行される旨が p9「外部評価について」に記されている。
+  - ファイル名が `..._http＿＿＿www.japan-lsd-mhlw.jp＿doc＿ald2025_guideline.pdf.pdf` と冗長なのは
+    取得時に URL をそのままファイル名に埋めたため。実体は研究班サイト（japan-lsd-mhlw.jp）の
+    ald2025_guideline.pdf で、日本神経学会のガイドライン掲載ページからこの URL へリンクされている。
+
+  ## テキスト層
+
+  本文は 1 段組で素直に取り出せる。表・図はテキスト層に文字が残るがセルの対応が崩れるため
+  vlm_candidates に挙げた。柱（章タイトル）が縦組みで 1 文字ずつ改行される箇所があり、
+  strip に `[診断治療]` の 1 文字パターンを入れてある。

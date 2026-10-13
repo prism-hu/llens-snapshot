@@ -1,0 +1,547 @@
+id: 皮膚リンパ腫2025
+title: 皮膚リンパ腫診療ガイドライン2025（皮膚がん診療ガイドライン第4版）
+guideline: 皮膚リンパ腫診療ガイドライン2025（皮膚がん診療ガイドライン第4版）
+publisher: 日本皮膚科学会・日本皮膚悪性腫瘍学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『皮膚リンパ腫診療ガイドライン 2025』(皮膚がん診療ガイドライン第 4 版 / 公益社団法人
+  日本皮膚科学会・一般社団法人日本皮膚悪性腫瘍学会 皮膚がん診療ガイドライン策定委員会
+  (皮膚リンパ腫診療ガイドライングループ) / 日本皮膚科学会雑誌 135(6), 1433-1529, 2025 年)。
+
+  皮膚リンパ腫は皮膚に原発もしくは親和性の高い悪性リンパ腫の一群で、暫定病型を含め 18 病型が
+  定義されている。菌状息肉症/セザリー症候群が最多 (本邦 45.2%)、次いで成人 T 細胞白血病・
+  リンパ腫。Minds 準拠で作成され、CQ12 件 (推奨の強さ 1〜4 または「推奨なし」/
+  エビデンスの強さ A〜D) を持つ。
+
+  構成は 4 章 + 文献:
+  - 第 1 章 皮膚リンパ腫診療ガイドラインについて (目的・対象・作成方法・COI、別表 1 委員一覧、
+    別表 2 CQ 一覧と投票の棄権)
+  - 第 2 章 皮膚リンパ腫総論 (病型・疫学 / 診断に必要な知識 / 病期分類 / 予後)
+  - 第 3 章 皮膚リンパ腫各論 (T 細胞・NK 細胞リンパ腫 / 皮膚 B 細胞リンパ腫 / その他)
+  - 第 4 章 クリニカルクエスチョン (CQ) と推奨 (CQ1〜CQ12)
+
+  第 4 章は 1 CQ = 1 ノード (推奨・投票結果・背景・解説・文献検索式まで)。第 3 章の
+  菌状息肉症/セザリー症候群は治療手段ごとの (1)〜(10) が長いので、それぞれ 1 ノードに割った。
+
+  子セクション:
+  - `95_推奨決定資料/CQ01`〜`CQ12` … 学会が「推奨作成関連資料 DL」zip で公開している
+    CQ ごとの推奨決定資料 (RC-3 推奨の強さ決定投票用紙 + RC-7 EtD フレームワーク)。
+    **本体の CQ ノードと title を揃えてある**
+  - `96_スコープ` … 同 zip 同梱のスコープ (SC-1 疾患トピックの基本的特徴 / SC-2 診療アルゴリズム /
+    SC-3 スコープ / SC-4 CQ の設定)
+strip_edge:
+  # 日皮会誌の柱とノンブル。raw モードではページ末尾の 2 行に来る
+  # (`\d{1,3}` を strip に置くと推奨の強さ・合意率・病期の数値行まで消えるので edge 側)
+  lines: 3
+  patterns:
+  - '\d{1,4} ● 日皮会誌：135（6）\s*，1433-1529，2025（令和 7）'
+  - '日皮会誌：135（6）\s*，1433-1529，2025（令和 7）● \d{1,4}'
+  - '皮膚がん診療ガイドライン策定委員会（皮膚リンパ腫診療ガイドライングループ）'
+  - '皮膚がん診療ガイドライン第 4 版 皮膚リンパ腫診療ガイドライン 2025( 日本皮膚科学会ガイドライン)?'
+# 不等号付き等号のグリフ落ち (紙面 ≧ / ≦)
+substitutions:
+  - {find: '＞ ＿', replace: '≧', note: '≧ のグリフがテキスト層で ＞ と ＿ に割れる。紙面は ≧'}
+pdfs:
+  - file: 皮膚リンパ腫診療ガイドライン2025.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/rinpasyu2025.pdf
+    label: 本体 (全 97 ページ)
+    # 学会誌組版の 2 段組。既定モードは左段と右段を 1 行ずつ交互に出すので raw を使う
+    mode: raw
+  # 推奨決定資料・スコープは zip 同梱で単独 URL が無いので url を省略して slug で指定する。
+  # 1 段組だが EtD フレームワーク・検索式・CQ 設定シートが**表主体**なので layout
+  - {file: Lymphoma_CQ1_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq1_rec.pdf,  label: CQ1 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ2_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq2_rec.pdf,  label: CQ2 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ3_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq3_rec.pdf,  label: CQ3 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ4_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq4_rec.pdf,  label: CQ4 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ5_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq5_rec.pdf,  label: CQ5 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ6_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq6_rec.pdf,  label: CQ6 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ7_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq7_rec.pdf,  label: CQ7 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ8_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq8_rec.pdf,  label: CQ8 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ9_推奨決定資料.pdf,  slug: jda_lymphoma_2025_cq9_rec.pdf,  label: CQ9 推奨決定資料,  mode: layout}
+  - {file: Lymphoma_CQ10_推奨決定資料.pdf, slug: jda_lymphoma_2025_cq10_rec.pdf, label: CQ10 推奨決定資料, mode: layout}
+  - {file: Lymphoma_CQ11_推奨決定資料.pdf, slug: jda_lymphoma_2025_cq11_rec.pdf, label: CQ11 推奨決定資料, mode: layout}
+  - {file: Lymphoma_CQ12_推奨決定資料.pdf, slug: jda_lymphoma_2025_cq12_rec.pdf, label: CQ12 推奨決定資料, mode: layout}
+  - {file: Lymphoma_SC_1～4.pdf, slug: jda_lymphoma_2025_sc.pdf, label: スコープ SC-1〜SC-4, mode: layout}
+nodes:
+  - path: 00_表紙・目次・作成委員会
+    title: 表紙・目次・皮膚がん診療ガイドライン策定委員会（皮膚リンパ腫診療ガイドライングループ）
+    body:
+      - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [1, 3], until: '^(#+\s*)?第 1 章'}
+  - path: 01_ガイドラインについて
+    title: 第 1 章 皮膚リンパ腫診療ガイドラインについて
+    children:
+      - path: 01_目的・適応・改訂の特徴
+        title: '[第 1 章 1〜5] 本ガイドラインの目的／改訂の目的／適応が想定される対象者／使用する場合の注意事項／改訂ガイドラインの特徴 (別表 1 委員一覧)'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [3, 6]
+            from: '^(#+\s*)?第 1 章'
+            until: '^(#+\s*)?6．エビデンス収集方法'
+            allow_overlap: true
+      - path: 02_エビデンス収集とシステマティックレビュー
+        title: '[第 1 章 6〜7] エビデンス収集方法（文献検索）／システマティックレビューの方法 (別表 2 CQ 一覧と投票の棄権)'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [6, 7]
+            from: '^(#+\s*)?6．エビデンス収集方法'
+            until: '^(#+\s*)?8．推奨決定の方法'
+            allow_overlap: true
+      - path: 03_推奨決定・改訂作業・外部評価
+        title: '[第 1 章 8〜12] 推奨決定の方法／作成過程における CQ 番号の変更／ガイドライン改訂作業の実際／外部評価およびパブリックコメント／今後の改訂'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [7, 9]
+            from: '^(#+\s*)?8．推奨決定の方法'
+            until: '^(#+\s*)?13．出版後のガイドラインのモニタリング'
+            allow_overlap: true
+      - path: 04_モニタリング・資金・利益相反
+        title: '[第 1 章 13〜15] 出版後のガイドラインのモニタリング／資金／利益相反 (申告と COI への対応)'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [9, 11]
+            from: '^(#+\s*)?13．出版後のガイドラインのモニタリング'
+            until: '^(#+\s*)?第 2 章'
+            allow_overlap: true
+  - path: 02_総論
+    title: 第 2 章 皮膚リンパ腫総論
+    children:
+      - path: 01_病型・疫学
+        title: '[第 2 章 1] 皮膚リンパ腫の病型・疫学'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [11, 12]
+            from: '^(#+\s*)?第 2 章'
+            until: '^(#+\s*)?2．皮膚リンパ腫診断に必要な知識'
+            allow_overlap: true
+      - path: 02_診断に必要な知識
+        title: '[第 2 章 2] 皮膚リンパ腫診断に必要な知識 (リンパ腫の診断・免疫染色・遺伝子解析・症状／所見の定義と解釈)'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [12, 14]
+            from: '^(#+\s*)?2．皮膚リンパ腫診断に必要な知識'
+            until: '^(#+\s*)?3．皮膚リンパ腫の病期分類'
+            allow_overlap: true
+      - path: 03_病期分類
+        title: '[第 2 章 3] 皮膚リンパ腫の病期分類 (菌状息肉症／セザリー症候群の TNMB 分類と病期分類、それ以外の TNM 分類)'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [14, 15]
+            from: '^(#+\s*)?3．皮膚リンパ腫の病期分類'
+            until: '^(#+\s*)?4．皮膚リンパ腫の予後'
+            allow_overlap: true
+      - path: 04_予後
+        title: '[第 2 章 4] 皮膚リンパ腫の予後 (菌状息肉症／セザリー症候群とそれ以外の皮膚リンパ腫)'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [15, 21]
+            from: '^(#+\s*)?4．皮膚リンパ腫の予後'
+            until: '^(#+\s*)?第 3 章'
+            allow_overlap: true
+  - path: 03_各論
+    title: 第 3 章 皮膚リンパ腫各論
+    children:
+      - path: 01_T細胞・NK細胞リンパ腫
+        title: '[第 3 章 1] T 細胞・NK 細胞リンパ腫'
+        children:
+          - path: 01_菌状息肉症・セザリー症候群
+            title: '[第 3 章 1.1] 菌状息肉症／セザリー症候群'
+            children:
+              - path: 00_概説
+                title: '[菌状息肉症／セザリー症候群] 概説 (疾患概念・治療の考え方)'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: [21, 22]
+                    from: '^(#+\s*)?第 3 章'
+                    until: '^(#+\s*)?（1）早期菌状息肉症の治療必要性の是非'
+                    allow_overlap: true
+              - path: 01_早期菌状息肉症の治療必要性の是非
+                title: '[菌状息肉症／セザリー症候群 (1)] 早期菌状息肉症の治療必要性の是非'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: 22
+                    from: '^(#+\s*)?（1）早期菌状息肉症の治療必要性の是非'
+                    until: '^(#+\s*)?（2）外用療法'
+                    allow_overlap: true
+              - path: 02_外用療法
+                title: '[菌状息肉症／セザリー症候群 (2)] 外用療法'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: 22
+                    from: '^(#+\s*)?（2）外用療法'
+                    until: '^(#+\s*)?（3）紫外線療法'
+                    allow_overlap: true
+              - path: 03_紫外線療法
+                title: '[菌状息肉症／セザリー症候群 (3)] 紫外線療法'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: [22, 24]
+                    from: '^(#+\s*)?（3）紫外線療法'
+                    until: '^(#+\s*)?（4）\D{0,6}体外光化学療法'
+                    allow_overlap: true
+              - path: 04_体外光化学療法
+                title: '[菌状息肉症／セザリー症候群 (4)] 体外光化学療法（extracorporeal photochemotherapy）'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: 24
+                    from: '^(#+\s*)?（4）\D{0,6}体外光化学療法'
+                    until: '^(#+\s*)?（5）Interferon'
+                    allow_overlap: true
+              - path: 05_Interferon
+                title: '[菌状息肉症／セザリー症候群 (5)] Interferon（IFN）'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: 24
+                    from: '^(#+\s*)?（5）Interferon'
+                    until: '^(#+\s*)?（6）低分子化合物'
+                    allow_overlap: true
+              - path: 06_低分子化合物
+                title: '[菌状息肉症／セザリー症候群 (6)] 低分子化合物 (retinoid・HDAC 阻害薬ほか)'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: [24, 26]
+                    from: '^(#+\s*)?（6）低分子化合物'
+                    until: '^(#+\s*)?（7）抗体療法薬'
+                    allow_overlap: true
+              - path: 07_抗体療法薬
+                title: '[菌状息肉症／セザリー症候群 (7)] 抗体療法薬 (mogamulizumab・brentuximab vedotin ほか)'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: [26, 28]
+                    from: '^(#+\s*)?（7）抗体療法薬'
+                    until: '^(#+\s*)?（8）化学療法'
+                    allow_overlap: true
+              - path: 08_化学療法
+                title: '[菌状息肉症／セザリー症候群 (8)] 化学療法'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: [28, 31]
+                    from: '^(#+\s*)?（8）化学療法'
+                    until: '^(#+\s*)?（9）放射線療法'
+                    allow_overlap: true
+              - path: 09_放射線療法
+                title: '[菌状息肉症／セザリー症候群 (9)] 放射線療法'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: [31, 32]
+                    from: '^(#+\s*)?（9）放射線療法'
+                    until: '^(#+\s*)?（10）造血幹細胞移植'
+                    allow_overlap: true
+              - path: 10_造血幹細胞移植
+                title: '[菌状息肉症／セザリー症候群 (10)] 造血幹細胞移植'
+                body:
+                  - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                    pages: [32, 34]
+                    from: '^(#+\s*)?（10）造血幹細胞移植'
+                    until: '^(#+\s*)?1\.2\D{0,6}原発性皮膚CD30陽性'
+                    allow_overlap: true
+          - path: 02_原発性皮膚CD30陽性T細胞リンパ増殖異常症
+            title: '[第 3 章 1.2] 原発性皮膚 CD30 陽性 T 細胞リンパ増殖異常症 (原発性皮膚未分化大細胞型リンパ腫・リンパ腫様丘疹症)'
+            body:
+              - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                pages: [34, 36]
+                from: '^(#+\s*)?1\.2\D{0,6}原発性皮膚CD30陽性'
+                until: '^(#+\s*)?1\.3 皮下脂肪織炎様'
+                allow_overlap: true
+          - path: 03_皮下脂肪織炎様T細胞リンパ腫
+            title: '[第 3 章 1.3] 皮下脂肪織炎様 T 細胞リンパ腫 (診断・検査／治療)'
+            body:
+              - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                pages: [36, 38]
+                from: '^(#+\s*)?1\.3 皮下脂肪織炎様'
+                until: '^(#+\s*)?1\.4 成人 T 細胞白血病'
+                allow_overlap: true
+          - path: 04_成人T細胞白血病・リンパ腫
+            title: '[第 3 章 1.4] 成人 T 細胞白血病・リンパ腫（ATL） (概説／治療)'
+            body:
+              - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                pages: [38, 43]
+                from: '^(#+\s*)?1\.4 成人 T 細胞白血病'
+                until: '^(#+\s*)?2．皮膚 B 細胞リンパ腫'
+                allow_overlap: true
+      - path: 02_皮膚B細胞リンパ腫
+        title: '[第 3 章 2] 皮膚 B 細胞リンパ腫'
+        children:
+          - path: 01_概説
+            title: '[皮膚 B 細胞リンパ腫 2.1] 概説 (原発性皮膚辺縁帯リンパ腫・原発性皮膚濾胞中心リンパ腫・原発性皮膚びまん性大細胞型 B 細胞リンパ腫 下肢型)'
+            body:
+              - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                pages: [43, 45]
+                from: '^(#+\s*)?2．皮膚 B 細胞リンパ腫'
+                until: '^(#+\s*)?2\.2 治療'
+                allow_overlap: true
+          - path: 02_治療
+            title: '[皮膚 B 細胞リンパ腫 2.2] 治療 (PCMZL・PCFCL／PCLBCL, LT)'
+            body:
+              - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+                pages: [45, 49]
+                from: '^(#+\s*)?2\.2 治療'
+                until: '^(#+\s*)?3．その他の皮膚リンパ腫・リンパ増殖異常症'
+                allow_overlap: true
+      - path: 03_その他の皮膚リンパ腫・リンパ増殖異常症
+        title: '[第 3 章 3] その他の皮膚リンパ腫・リンパ増殖異常症 (原発性皮膚 CD4 陽性小型／中型 T 細胞リンパ増殖異常症〜節外性 NK／T 細胞リンパ腫の 8 病型)'
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [49, 53]
+            from: '^(#+\s*)?3．その他の皮膚リンパ腫・リンパ増殖異常症'
+            until: '^(#+\s*)?第 4 章'
+            allow_overlap: true
+  - path: 04_クリニカルクエスチョンと推奨
+    title: 第 4 章 クリニカルクエスチョン（CQ）と推奨
+    children:
+      - path: CQ01
+        title: '[CQ1] 菌状息肉症／セザリー症候群に対して，PUVA 療法は narrow-band UVB 療法と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ01`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [53, 56]
+            from: '^(#+\s*)?第 4 章'
+            until: '^(#+\s*)?CQ2\D{0,6}紫外線療法抵抗性'
+            allow_overlap: true
+      - path: CQ02
+        title: '[CQ2] 紫外線療法抵抗性の菌状息肉症に対して，bexarotene と紫外線療法の併用は bexarotene 単剤療法と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ02`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [56, 58]
+            from: '^(#+\s*)?CQ2\D{0,6}紫外線療法抵抗性'
+            until: '^(#+\s*)?CQ3\D{0,6}菌状息肉症'
+            allow_overlap: true
+      - path: CQ03
+        title: '[CQ3] 菌状息肉症／セザリー症候群に対して bexarotene を開始する際，低用量での導入は標準用量での導入に比べて勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ03`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [58, 60]
+            from: '^(#+\s*)?CQ3\D{0,6}菌状息肉症'
+            until: '^(#+\s*)?CQ4\D{0,6}Interferon'
+            allow_overlap: true
+      - path: CQ04
+        title: '[CQ4] Interferon-γ や retinoid 抵抗性の CD30 陰性進行期菌状息肉症に対して，経口 etoposide は mogamulizumab と比べて勧められるか【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ04`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [60, 62]
+            from: '^(#+\s*)?CQ4\D{0,6}Interferon'
+            allow_overlap: true
+      - path: CQ05
+        title: '[CQ5] Interferon-γ や retinoid 抵抗性の CD30 陽性進行期菌状息肉症に対して，brentuximab vedotin は経口 etoposide，mogamulizumab と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ05`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [63, 65]
+            until: '^(#+\s*)?CQ6 セザリー症候群の初期治療として'
+      - path: CQ06
+        title: '[CQ6] セザリー症候群の初期治療として，mogamulizumab は retinoid と比べて勧められるか？【推奨の強さ なし（推奨を決定できなかった）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ06`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [65, 67]
+            from: '^(#+\s*)?CQ6 セザリー症候群の初期治療として'
+            until: '^(#+\s*)?CQ7\D{0,6}菌状息肉症への低線量'
+            allow_overlap: true
+      - path: CQ07
+        title: '[CQ7] 菌状息肉症への低線量（総線量 4〜20 Gy）電子線照射は，従来線量（総線量 20〜40 Gy）電子線照射と比べて勧められるか？【CQ7-1 全身皮膚照射：推奨の強さ 2／エビデンスの強さ D、CQ7-2 病変局所照射：推奨の強さ 2／エビデンスの強さ D】'
+        body_text: |
+          CQ7 は「1．局面性・腫瘤性病変に対して，全身皮膚の低線量照射は従来線量照射と比べて
+          勧められるか？」(CQ7-1) と「2．局面性・腫瘤性病変に対して，病変局所の低線量照射は
+          従来線量照射と比べて勧められるか？」(CQ7-2) の 2 問からなり、推奨・投票結果も
+          2 つに分かれている。原本が 1 つの CQ として掲げているのでここでも 1 ノードにした。
+          推奨決定資料は `95_推奨決定資料/CQ07`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [67, 70]
+            from: '^(#+\s*)?CQ7\D{0,6}菌状息肉症への低線量'
+            until: '^(#+\s*)?CQ8\D{0,6}移植可能な進行期菌状息肉症'
+            allow_overlap: true
+      - path: CQ08
+        title: '[CQ8] 移植可能な進行期菌状息肉症（病期 IIB 以上）の患者に対して，同種造血幹細胞移植は薬物療法と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ08`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [70, 72]
+            from: '^(#+\s*)?CQ8\D{0,6}移植可能な進行期菌状息肉症'
+            allow_overlap: true
+      - path: CQ09
+        title: '[CQ9] Skin-directed therapy による治療が困難な原発性皮膚未分化大細胞型リンパ腫に対して，brentuximab vedotin は retinoid 内服，methotrexate 内服と比べて勧められるか？【推奨の強さ 1（実施することを推奨）／エビデンスの強さ C（弱）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ09`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [73, 75]
+            until: '^(#+\s*)?CQ10\D{0,6}皮膚病変を有する'
+      - path: CQ10
+        title: '[CQ10] 皮膚病変を有する indolent 成人 T 細胞白血病・リンパ腫（ATL）（くすぶり型および予後不良因子のない慢性型）に対して，skin-directed therapy と retinoid の併用は skin-directed therapy 単独と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ10`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [75, 77]
+            from: '^(#+\s*)?CQ10\D{0,6}皮膚病変を有する'
+            until: '^(#+\s*)?CQ11\D{0,6}Skin-directed therapy 抵抗性'
+            allow_overlap: true
+      - path: CQ11
+        title: '[CQ11] Skin-directed therapy 抵抗性，多発性の indolent 群皮膚 B 細胞リンパ腫（原発性皮膚辺縁帯リンパ腫，原発性皮膚濾胞中心リンパ腫）に対して，rituximab 併用多剤化学療法は rituximab 単剤療法に比べて勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ11`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [77, 79]
+            from: '^(#+\s*)?CQ11\D{0,6}Skin-directed therapy 抵抗性'
+            allow_overlap: true
+      - path: CQ12
+        title: '[CQ12] 高齢者の原発性皮膚びまん性大細胞型 B 細胞リンパ腫，下肢型に対して，skin-directed therapy 単独および rituximab 併用での治療は，rituximab 併用多剤化学療法と比べて勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body_text: |
+          推奨決定資料は `95_推奨決定資料/CQ12`。
+        body:
+          - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+            pages: [80, 82]
+            until: '^(#+\s*)?文 献'
+  - path: 05_文献
+    title: 文献
+    body:
+      - pdf: 皮膚リンパ腫診療ガイドライン2025.pdf
+        pages: [82, 97]
+        from: '^(#+\s*)?文 献'
+        allow_overlap: true
+  - path: 95_推奨決定資料
+    title: 推奨決定資料（CQ1〜CQ12）
+    body_text: |
+      学会が「推奨作成関連資料 DL」の zip で公開している、CQ ごとの推奨決定資料。
+      各 CQ について **RC-3 推奨の強さ決定投票用紙** (p.1) と **RC-7 EtD フレームワーク
+      (Clinical recommendation: Individual perspective)** (p.2 以降) からなり、
+      問題の優先度・望ましい効果／望ましくない効果・エビデンスの確実性・価値観・効果のバランス・
+      必要資源量・費用対効果・容認性・実行可能性の各基準について、パネルの判断と
+      リサーチエビデンス・追加的考察が記されている。
+      **本体の CQ ノード (`04_クリニカルクエスチョンと推奨/CQ01`〜) と title を揃えてある。**
+      単独 URL は無く zip 同梱なので、配信名は `jda_lymphoma_2025_cq<n>_rec.pdf` を自分で付けた。
+    children:
+      - path: CQ01
+        title: '[CQ1 推奨決定資料] 菌状息肉症／セザリー症候群に対して，PUVA 療法は narrow-band UVB 療法と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body: [{pdf: Lymphoma_CQ1_推奨決定資料.pdf, pages: [1, 6]}]
+      - path: CQ02
+        title: '[CQ2 推奨決定資料] 紫外線療法抵抗性の菌状息肉症に対して，bexarotene と紫外線療法の併用は bexarotene 単剤療法と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ C（弱）】'
+        body: [{pdf: Lymphoma_CQ2_推奨決定資料.pdf, pages: [1, 6]}]
+      - path: CQ03
+        title: '[CQ3 推奨決定資料] 菌状息肉症／セザリー症候群に対して bexarotene を開始する際，低用量での導入は標準用量での導入に比べて勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body: [{pdf: Lymphoma_CQ3_推奨決定資料.pdf, pages: [1, 6]}]
+      - path: CQ04
+        title: '[CQ4 推奨決定資料] Interferon-γ や retinoid 抵抗性の CD30 陰性進行期菌状息肉症に対して，経口 etoposide は mogamulizumab と比べて勧められるか【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body: [{pdf: Lymphoma_CQ4_推奨決定資料.pdf, pages: [1, 6]}]
+      - path: CQ05
+        title: '[CQ5 推奨決定資料] Interferon-γ や retinoid 抵抗性の CD30 陽性進行期菌状息肉症に対して，brentuximab vedotin は経口 etoposide，mogamulizumab と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body: [{pdf: Lymphoma_CQ5_推奨決定資料.pdf, pages: [1, 6]}]
+      - path: CQ06
+        title: '[CQ6 推奨決定資料] セザリー症候群の初期治療として，mogamulizumab は retinoid と比べて勧められるか？【推奨の強さ なし（推奨を決定できなかった）／エビデンスの強さ D（とても弱い）】'
+        body: [{pdf: Lymphoma_CQ6_推奨決定資料.pdf, pages: [1, 8]}]
+      - path: CQ07
+        title: '[CQ7 推奨決定資料] 菌状息肉症への低線量（総線量 4〜20 Gy）電子線照射は，従来線量（総線量 20〜40 Gy）電子線照射と比べて勧められるか？【CQ7-1 全身皮膚照射：推奨の強さ 2／エビデンスの強さ D、CQ7-2 病変局所照射：推奨の強さ 2／エビデンスの強さ D】'
+        body_text: |
+          CQ7 は 2 問に分かれるので、この資料も RC-3 投票用紙が 2 枚 (p.1 = CQ7-1、p.2 = CQ7-2)、
+          EtD フレームワークが 2 本 (p.3〜 = CQ7-1、p.8〜 = CQ7-2) 入っている。
+        body: [{pdf: Lymphoma_CQ7_推奨決定資料.pdf, pages: [1, 12]}]
+      - path: CQ08
+        title: '[CQ8 推奨決定資料] 移植可能な進行期菌状息肉症（病期 IIB 以上）の患者に対して，同種造血幹細胞移植は薬物療法と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ C（弱）】'
+        body: [{pdf: Lymphoma_CQ8_推奨決定資料.pdf, pages: [1, 6]}]
+      - path: CQ09
+        title: '[CQ9 推奨決定資料] Skin-directed therapy による治療が困難な原発性皮膚未分化大細胞型リンパ腫に対して，brentuximab vedotin は retinoid 内服，methotrexate 内服と比べて勧められるか？【推奨の強さ 1（実施することを推奨）／エビデンスの強さ C（弱）】'
+        body: [{pdf: Lymphoma_CQ9_推奨決定資料.pdf, pages: [1, 6]}]
+      - path: CQ10
+        title: '[CQ10 推奨決定資料] 皮膚病変を有する indolent 成人 T 細胞白血病・リンパ腫（ATL）（くすぶり型および予後不良因子のない慢性型）に対して，skin-directed therapy と retinoid の併用は skin-directed therapy 単独と比べて勧められるか？【推奨の強さ 2（実施することを提案）／エビデンスの強さ D（とても弱い）】'
+        body: [{pdf: Lymphoma_CQ10_推奨決定資料.pdf, pages: [1, 6]}]
+      - path: CQ11
+        title: '[CQ11 推奨決定資料] Skin-directed therapy 抵抗性，多発性の indolent 群皮膚 B 細胞リンパ腫（原発性皮膚辺縁帯リンパ腫，原発性皮膚濾胞中心リンパ腫）に対して，rituximab 併用多剤化学療法は rituximab 単剤療法に比べて勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body: [{pdf: Lymphoma_CQ11_推奨決定資料.pdf, pages: [1, 7]}]
+      - path: CQ12
+        title: '[CQ12 推奨決定資料] 高齢者の原発性皮膚びまん性大細胞型 B 細胞リンパ腫，下肢型に対して，skin-directed therapy 単独および rituximab 併用での治療は，rituximab 併用多剤化学療法と比べて勧められるか？【推奨の強さ 3（実施しないことを提案）／エビデンスの強さ D（とても弱い）】'
+        body: [{pdf: Lymphoma_CQ12_推奨決定資料.pdf, pages: [1, 6]}]
+  - path: 96_スコープ
+    title: スコープ（SC-1 疾患トピックの基本的特徴／SC-2 診療アルゴリズム／SC-3 スコープ／SC-4 CQ の設定）
+    body_text: |
+      学会が「推奨作成関連資料 DL」の zip で公開しているスコープ。Minds のスコープ様式
+      SC-1〜SC-4 に沿って、疾患トピックの基本的特徴 (臨床的特徴・疫学的特徴・診療の全体的な流れ)、
+      診療アルゴリズム、スコープ (ガイドラインがカバーする内容・システマティックレビューに
+      関する事項・推奨作成から公開までの取り決め)、CQ の設定 (重要臨床課題ごとの PICO) を示す。
+    children:
+      - path: 01_疾患トピックの基本的特徴
+        title: '[SC-1] 疾患トピックの基本的特徴 (臨床的特徴・疫学的特徴・診療の全体的な流れ)'
+        body: [{pdf: Lymphoma_SC_1～4.pdf, pages: [1, 2]}]
+      - path: 02_診療アルゴリズム
+        title: '[SC-2] 診療アルゴリズム'
+        body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 3}]
+      - path: 03_スコープ
+        title: '[SC-3] スコープ (タイトル・目的・トピック・想定される利用者と利用施設・既存ガイドラインとの関係・重要臨床課題・CQ リスト・システマティックレビューに関する事項・推奨作成から公開までの取り決め)'
+        body: [{pdf: Lymphoma_SC_1～4.pdf, pages: [4, 13]}]
+      - path: 04_CQの設定
+        title: '[SC-4] CQ の設定 (重要臨床課題ごとの PICO)'
+        children:
+          - {path: CQ01, title: '[SC-4 CQ1] 重要臨床課題 1-1) 菌状息肉症／セザリー症候群の治療：菌状息肉症／セザリー症候群に対する紫外線療法の選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 14}]}
+          - {path: CQ02, title: '[SC-4 CQ2] 重要臨床課題 1-2) 菌状息肉症／セザリー症候群の治療：紫外線療法抵抗性菌状息肉症の治療選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 15}]}
+          - {path: CQ03, title: '[SC-4 CQ3] 重要臨床課題 1-3) 菌状息肉症／セザリー症候群の治療：bexarotene の導入用量', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 16}]}
+          - {path: CQ04, title: '[SC-4 CQ4] 重要臨床課題 1-4) 菌状息肉症／セザリー症候群の治療：CD30 陰性進行期菌状息肉症の治療選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 17}]}
+          - {path: CQ05, title: '[SC-4 CQ5] 重要臨床課題 1-5) 菌状息肉症／セザリー症候群の治療：CD30 陽性進行期菌状息肉症の治療選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 18}]}
+          - {path: CQ06, title: '[SC-4 CQ6] 重要臨床課題 1-6) 菌状息肉症／セザリー症候群の治療：セザリー症候群の初期治療の選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 19}]}
+          - {path: CQ07, title: '[SC-4 CQ7] 重要臨床課題 1-7) 菌状息肉症／セザリー症候群の治療：菌状息肉症への電子線照射の線量', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 20}]}
+          - {path: CQ08, title: '[SC-4 CQ8] 重要臨床課題 1-8) 菌状息肉症／セザリー症候群の治療：進行期菌状息肉症に対する同種造血幹細胞移植', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 21}]}
+          - {path: CQ09, title: '[SC-4 CQ9] 重要臨床課題 2) 原発性皮膚未分化大細胞型リンパ腫の治療選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 22}]}
+          - {path: CQ10, title: '[SC-4 CQ10] 重要臨床課題 3) 皮膚病変を有する indolent 成人 T 細胞白血病・リンパ腫の治療選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 23}]}
+          - {path: CQ11, title: '[SC-4 CQ11] 重要臨床課題 4-1) 皮膚 B 細胞リンパ腫の治療選択：indolent 群皮膚 B 細胞リンパ腫の治療選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 24}]}
+          - {path: CQ12, title: '[SC-4 CQ12] 重要臨床課題 4-2) 皮膚 B 細胞リンパ腫の治療選択：高齢者の原発性皮膚びまん性大細胞型 B 細胞リンパ腫・下肢型の治療選択', body: [{pdf: Lymphoma_SC_1～4.pdf, pages: 25}]}
+vlm_candidates:
+  - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [5, 6], why: 別表 1 委員一覧 + 別表 2 CQ 一覧および推奨決定会議における投票の棄権 (横長の表)}
+  - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [14, 15], why: 菌状息肉症／セザリー症候群の TNMB 分類・病期分類とそれ以外の TNM 分類の表}
+  - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [16, 20], why: 予後因子・生存曲線・病型別予後の図表}
+  - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [23, 33], why: 菌状息肉症／セザリー症候群の治療成績一覧表 (奏効率・PFS・OS の多列表が連続する)}
+  - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [35, 37], why: 図 7 ほか 治療アルゴリズムの図}
+  - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [41, 42], why: ATL の病型分類・治療アルゴリズム}
+  - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [46, 48], why: 皮膚 B 細胞リンパ腫の治療成績一覧表}
+  - {pdf: 皮膚リンパ腫診療ガイドライン2025.pdf, pages: [53, 82], why: 第 4 章 CQ1〜CQ12 の「投票結果」表と「文献検索式と文献選択」表 (検索式と件数が別行に割れる。CQ ごとに 1〜2 ページ)}
+  - {pdf: Lymphoma_SC_1～4.pdf, pages: 3, why: SC-2 診療アルゴリズム (図のみのページ。テキスト層は 30 字しかない)}
+  - {pdf: Lymphoma_CQ1_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワークは「判断／リサーチエビデンス／追加的考察」の 3 列表。以下 CQ2〜CQ12 も同じ}
+  - {pdf: Lymphoma_CQ2_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ3_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ4_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ5_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ6_推奨決定資料.pdf, pages: [1, 8], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ7_推奨決定資料.pdf, pages: [1, 12], why: EtD フレームワーク 2 本 (CQ7-1／CQ7-2)}
+  - {pdf: Lymphoma_CQ8_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ9_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ10_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ11_推奨決定資料.pdf, pages: [1, 7], why: EtD フレームワーク (3 列表)}
+  - {pdf: Lymphoma_CQ12_推奨決定資料.pdf, pages: [1, 6], why: EtD フレームワーク (3 列表)}
+notes: |
+  - **本体は日本皮膚科学会雑誌の 2 段組**。既定モードは左段と右段を 1 行ずつ交互に出して
+    本文が読めなくなるため、本体は `mode: raw` (内容ストリーム順)。`-layout` は 2 段が
+    1 行に並ぶだけで読み順が直らない。
+    **推奨決定資料 13 本は 1 段組だが EtD フレームワーク・検索式・CQ 設定シートが表主体**
+    なので、桁を保つ `mode: layout` に分けた。
+  - 柱とノンブル (`日皮会誌：135（6），1433-1529，2025（令和 7）● 1433` 形式) を
+    `strip_edge` (lines: 3) で落とした。推奨の強さ・エビデンスの強さ・合意率・病期・線量など
+    **裸の数値行が本文に多い**ので、`\d{1,3}` は `strip` に置かず日皮会誌の行ごと edge で落とした。
+  - 原本は折り返した見出しに `‌` (U+200C) と `\x07` を挟む
+    (`CQ7 ‌ <BEL> 菌状息肉症への低線量…`)。U+200C は build が消すが `\x07` は残るので、
+    `from`/`until` は `^CQ7\D{0,6}菌状息肉症への低線量` のように**番号と本文の間を `\D{0,6}` で
+    受ける**形で書いた。同じページに「文献検索式と文献選択」の `CQ7` 単独行や投票結果表の
+    `CQ7` があるので、**必ず CQ 文言まで含めて**アンカーしている。
+  - 推奨決定資料 12 本とスコープは**学会ページの zip 同梱で単独 URL が無い**ので、
+    `url` を省略して `slug:` (カタログの slug) を書いた。ノードの `source` は manifest 直下の
+    `source` (学会の一般公開ガイドラインのページ) に落ちる。
+  - **本体の CQ ノードと `95_推奨決定資料` の CQ ノードは title を揃えてある** (同じ CQ 文言 +
+    同じ推奨の強さ／エビデンスの強さ)。本体 CQ の `body_text` に推奨決定資料の path を 1 行置いた。
+  - 本体 97 ページ・推奨決定資料 12 本 (計 81 ページ)・スコープ 25 ページの**全ページが
+    どれかのノードに載っている**。表紙・目次は `00_表紙・目次・作成委員会` に入れた
+    (作成委員会の構成と書誌がここにしか無いため)。
+  - 皮膚悪性腫瘍診療ガイドライン第 3 版 (2020) の皮膚リンパ腫はカタログに無く、本 PDF が現行版。
+
+  ## 原本の誤記への注記 (2026-10-06)
+  - 原本の誤記・原本内の食い違いのうち臨床的に読み違えを招くものは、本文を原本の印字どおり残したまま、
+    該当箇所の直後 (表は直前) に `（注記：…）` の段落を足した。この段落は収録時に足したもので原本には無い。
+    正しい値は断定せず、根拠 (同じ文書の別ページ・表の構造・原典の分類) を添えて「と思われる」に留めた。
+  - 推奨決定資料 CQ4 / CQ6 の RC-3 推奨文と結論の食い違い、CQ7 の RC-3 p.1 の副問文

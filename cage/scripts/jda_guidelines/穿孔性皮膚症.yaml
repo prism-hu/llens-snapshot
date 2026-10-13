@@ -1,0 +1,180 @@
+id: 穿孔性皮膚症
+title: 穿孔性皮膚症（perforating dermatosis）の診療の手引き
+guideline: 穿孔性皮膚症（perforating dermatosis）の診療の手引き
+publisher: 日本皮膚科学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『穿孔性皮膚症（perforating dermatosis）の診療の手引き』(日本皮膚科学会診療の手引き)。
+  川上民裕・秋山真志・須賀康・中野創・三苫千景・山本明美・米田耕造が作成し、
+  日本皮膚科学会雑誌に掲載された。
+
+  穿孔性皮膚症は真皮成分が表皮を貫いて排出される一群の疾患で、本手引きは
+  **後天性反応性穿孔性膠原線維症・蛇行性穿孔性弾性線維症・キルレ病・穿孔性毛包炎**の
+  4 疾患を扱う。
+
+  構成 (全 3 章):
+  - 第 1 章 診療の手引き作成にあたって (特徴・エビデンスレベルと論文の抽出・同意度の採用・
+    推奨度／推奨文の基準・資金源と利益相反／表1 エビデンスレベルの分類・表2 同意度の基準・
+    表3 推奨文の決定方法)
+  - 第 2 章 穿孔性皮膚症の診断基準と重症度分類 (表4 診断基準・表5 重症度分類)
+  - 第 3 章 穿孔性皮膚症の clinical question (CQ1〜CQ9。疾患ごとに図1〜図4)
+
+  推奨度は A / B / C1 / C2 / D、エビデンスレベルは 1〜6、これに委員の**同意度** (5 点満点) を併記する。
+
+  収録は 1 CQ = 1 ノード (推奨文 + エビデンスレベル／同意度／推奨度 + 解説 + 文献)。
+strip:
+  # 柱 (ノド柱・書名)。日皮会誌の学会誌組版で、raw モードでは**ページ末尾**に出る
+  - '穿孔性皮膚症（perforating dermatosis）の\s*診療の手引き(\s*日本皮膚科学会診療の手引き)?'
+  - '穿孔性皮膚症（perforating dermatosis）の診療の手引き'
+  - '川上民裕 ほか'
+  - '日本皮膚科学会診療の手引き'
+  # ノンブル入りの版面フッタ。`●` を必ず含むので文献中の「日皮会誌，…」とは紛れない
+  - '\d{1,4}\s*●\s*日皮会誌.*'
+  - '日皮会誌.*●\s*\d{1,4}'
+strip_edge:
+  # 裸のノンブル。重症度分類のスコアや同意度の数値を守るため strip ではなく端だけ
+  lines: 3
+  patterns:
+    - '\d{1,3}'
+pdfs:
+  - file: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/perforating_dermatosis.pdf
+    label: 穿孔性皮膚症の診療の手引き
+    mode: raw
+nodes:
+  - path: 01_診療の手引き作成にあたって
+    title: 第1章 診療の手引き作成にあたって（1．診療の手引きの特徴／2．エビデンスレベルと論文の抽出／3．同意度の採用／4．推奨度・推奨文の基準／5．資金源と利益相反／表1 エビデンスレベルの分類・表2 同意度の基準）
+    body:
+      - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+        pages: [1, 2]
+        until: '^(#+\s*)?第\s*2\s*章'
+  - path: 02_診断基準と重症度分類
+    title: 第2章 穿孔性皮膚症の診断基準と重症度分類（1．診断基準〈表4〉／2．重症度分類〈表5〉／表3 推奨文の決定方法）
+    body:
+      - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+        pages: [2, 4]
+        from: '^(#+\s*)?第\s*2\s*章'
+        until: '^(#+\s*)?第\s*3\s*章'
+        allow_overlap: true
+  - path: 03_CQ
+    title: 第3章 穿孔性皮膚症の clinical question（CQ1〜CQ9）
+    body_text: |
+      4 疾患それぞれの合併疾患と治療についての 9 件の clinical question。
+      各ノードは推奨文・エビデンスレベル／同意度／推奨度・解説・文献を持つ。
+    children:
+      - path: 01_後天性反応性穿孔性膠原線維症
+        title: 1．後天性反応性穿孔性膠原線維症（図1）— CQ1〜CQ4
+        children:
+          - path: CQ1
+            title: '[後天性反応性穿孔性膠原線維症 CQ1] 後天性反応性穿孔性膠原線維症に特徴的な合併疾患は何か？【推奨度 B／エビデンスレベル 5／同意度 4.72】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [4, 5]
+                from: '^(#+\s*)?第\s*3\s*章'
+                until: '^(#+\s*)?CQ2[：:]'
+                allow_overlap: true
+          - path: CQ2
+            title: '[後天性反応性穿孔性膠原線維症 CQ2] 後天性反応性穿孔性膠原線維症に，糖尿病や慢性腎疾患の治療は有効か？【推奨度 C1／エビデンスレベル 5／同意度 4.0】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [5, 6]
+                from: '^(#+\s*)?CQ2[：:]'
+                until: '^(#+\s*)?CQ3[：:]'
+                allow_overlap: true
+          - path: CQ3
+            title: '[後天性反応性穿孔性膠原線維症 CQ3] 後天性反応性穿孔性膠原線維症に，ステロイド外用は有効か？【推奨度 C1／エビデンスレベル 5／同意度 4.17】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [6, 6]
+                from: '^(#+\s*)?CQ3[：:]'
+                until: '^(#+\s*)?CQ4[：:]'
+                allow_overlap: true
+          - path: CQ4
+            title: '[後天性反応性穿孔性膠原線維症 CQ4] 後天性反応性穿孔性膠原線維症に，紫外線療法は有効か？【推奨度 C1／エビデンスレベル 5／同意度 4.22】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [6, 6]
+                from: '^(#+\s*)?CQ4[：:]'
+                until: '^(#+\s*)?2．蛇行性穿孔性弾性線維症'
+                allow_overlap: true
+      - path: 02_蛇行性穿孔性弾性線維症
+        title: 2．蛇行性穿孔性弾性線維症（図2）— CQ5・CQ6
+        children:
+          - path: CQ5
+            title: '[蛇行性穿孔性弾性線維症 CQ5] 蛇行性穿孔性弾性線維症に特徴的な合併疾患は何か？【推奨度 C1／エビデンスレベル 5／同意度 4.28】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [6, 7]
+                from: '^(#+\s*)?2．蛇行性穿孔性弾性線維症'
+                until: '^(#+\s*)?CQ6[：:]'
+                allow_overlap: true
+          - path: CQ6
+            title: '[蛇行性穿孔性弾性線維症 CQ6] D-ペニシラミン内服治療中に蛇行性穿孔性弾性線維症が発症した場合，D-ペニシラミン内服を中止すべきか？【推奨度 C1／エビデンスレベル 5／同意度 4.28】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [7, 8]
+                from: '^(#+\s*)?CQ6[：:]'
+                until: '^(#+\s*)?3．キルレ病'
+                allow_overlap: true
+      - path: 03_キルレ病
+        title: 3．キルレ病（図3）— CQ7
+        children:
+          - path: CQ7
+            title: '[キルレ病 CQ7] キルレ病に特徴的な合併疾患は何か？【推奨度 C1／エビデンスレベル 5／同意度 4.22】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [8, 9]
+                from: '^(#+\s*)?3．キルレ病'
+                until: '^(#+\s*)?4．穿孔性毛包炎'
+                allow_overlap: true
+      - path: 04_穿孔性毛包炎
+        title: 4．穿孔性毛包炎（図4）— CQ8・CQ9
+        children:
+          - path: CQ8
+            title: '[穿孔性毛包炎 CQ8] 穿孔性毛包炎に特徴的な合併疾患は何か？【推奨度 C1／エビデンスレベル 5／同意度 4.11】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [9, 9]
+                from: '^(#+\s*)?4．穿孔性毛包炎'
+                until: '^(#+\s*)?CQ9[：:]'
+                allow_overlap: true
+          - path: CQ9
+            title: '[穿孔性毛包炎 CQ9] 分子標的薬（キナーゼ阻害薬）治療中に穿孔性毛包炎が発症した場合，分子標的薬（キナーゼ阻害薬）を中止すべきか？【推奨度 C1／エビデンスレベル 5／同意度 4.17】'
+            body:
+              - pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf
+                pages: [9, 10]
+                from: '^(#+\s*)?CQ9[：:]'
+                allow_overlap: true
+vlm_candidates:
+  - {pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf, pages: [2, 3], why: 表1 エビデンスレベルの分類・表2 同意度の基準・表3 推奨文の決定方法・表4 穿孔性皮膚症の診断基準（いずれも多列表）}
+  - {pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf, pages: [4, 4], why: 表5 穿孔性皮膚症の重症度分類（スコア範囲の表。裸の数値が多い）}
+  - {pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf, pages: [5, 5], why: 図1 後天性反応性穿孔性膠原線維症（臨床写真）}
+  - {pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf, pages: [7, 7], why: 図2 蛇行性穿孔性弾性線維症（臨床写真）}
+  - {pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf, pages: [8, 8], why: 図3 キルレ病（臨床写真）}
+  - {pdf: 穿孔性皮膚症（perforating dermatosis）の 診療の手引き.pdf, pages: [9, 9], why: 図4 穿孔性毛包炎（臨床写真）}
+notes: |
+  ## 版の扱い
+  - 年の付かない「診療の手引き」で、旧版・改訂版は公開されていない。id も年を付けていない。
+
+  ## 抽出モード
+  - 日皮会誌の 2 段組。既定モードは左右段の行が交互に出て文がつながらず、`-layout` は
+    1 行に左段 + 右段が並ぶ。`-raw` だけが段ごとに上から下へ出るので `mode: raw` にした。
+  - 康熙部首の混入は 0 件なので `normalize_radicals` は付けていない。
+
+  ## strip / strip_edge
+  - 柱 (書名・「川上民裕 ほか」) と版面フッタを `strip` に置いた。
+  - 裸のノンブルは `strip_edge` (lines: 3)。重症度分類のスコア (0〜18 等) と同意度 (4.72 等) を
+    守るため `strip` には置いていない。
+
+  ## 落としたページ
+  - 落としたページは無い。全 10 ページがいずれかのノードに載る。
+
+  ## ページ内分割
+  - 章境界 (第2章／第3章)、疾患の節境界 (2．蛇行性穿孔性弾性線維症／3．キルレ病／4．穿孔性毛包炎)、
+    CQ 境界をすべて `from` / `until` で割った。各疾患の節見出しは、その疾患の最初の CQ の
+    ノードの冒頭に入る。
+  - 学会誌組版のため表・図は本文の途中に組まれ、raw では節見出しより後ろに流れる
+    (表5 重症度分類は第2章のページだが CQ1 の側に出る)。どのノードにどの図表が載るかは
+    vlm_candidates に列挙してある。
+  - overlay (VLM) が見出しを `## ` 付きで起こしても当たるように、境界は `^(#+\s*)?…` の形で書いてある。

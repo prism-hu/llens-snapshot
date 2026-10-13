@@ -1,0 +1,553 @@
+id: 類天疱瘡
+title: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン
+guideline: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン
+publisher: 日本皮膚科学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン』(日本皮膚科学会ガイドライン)。
+  類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン作成委員会 (氏家英之ほか 16 名) が作成し、
+  日本皮膚科学会雑誌 127 巻 7 号 1483-1521 頁 (2017 年／平成 29 年) に掲載された。
+  厚生労働省難治性疾患等克服研究事業「稀少難治性皮膚疾患に関する調査研究」の支援を受けている。
+
+  対象は**水疱性類天疱瘡（BP）・粘膜類天疱瘡（MMP）・後天性表皮水疱症（EBA）**の 3 疾患。
+  構成:
+  - I 概要 (3 疾患それぞれの定義・特徴／疫学／病態生理／臨床症状・病理所見・検査所見／治療／予後)
+  - II 類天疱瘡（後天性表皮水疱症を含む）の診断基準と重症度判定基準 (表1 診断基準・表2 BPDAI に基づく重症度判定基準)
+  - III 治療指針 (3 疾患それぞれの「治療における心構え」「治療方針」「病勢評価」「再燃時」。
+    図1〜図3 治療アルゴリズム・表3〜表7)
+  - CQ 一覧と CQ 本体 (BP-CQ1〜14／MMP-CQ1〜13／EBA-CQ1〜12 の計 39 件)
+  - エビデンスレベルと推奨度の決定基準 (皮膚悪性腫瘍診療ガイドラインの分類を採用。推奨度 A/B/C1/C2/D)
+
+  収録は 1 CQ = 1 ノード (推奨度 + 解説 + 文献)。CQ を持たない章は原本の節で 1 ノードにしてある。
+
+  これに学会が後から公開した従属文書 1 本を子セクションとして収める:
+  - `90_補遺版` … 『類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン 補遺版』
+    (日本皮膚科学会類天疱瘡診療ガイドライン策定委員会、5 ページ)。DPP-4 阻害薬関連水疱性類天疱瘡の
+    CQ1〜CQ5
+strip:
+  # 柱 (ノド柱・書名)。日皮会誌の学会誌組版で、raw モードでは**ページ末尾**に出る
+  - '類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン(\s*補遺版)?(\s*日本皮膚科学会ガイドライン)?'
+  - '類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン作成委員会'
+  - '日本皮膚科学会類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン策定委員会'
+  - '日本皮膚科学会ガイドライン'
+  # ノンブル入りの版面フッタ。`●` を必ず含むので文献中の「日皮会誌，…」とは紛れない
+  - '\d{1,4}\s*●\s*日皮会誌.*'
+  - '日皮会誌.*●\s*\d{1,4}'
+strip_edge:
+  # 裸のノンブル。BPDAI／MMPDAI の点数・表の数値を守るため strip ではなく端だけに効かせる
+  lines: 3
+  patterns:
+    - '\d{1,3}'
+# 長音符が U+2015 (―) で抽出される (紙面はー)。grep で当たらなくなるので戻す
+substitutions:
+  - {find: 'アミロイド―シス', replace: 'アミロイドーシス', note: '長音符のグリフ違い'}
+pdfs:
+  - file: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/bullous%20pemphigoid.pdf
+    # カタログの url は `.../bullous%20pemphigoid.pdf`。basename が percent-encode を含み
+    # ASCII の配信名として採れないので配信名はカタログの slug（url は provenance として併記）
+    slug: bullous_pemphigoid.pdf
+    label: '本体 (日皮会誌 127(7): 1483-1521, 2017)'
+    mode: raw
+  - file: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン‌補遺版.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/bullous%20pemphigoid_ADD2023.pdf
+    # 同上 (`.../bullous%20pemphigoid_ADD2023.pdf`)
+    slug: bullous_pemphigoid_ADD2023.pdf
+    label: 補遺版
+    mode: raw
+nodes:
+  - path: 01_概要
+    title: I 概要
+    body_text: |
+      水疱性類天疱瘡・粘膜類天疱瘡・後天性表皮水疱症の 3 疾患について、定義と特徴・疫学・
+      病態生理・臨床症状と検査所見・治療・予後を疾患ごとにまとめた総論。各疾患の末尾に文献が付く。
+    children:
+      - path: 01_水疱性類天疱瘡の概要
+        title: '[概要] 水疱性類天疱瘡の概要（1．定義・特徴／2．疫学／3．神経疾患との関連／4．薬剤との関連／5．悪性腫瘍との関連／6．病態生理／7．臨床症状，病理所見および検査所見／8．治療／9．予後・文献）'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [1, 5]
+            until: '^(#+\s*)?粘膜類天疱瘡の概要'
+      - path: 02_粘膜類天疱瘡の概要
+        title: '[概要] 粘膜類天疱瘡の概要（1．定義・特徴／2．疫学／3．悪性腫瘍との関連／4．病態生理／5．臨床症状，病理所見および検査所見／6．治療／7．予後・文献）'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [5, 6]
+            from: '^(#+\s*)?粘膜類天疱瘡の概要'
+            until: '^(#+\s*)?後天性表皮水疱症の概要'
+            allow_overlap: true
+      - path: 03_後天性表皮水疱症の概要
+        title: '[概要] 後天性表皮水疱症の概要（1．定義／2．疫学／3．病態生理／4．臨床症状，病理所見および検査所見／5．治療／6．予後・文献）'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [6, 8]
+            from: '^(#+\s*)?後天性表皮水疱症の概要'
+            until: '^(#+\s*)?II\s.*類天疱瘡（後天性表皮水疱症を含む）の診'
+            allow_overlap: true
+  - path: 02_診断基準と重症度判定基準
+    title: II 類天疱瘡（後天性表皮水疱症を含む）の診断基準と重症度判定基準（1．診断基準／2．重症度判定基準／表1 診断基準・表2 BPDAI に基づく重症度判定基準）
+    body:
+      - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+        pages: [8, 8]
+        from: '^(#+\s*)?II\s.*類天疱瘡（後天性表皮水疱症を含む）の診'
+        until: '^(#+\s*)?III\s*治療指針'
+        allow_overlap: true
+  - path: 03_治療指針
+    title: III 治療指針
+    body_text: |
+      3 疾患それぞれについて「1．治療における心構え」「2．治療方針（軽症例／中等症，重症および難治例）」
+      「3．病勢評価」「4．再燃時」を示す。治療アルゴリズム（図1〜図3）と治療一覧（表4・表5・表7）、
+      検査・治療チェック項目一覧（表3）、MMPDAI（表6）を含む。
+    children:
+      - path: 01_水疱性類天疱瘡
+        title: '[治療指針] 水疱性類天疱瘡（1．治療における心構え／2．治療方針／3．病勢評価／4．再燃時／表3 検査・治療チェック項目一覧・図1 治療アルゴリズム・表4 水疱性類天疱瘡治療一覧・文献）'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [8, 14]
+            from: '^(#+\s*)?III\s*治療指針'
+            until: '^(#+\s*)?粘膜類天疱瘡$'
+            allow_overlap: true
+      - path: 02_粘膜類天疱瘡
+        title: '[治療指針] 粘膜類天疱瘡（1．治療における心構え／2．治療方針／3．病勢評価／4．再燃時／図2 治療アルゴリズム・表5 粘膜類天疱瘡治療一覧・表6 MMPDAI・文献）'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [14, 18]
+            from: '^(#+\s*)?粘膜類天疱瘡$'
+            until: '^(#+\s*)?後天性表皮水疱症$'
+            allow_overlap: true
+      - path: 03_後天性表皮水疱症
+        title: '[治療指針] 後天性表皮水疱症（1．治療における心構え／2．治療方針／3．病勢評価／4．再燃時／図3 治療アルゴリズム・表7 後天性表皮水疱症治療一覧・文献）'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [18, 21]
+            from: '^(#+\s*)?後天性表皮水疱症$'
+            until: '^(#+\s*)?CQ\s*一覧'
+            allow_overlap: true
+  - path: 04_CQ
+    title: クリニカルクエスチョン（BP-CQ1〜14／MMP-CQ1〜13／EBA-CQ1〜12）
+    body_text: |
+      3 疾患それぞれの治療についての 39 件のクリニカルクエスチョン。各ノードは推奨度・解説・文献を持つ。
+      推奨度の `＊` は、国際的にエビデンスが不十分な状況を踏まえ、委員会のコンセンサスで
+      エビデンスレベルどおりでないグレードを付けたことを示す（原本の注 2）。
+    children:
+      - path: 00_CQ一覧
+        title: CQ 一覧（3 疾患 39 件の一覧）
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [21, 22]
+            from: '^(#+\s*)?CQ\s*一覧'
+            until: '^(#+\s*)?BP-CQ1[：:]'
+            allow_overlap: true
+      - path: BP-CQ01
+        title: '[水疱性類天疱瘡 BP-CQ1] ステロイド全身投与は有用か？【推奨度：A】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [22, 22]
+            from: '^(#+\s*)?BP-CQ1[：:]'
+            until: '^(#+\s*)?BP-CQ2[：:]'
+            allow_overlap: true
+      - path: BP-CQ02
+        title: '[水疱性類天疱瘡 BP-CQ2] テトラサイクリンあるいはミノサイクリンとニコチン酸アミドの併用療法は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [22, 23]
+            from: '^(#+\s*)?BP-CQ2[：:]'
+            until: '^(#+\s*)?BP-CQ3[：:]'
+            allow_overlap: true
+      - path: BP-CQ03
+        title: '[水疱性類天疱瘡 BP-CQ3] ステロイド内服と DDS（ダプソン）内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [23, 23]
+            from: '^(#+\s*)?BP-CQ3[：:]'
+            until: '^(#+\s*)?BP-CQ4[：:]'
+            allow_overlap: true
+      - path: BP-CQ04
+        title: '[水疱性類天疱瘡 BP-CQ4] ステロイドパルス療法は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [23, 24]
+            from: '^(#+\s*)?BP-CQ4[：:]'
+            until: '^(#+\s*)?BP-CQ5[：:]'
+            allow_overlap: true
+      - path: BP-CQ05
+        title: '[水疱性類天疱瘡 BP-CQ5] 大量ガンマグロブリン静注（IVIG）療法は有用か？【推奨度：B】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [24, 24]
+            from: '^(#+\s*)?BP-CQ5[：:]'
+            until: '^(#+\s*)?BP-CQ6[：:]'
+            allow_overlap: true
+      - path: BP-CQ06
+        title: '[水疱性類天疱瘡 BP-CQ6] ステロイド内服と血漿交換療法の併用は有用か？【推奨度：B＊】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [24, 24]
+            from: '^(#+\s*)?BP-CQ6[：:]'
+            until: '^(#+\s*)?BP-CQ7[：:]'
+            allow_overlap: true
+      - path: BP-CQ07
+        title: '[水疱性類天疱瘡 BP-CQ7] ステロイド内服とアザチオプリン内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [24, 25]
+            from: '^(#+\s*)?BP-CQ7[：:]'
+            until: '^(#+\s*)?BP-CQ8[：:]'
+            allow_overlap: true
+      - path: BP-CQ08
+        title: '[水疱性類天疱瘡 BP-CQ8] ステロイド内服とミゾリビン内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [25, 25]
+            from: '^(#+\s*)?BP-CQ8[：:]'
+            until: '^(#+\s*)?BP-CQ9[：:]'
+            allow_overlap: true
+      - path: BP-CQ09
+        title: '[水疱性類天疱瘡 BP-CQ9] ステロイド内服とシクロフォスファミド内服・パルス療法の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [25, 26]
+            from: '^(#+\s*)?BP-CQ9[：:]'
+            until: '^(#+\s*)?BP-CQ10[：:]'
+            allow_overlap: true
+      - path: BP-CQ10
+        title: '[水疱性類天疱瘡 BP-CQ10] ステロイド内服とシクロスポリン内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [26, 26]
+            from: '^(#+\s*)?BP-CQ10[：:]'
+            until: '^(#+\s*)?BP-CQ11[：:]'
+            allow_overlap: true
+      - path: BP-CQ11
+        title: '[水疱性類天疱瘡 BP-CQ11] ステロイド内服とミコフェノール酸モフェチル内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [26, 27]
+            from: '^(#+\s*)?BP-CQ11[：:]'
+            until: '^(#+\s*)?BP-CQ12[：:]'
+            allow_overlap: true
+      - path: BP-CQ12
+        title: '[水疱性類天疱瘡 BP-CQ12] メトトレキサートは有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [27, 27]
+            from: '^(#+\s*)?BP-CQ12[：:]'
+            until: '^(#+\s*)?BP-CQ13[：:]'
+            allow_overlap: true
+      - path: BP-CQ13
+        title: '[水疱性類天疱瘡 BP-CQ13] ステロイド内服とリツキシマブ（抗 CD20 抗体）の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [27, 27]
+            from: '^(#+\s*)?BP-CQ13[：:]'
+            until: '^(#+\s*)?BP-CQ14[：:]'
+            allow_overlap: true
+      - path: BP-CQ14
+        title: '[水疱性類天疱瘡 BP-CQ14] 強力ステロイド（clobetasol propionate）全身外用は有用か？【推奨度：C1＊】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [27, 28]
+            from: '^(#+\s*)?BP-CQ14[：:]'
+            until: '^(#+\s*)?MMP-CQ1[：:]'
+            allow_overlap: true
+      - path: MMP-CQ01
+        title: '[粘膜類天疱瘡 MMP-CQ1] ステロイド全身投与は有用か？【推奨度：A】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [28, 28]
+            from: '^(#+\s*)?MMP-CQ1[：:]'
+            until: '^(#+\s*)?MMP-CQ2[：:]'
+            allow_overlap: true
+      - path: MMP-CQ02
+        title: '[粘膜類天疱瘡 MMP-CQ2] テトラサイクリンあるいはミノサイクリンとニコチン酸アミドの併用療法は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [28, 28]
+            from: '^(#+\s*)?MMP-CQ2[：:]'
+            until: '^(#+\s*)?MMP-CQ3[：:]'
+            allow_overlap: true
+      - path: MMP-CQ03
+        title: '[粘膜類天疱瘡 MMP-CQ3] ステロイド内服と DDS（ダプソン）内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [28, 29]
+            from: '^(#+\s*)?MMP-CQ3[：:]'
+            until: '^(#+\s*)?MMP-CQ4[：:]'
+            allow_overlap: true
+      - path: MMP-CQ04
+        title: '[粘膜類天疱瘡 MMP-CQ4] ステロイドパルス療法は有用か？【推奨度：C1＊】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [29, 29]
+            from: '^(#+\s*)?MMP-CQ4[：:]'
+            until: '^(#+\s*)?MMP-CQ5[：:]'
+            allow_overlap: true
+      - path: MMP-CQ05
+        title: '[粘膜類天疱瘡 MMP-CQ5] ステロイド内服と血漿交換療法の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [29, 29]
+            from: '^(#+\s*)?MMP-CQ5[：:]'
+            until: '^(#+\s*)?MMP-CQ6[：:]'
+            allow_overlap: true
+      - path: MMP-CQ06
+        title: '[粘膜類天疱瘡 MMP-CQ6] ステロイド内服とアザチオプリン内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [29, 30]
+            from: '^(#+\s*)?MMP-CQ6[：:]'
+            until: '^(#+\s*)?MMP-CQ7[：:]'
+            allow_overlap: true
+      - path: MMP-CQ07
+        title: '[粘膜類天疱瘡 MMP-CQ7] シクロフォスファミド内服は有用か？【推奨度：B】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [30, 31]
+            from: '^(#+\s*)?MMP-CQ7[：:]'
+            until: '^(#+\s*)?MMP-CQ8[：:]'
+            allow_overlap: true
+      - path: MMP-CQ08
+        title: '[粘膜類天疱瘡 MMP-CQ8] ステロイド内服とシクロフォスファミドパルス療法の併用は有用か？【推奨度：B＊】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [31, 31]
+            from: '^(#+\s*)?MMP-CQ8[：:]'
+            until: '^(#+\s*)?MMP-CQ9[：:]'
+            allow_overlap: true
+      - path: MMP-CQ09
+        title: '[粘膜類天疱瘡 MMP-CQ9] ステロイド内服とミコフェノール酸モフェチル内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [31, 31]
+            from: '^(#+\s*)?MMP-CQ9[：:]'
+            allow_overlap: true
+      - path: MMP-CQ10
+        title: '[粘膜類天疱瘡 MMP-CQ10] メトトレキサートは有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [32, 32]
+            from: '^(#+\s*)?MMP-CQ10[：:]'
+            until: '^(#+\s*)?MMP-CQ11[：:]'
+            allow_overlap: true
+      - path: MMP-CQ11
+        title: '[粘膜類天疱瘡 MMP-CQ11] 大量ガンマグロブリン静注（IVIG）療法は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [32, 33]
+            from: '^(#+\s*)?MMP-CQ11[：:]'
+            until: '^(#+\s*)?MMP-CQ12[：:]'
+            allow_overlap: true
+      - path: MMP-CQ12
+        title: '[粘膜類天疱瘡 MMP-CQ12] ステロイド内服とリツキシマブ（抗 CD20 抗体）の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [33, 33]
+            from: '^(#+\s*)?MMP-CQ12[：:]'
+            until: '^(#+\s*)?MMP-CQ13[：:]'
+            allow_overlap: true
+      - path: MMP-CQ13
+        title: '[粘膜類天疱瘡 MMP-CQ13] ステロイド外用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [33, 34]
+            from: '^(#+\s*)?MMP-CQ13[：:]'
+            until: '^(#+\s*)?EBA-CQ1[：:]'
+            allow_overlap: true
+      - path: EBA-CQ01
+        title: '[後天性表皮水疱症 EBA-CQ1] ステロイド全身投与は有用か？【推奨度：B＊】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [34, 34]
+            from: '^(#+\s*)?EBA-CQ1[：:]'
+            until: '^(#+\s*)?EBA-CQ2[：:]'
+            allow_overlap: true
+      - path: EBA-CQ02
+        title: '[後天性表皮水疱症 EBA-CQ2] コルヒチンは有効か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [34, 34]
+            from: '^(#+\s*)?EBA-CQ2[：:]'
+            until: '^(#+\s*)?EBA-CQ3[：:]'
+            allow_overlap: true
+      - path: EBA-CQ03
+        title: '[後天性表皮水疱症 EBA-CQ3] ステロイド内服と DDS（ダプソン）内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [34, 35]
+            from: '^(#+\s*)?EBA-CQ3[：:]'
+            until: '^(#+\s*)?EBA-CQ4[：:]'
+            allow_overlap: true
+      - path: EBA-CQ04
+        title: '[後天性表皮水疱症 EBA-CQ4] ステロイドパルス療法は有用か？【推奨度：C1＊】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [35, 35]
+            from: '^(#+\s*)?EBA-CQ4[：:]'
+            until: '^(#+\s*)?EBA-CQ5[：:]'
+            allow_overlap: true
+      - path: EBA-CQ05
+        title: '[後天性表皮水疱症 EBA-CQ5] ステロイド内服と血漿交換療法の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [35, 35]
+            from: '^(#+\s*)?EBA-CQ5[：:]'
+            until: '^(#+\s*)?EBA-CQ6[：:]'
+            allow_overlap: true
+      - path: EBA-CQ06
+        title: '[後天性表皮水疱症 EBA-CQ6] ステロイド内服とアザチオプリン内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [35, 35]
+            from: '^(#+\s*)?EBA-CQ6[：:]'
+            allow_overlap: true
+      - path: EBA-CQ07
+        title: '[後天性表皮水疱症 EBA-CQ7] ステロイド内服とシクロスポリン内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [36, 36]
+            from: '^(#+\s*)?EBA-CQ7[：:]'
+            until: '^(#+\s*)?EBA-CQ8[：:]'
+            allow_overlap: true
+      - path: EBA-CQ08
+        title: '[後天性表皮水疱症 EBA-CQ8] ステロイド内服とシクロフォスファミド内服・パルス療法の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [36, 36]
+            from: '^(#+\s*)?EBA-CQ8[：:]'
+            until: '^(#+\s*)?EBA-CQ9[：:]'
+            allow_overlap: true
+      - path: EBA-CQ09
+        title: '[後天性表皮水疱症 EBA-CQ9] ステロイド内服とミコフェノール酸モフェチル内服の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [36, 37]
+            from: '^(#+\s*)?EBA-CQ9[：:]'
+            until: '^(#+\s*)?EBA-CQ10[：:]'
+            allow_overlap: true
+      - path: EBA-CQ10
+        title: '[後天性表皮水疱症 EBA-CQ10] メトトレキサートは有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [37, 37]
+            from: '^(#+\s*)?EBA-CQ10[：:]'
+            until: '^(#+\s*)?EBA-CQ11[：:]'
+            allow_overlap: true
+      - path: EBA-CQ11
+        title: '[後天性表皮水疱症 EBA-CQ11] 大量ガンマグロブリン静注（IVIG）療法は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [37, 38]
+            from: '^(#+\s*)?EBA-CQ11[：:]'
+            until: '^(#+\s*)?EBA-CQ12[：:]'
+            allow_overlap: true
+      - path: EBA-CQ12
+        title: '[後天性表皮水疱症 EBA-CQ12] ステロイド内服とリツキシマブ（抗 CD20 抗体）の併用は有用か？【推奨度：C1】'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+            pages: [38, 38]
+            from: '^(#+\s*)?EBA-CQ12[：:]'
+            until: '^(#+\s*)?エビデンスレベルと推奨度の決定基準'
+            allow_overlap: true
+
+  - path: 05_エビデンスレベルと推奨度の決定基準
+    title: エビデンスレベルと推奨度の決定基準（A：エビデンスのレベル分類 I〜VI／B：推奨度の分類 A・B・C1・C2・D／謝辞）
+    body:
+      - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf
+        pages: [38, 39]
+        from: '^(#+\s*)?エビデンスレベルと推奨度の決定基準'
+        allow_overlap: true
+  - path: 90_補遺版
+    title: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン 補遺版（DPP-4 阻害薬関連水疱性類天疱瘡）
+    body_text: |
+      2017 年版の公開後、DPP-4 阻害薬（2 型糖尿病治療薬）内服中に発症する水疱性類天疱瘡の
+      知見が蓄積したことを受けて策定委員会が出した補遺版（5 ページ）。CQ1〜CQ5 は本体の
+      BP-CQ とは番号体系が独立しているので、子セクションとして分けてある。
+    children:
+      - path: 00_補遺版の位置づけ
+        title: 補遺版の位置づけ（策定委員会・作成の経緯）
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン‌補遺版.pdf
+            pages: [1, 1]
+            until: '^(#+\s*)?CQ1[．.]'
+      - path: CQ1
+        title: '[補遺版 CQ1] DPP（dipeptidyl peptidase）-4 阻害薬関連水疱性類天疱瘡の臨床像は通常の類天疱瘡と異なるか？'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン‌補遺版.pdf
+            pages: [1, 2]
+            from: '^(#+\s*)?CQ1[．.]'
+            until: '^(#+\s*)?CQ2[．.]'
+            allow_overlap: true
+      - path: CQ2
+        title: '[補遺版 CQ2] 抗 BP180NC16a 抗体が陰性の場合，診断はどうすればよいか？'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン‌補遺版.pdf
+            pages: [2, 3]
+            from: '^(#+\s*)?CQ2[．.]'
+            until: '^(#+\s*)?CQ3[．.]'
+            allow_overlap: true
+      - path: CQ3
+        title: '[補遺版 CQ3] DPP-4 阻害薬の種類によって類天疱瘡の発症頻度は異なるか？'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン‌補遺版.pdf
+            pages: [3, 3]
+            from: '^(#+\s*)?CQ3[．.]'
+            until: '^(#+\s*)?CQ4[．.]'
+            allow_overlap: true
+      - path: CQ4
+        title: '[補遺版 CQ4] DPP-4 阻害薬関連水疱性類天疱瘡を疑ったら，薬剤を中止すべきか？'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン‌補遺版.pdf
+            pages: [3, 4]
+            from: '^(#+\s*)?CQ4[．.]'
+            until: '^(#+\s*)?CQ5[．.]'
+            allow_overlap: true
+      - path: CQ5
+        title: '[補遺版 CQ5] DPP-4 阻害薬関連類天疱瘡は，ステロイド内服が必要か？（付図 非炎症型皮疹）'
+        body:
+          - pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン‌補遺版.pdf
+            pages: [4, 5]
+            from: '^(#+\s*)?CQ5[．.]'
+            allow_overlap: true
+vlm_candidates:
+  - {pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf, pages: [8, 9], why: 表1 診断基準・表2 BPDAI に基づく重症度判定基準（点数区分の表。raw では素点セルが縦に潰れる）}
+  - {pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf, pages: [10, 12], why: 表3 検査・治療チェック項目一覧・図1 水疱性類天疱瘡治療アルゴリズム・表4 水疱性類天疱瘡治療一覧}
+  - {pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf, pages: [15, 16], why: 図2 粘膜類天疱瘡治療アルゴリズム・表5 粘膜類天疱瘡治療一覧}
+  - {pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン.pdf, pages: [18, 20], why: 表6 MMPDAI・図3 後天性表皮水疱症治療アルゴリズム・表7 後天性表皮水疱症治療一覧}
+  - {pdf: 類天疱瘡（後天性表皮水疱症を含む）診療ガイドライン‌補遺版.pdf, pages: [4, 4], why: 付図 DPP-4 阻害薬関連水疱性類天疱瘡の非炎症型皮疹（臨床写真）}
+notes: |
+  ## 版と従属文書の扱い
+  - 本体は 2017 年版 (日皮会誌 127(7): 1483-1521)。全面改訂版は公開されていないので、
+    学会が後から出した「補遺版」(5p、DPP-4 阻害薬関連水疱性類天疱瘡) を同じ manifest の
+    子セクション `90_補遺版` に収めた。CQ の番号体系が独立しているので統合していない。
+
+  ## 配信名 (slug)
+  - 2 本とも URL の basename が `bullous%20pemphigoid.pdf` のように percent-encode を含み
+    ASCII の配信名にならないので `url:` を書かず、カタログの slug
+    (`bullous_pemphigoid.pdf` / `bullous_pemphigoid_ADD2023.pdf`) を使った。
+  - 補遺版の cache 上のファイル名には**ゼロ幅接合子 (U+200C)** が入っている。
+    `pdfs[].file` は cache の実ファイル名をそのまま写してある。
+
+  ## 抽出モード
+  - 2 本とも日皮会誌の 2 段組。既定モードは左右段の行が交互に出て文がつながらず、`-layout` は
+    1 行に左段 + 右段が並ぶ。`-raw` だけが段ごとに上から下へ出るので `mode: raw` にした。
+  - 康熙部首の混入は 2 本とも 0 件なので `normalize_radicals` は付けていない。
+
+  ## strip / strip_edge
+  - 柱 (書名・作成委員会名) と版面フッタ (「1520 ● 日皮会誌：127（7）1483-1521，2017（平成 29）」)
+    を `strip` に置いた。フッタは `●` を必ず含むので文献中の「日皮会誌」引用とは紛れない。
+  - 裸のノンブルは `strip_edge` (lines: 3)。BPDAI／MMPDAI の点数区分 (≦14 点・15〜34 点 等) や
+    治療一覧の投与量を守るため `strip` には置いていない。
+
+  ## 落としたページ
+  - 落としたページは無い。本体 39 ページ・補遺版 5 ページのすべてがいずれかのノードに載る。
+
+  ## ページ内分割
+  - 章境界 (概要の 3 疾患／II 診断基準／III 治療指針／治療指針の 3 疾患／CQ 一覧／
+    エビデンスレベルと推奨度の決定基準) と 39 件の CQ 境界をすべて `from` / `until` で割った。
+  - 治療指針の疾患境界は原本で「粘膜類天疱瘡」「後天性表皮水疱症」の 1 行見出しなので、
+    `^(#+\s*)?粘膜類天疱瘡$` のように行全体で受けている。全 39 ページを走査して、
+    この 3 語だけの行は当該見出し以外に無いことを確認した。
+  - **p.21〜22 には「CQ 一覧」があり、CQ 本体と同じ文言の行が並ぶ**。BP-CQ1 の一覧行は p.21、
+    本体は p.22 にあり、各 CQ の `from` は本体側のページだけを見るので取り違えは起きない。
+  - overlay (VLM) が見出しを `## ` 付きで起こしても当たるように、境界は `^(#+\s*)?…` の形で書いてある。

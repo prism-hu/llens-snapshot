@@ -1,0 +1,537 @@
+id: 皮膚真菌症2025
+title: 皮膚真菌症診療ガイドライン2025
+guideline: 皮膚真菌症診療ガイドライン2025
+publisher: 日本皮膚科学会・日本医真菌学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『皮膚真菌症診療ガイドライン 2025』(日本皮膚科学会・日本医真菌学会合同皮膚真菌症診療
+  ガイドライン策定委員会、委員長 福田知雄。日皮会誌 135(13)：2511-2566，2025(令和 7))。
+  2009 年『皮膚真菌症診断・治療ガイドライン』(初版)、2019 年『日本皮膚科学会皮膚真菌症
+  診療ガイドライン 2019』に続く**第 3 版**で、2019 年版をたたき台に改訂したもの。
+  作成費用は日本皮膚科学会が負担。エビデンスレベル (I〜VI) と推奨度 (A / B / C1 / C2 / D)
+  の分類は『皮膚悪性腫瘍診療ガイドライン第 2 版』に準拠する。
+
+  構成:
+  - 概要 (背景と目的・作成手順・資金提供者と利益相反・表 1 CQ 一覧と推奨度・
+    エビデンスレベルと推奨度の分類・公開方法・改訂・免責事項)
+  - 第 1 章 疾患概念と診断・治療の原則 (表在性皮膚真菌症 6 項・深在性皮膚真菌症 5 項)
+  - 第 2 章 真菌検査法 (直接鏡検・真菌培養・その他の検査法 9 項)
+  - 第 3 章 皮膚真菌症の原因菌 (菌名と変遷・留意すべき皮膚真菌症 4 項)
+  - 第 4 章にあたる CQ1〜CQ21 (治療。1 CQ = 1 ノード)
+  - 文献 (1)〜367))
+
+  収録は CQ を 1 CQ = 1 ノード、CQ 以外の章は 1 節 (1.1 / 2.1 / 3.1 …) = 1 ノード。
+strip_edge:
+  # 柱下フッタ (奇数/偶数ページで左右が入れ替わる 2 形) と走り柱。ページ末尾に出る。
+  # **`\d{1,3}` 単体は入れない** (推奨度表・表の数値・文献番号が消えるため)
+  lines: 3
+  patterns:
+    - '\d{1,4}\s*●\s*日皮会誌：.*'
+    - '日皮会誌：.*●\s*\d{1,4}'
+    - '皮膚真菌症診療ガイドライン\s*2025'
+    - '日本皮膚科学会・日本医真菌学会合同皮膚真菌症診療ガイドライン策定委員会'
+    - '.*日本皮膚科学会ガイドライン'
+pdfs:
+  - file: 皮膚真菌症診療ガイドライン2025.pdf
+    url: https://www.dermatol.or.jp/dermatol/wp-content/uploads/2013/08/19e2ae577a696f81acf51fdcc0173e2c.pdf
+    # カタログの url は WordPress の 32 桁ハッシュ basename (再アップロードで変わる) なので
+    # url: を書かず、カタログの slug を配信名にする。実 URL は notes に残した
+    slug: jda_dermatomycosis_2025.pdf
+    label: 本体 (全 56 ページ)
+    mode: raw
+nodes:
+  - path: 00_ガイドラインの概要
+    title: 皮膚真菌症診療ガイドライン2025の概要（背景と目的・作成手順・資金提供者と利益相反・表1 Clinical question と推奨度・エビデンスのレベル分類と推奨度の分類・公開方法・改訂・免責事項）
+    body_text: |
+      原本 1 ページ目の冒頭 2 行（表題「皮膚真菌症診療ガイドライン 2025」と作成主体
+      「日本皮膚科学会・日本医真菌学会合同皮膚真菌症診療ガイドライン策定委員会」）は、
+      各ページの走り柱と同じ文字列のため `strip_edge` で落ちている。以下は策定委員の
+      名簿から始まる。
+    body:
+      - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+        pages: [1, 4]
+        until: '^(#+\s*)?第\s*1\s*章'
+  - path: 01_疾患概念と診断・治療の原則
+    title: 第1章 疾患概念と診断・治療の原則
+    children:
+      - path: 01_表在性皮膚真菌症_総論
+        title: '[第1章 1.] 表在性皮膚真菌症 — 定義と本邦の疫学（足白癬・爪白癬の潜在罹患率調査、日本医真菌学会の全国調査）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [4, 5]
+            from: '^(#+\s*)?第\s*1\s*章'
+            until: '^(#+\s*)?1\.1\s'
+            allow_overlap: true
+      - path: 02_手・足白癬
+        title: '[第1章 1.1] 手・足白癬（定義・症状・診断・治療・生活指導）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [5, 5]
+            from: '^(#+\s*)?1\.1\s'
+            until: '^(#+\s*)?1\.2\s'
+            allow_overlap: true
+      - path: 03_爪白癬・爪真菌症
+        title: '[第1章 1.2] 爪白癬・爪真菌症（爪白癬の病型と診断・内服/外用/その他の治療、カンジダ性爪真菌症）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [5, 6]
+            from: '^(#+\s*)?1\.2\s'
+            until: '^(#+\s*)?1\.3\s'
+            allow_overlap: true
+      - path: 04_体部・股部白癬
+        title: '[第1章 1.3] 体部・股部白癬（定義・症状・診断・治療）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [6, 7]
+            from: '^(#+\s*)?1\.3\s'
+            until: '^(#+\s*)?1\.4\s'
+            allow_overlap: true
+      - path: 05_頭部の皮膚糸状菌症
+        title: '[第1章 1.4] 頭部の皮膚糸状菌症（頭部白癬）（ケルスス禿瘡を含む定義・症状・診断・治療）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [7, 8]
+            from: '^(#+\s*)?1\.4\s'
+            until: '^(#+\s*)?1\.5\s'
+            allow_overlap: true
+      - path: 06_皮膚・粘膜カンジダ症
+        title: '[第1章 1.5] 皮膚・粘膜カンジダ症（病型・診断・治療）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [8, 9]
+            from: '^(#+\s*)?1\.5\s'
+            until: '^(#+\s*)?1\.6\s'
+            allow_overlap: true
+      - path: 07_マラセチア症
+        title: '[第1章 1.6] マラセチア症（癜風・マラセチア毛包炎の定義・症状・診断・治療）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [9, 9]
+            from: '^(#+\s*)?1\.6\s'
+            until: '^(#+\s*)?2．深在性皮膚真菌症'
+            allow_overlap: true
+      - path: 08_深在性皮膚真菌症_総論
+        title: '[第1章 2.] 深在性皮膚真菌症 — 定義と分類（深在性皮膚真菌症と内臓真菌症）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [9, 10]
+            from: '^(#+\s*)?2．深在性皮膚真菌症'
+            until: '^(#+\s*)?2\.1\s'
+            allow_overlap: true
+      - path: 09_スポロトリコーシス
+        title: '[第1章 2.1] スポロトリコーシス（Sporotrichosis）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [10, 10]
+            from: '^(#+\s*)?2\.1\s'
+            until: '^(#+\s*)?2\.2\s'
+            allow_overlap: true
+      - path: 10_黒色真菌感染症
+        title: '[第1章 2.2] 黒色真菌感染症，黒色分芽菌症とクロモミコーシス（用語と概念）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [10, 10]
+            from: '^(#+\s*)?2\.2\s'
+            until: '^(#+\s*)?2\.3\s'
+            allow_overlap: true
+      - path: 11_黒色分芽菌症
+        title: '[第1章 2.3] 黒色分芽菌症（Chromoblastomycosis）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [10, 11]
+            from: '^(#+\s*)?2\.3\s'
+            until: '^(#+\s*)?2\.4\s'
+            allow_overlap: true
+      - path: 12_黒色菌糸症
+        title: '[第1章 2.4] 黒色菌糸症（Phaeohyphomycosis）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [11, 12]
+            from: '^(#+\s*)?2\.4\s'
+            until: '^(#+\s*)?2\.5\s'
+            allow_overlap: true
+      - path: 13_無色菌糸症
+        title: '[第1章 2.5] 無色菌糸症（Hyalohyphomycosis）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [12, 12]
+            from: '^(#+\s*)?2\.5\s'
+            until: '^(#+\s*)?第\s*2\s*章'
+            allow_overlap: true
+  - path: 02_真菌検査法
+    title: 第2章 真菌検査法
+    children:
+      - path: 01_直接顕微鏡検査
+        title: '[第2章 1.] 直接顕微鏡検査（直接鏡検法）（意義・検体採取・KOH 法・観察のコツ・図1〜3）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [12, 13]
+            from: '^(#+\s*)?第\s*2\s*章'
+            until: '^(#+\s*)?2．真菌培養法'
+            allow_overlap: true
+      - path: 02_真菌培養法
+        title: '[第2章 2.] 真菌培養法（培地の選択・培養条件・表2 培地と培養条件・図4, 5）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [13, 15]
+            from: '^(#+\s*)?2．真菌培養法'
+            until: '^(#+\s*)?3．その他の真菌検査法'
+            allow_overlap: true
+      - path: 03_その他の真菌検査法
+        title: '[第2章 3.] その他の真菌検査法'
+        children:
+          - path: 01_総論
+            title: '[第2章 3.] その他の真菌検査法 — 総論（補助的検査法の位置づけ）'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [15, 15]
+                from: '^(#+\s*)?3．その他の真菌検査法'
+                allow_overlap: true
+          - path: 02_皮内反応
+            title: '[第2章 3.1] 皮内反応'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [16, 16]
+                until: '^(#+\s*)?3\.2\s'
+          - path: 03_血清診断
+            title: '[第2章 3.2] 血清診断（β-D-グルカン・各種抗原検査）'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [16, 16]
+                from: '^(#+\s*)?3\.2\s'
+                until: '^(#+\s*)?3\.3\s'
+                allow_overlap: true
+          - path: 04_Wood灯検査
+            title: '[第2章 3.3] 365 nm（Wood 灯）検査'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [16, 16]
+                from: '^(#+\s*)?3\.3\s'
+                until: '^(#+\s*)?3\.4\s'
+                allow_overlap: true
+          - path: 05_病理組織学的検査
+            title: '[第2章 3.4] 病理組織学的検査'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [16, 16]
+                from: '^(#+\s*)?3\.4\s'
+                until: '^(#+\s*)?3\.5\s'
+                allow_overlap: true
+          - path: 06_ダーモスコピー
+            title: '[第2章 3.5] ダーモスコピー'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [16, 17]
+                from: '^(#+\s*)?3\.5\s'
+                until: '^(#+\s*)?3\.6\s'
+                allow_overlap: true
+          - path: 07_質量分析法
+            title: '[第2章 3.6] 質量分析法（MALDI-TOF MS）'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [17, 17]
+                from: '^(#+\s*)?3\.6\s'
+                until: '^(#+\s*)?3\.7\s'
+                allow_overlap: true
+          - path: 08_分子生物学的同定法
+            title: '[第2章 3.7] 分子生物学的同定法（塩基配列解析・PCR 法）'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [17, 18]
+                from: '^(#+\s*)?3\.7\s'
+                until: '^(#+\s*)?3\.8\s'
+                allow_overlap: true
+          - path: 09_薬剤耐性白癬と薬剤感受性検査
+            title: '[第2章 3.8] 薬剤耐性白癬と薬剤感受性検査（Trichophyton indotineae・耐性獲得機序 図6, 7・相談先）'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [18, 20]
+                from: '^(#+\s*)?3\.8\s'
+                until: '^(#+\s*)?3\.9\s'
+                allow_overlap: true
+          - path: 10_爪白癬抗原キット
+            title: '[第2章 3.9] 爪白癬抗原キット（デルマクイック® 爪白癬。原理・図8 テストストリップ・性能・保険適用と算定要件・使用上の注意）'
+            body:
+              - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+                pages: [20, 22]
+                from: '^(#+\s*)?3\.9\s'
+                until: '^(#+\s*)?第\s*3\s*章'
+                allow_overlap: true
+  - path: 03_皮膚真菌症の原因菌
+    title: 第3章 皮膚真菌症の原因菌
+    children:
+      - path: 01_原因菌の菌名と変遷
+        title: '[第3章 1.] 皮膚真菌症原因菌の菌名と変遷（皮膚糸状菌・Candida・Malassezia の分類変更）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [22, 23]
+            from: '^(#+\s*)?第\s*3\s*章'
+            until: '^(#+\s*)?2．留意すべき皮膚真菌症'
+            allow_overlap: true
+      - path: 02_動物から感染する皮膚真菌症
+        title: '[第3章 2.1] 動物から感染する皮膚真菌症（Microsporum canis・T. benhamiae 等）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [23, 24]
+            from: '^(#+\s*)?2．留意すべき皮膚真菌症'
+            until: '^(#+\s*)?2\.2\s'
+            allow_overlap: true
+      - path: 03_Trichophyton_tonsurans感染症
+        title: '[第3章 2.2] Trichophyton tonsurans 感染症（格闘技系競技者の集団感染・ブラシ検査・治療）'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [24, 24]
+            from: '^(#+\s*)?2\.2\s'
+            until: '^(#+\s*)?2\.3\s'
+            allow_overlap: true
+      - path: 04_Trichophyton_indotineae
+        title: '[第3章 2.3] 耐性菌の中心となる可能性のある Trichophyton indotineae'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [24, 25]
+            from: '^(#+\s*)?2\.3\s'
+            until: '^(#+\s*)?2\.4\s'
+            allow_overlap: true
+      - path: 05_Candida_auris
+        title: '[第3章 2.4] 死亡率の高い侵襲性医療関連感染症を引き起こす Candida auris'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [25, 25]
+            from: '^(#+\s*)?2\.4\s'
+            until: '^(#+\s*)?CQ1．'
+            allow_overlap: true
+  - path: 04_クリニカルクエスチョン
+    title: クリニカルクエスチョン（CQ1〜CQ21。治療。推奨度 A：行うよう強く勧める／B：行うよう勧める／C1：行ってもよい／C2：行わないほうがよい／D：行うべきではない）
+    children:
+      - path: CQ01
+        title: '[治療/足白癬 CQ1] 足白癬に抗真菌薬による外用療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [25, 26]
+            from: '^(#+\s*)?CQ1．'
+            until: '^(#+\s*)?CQ2．'
+            allow_overlap: true
+      - path: CQ02
+        title: '[治療/足白癬 CQ2] 足白癬に抗真菌薬による内服療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [26, 27]
+            from: '^(#+\s*)?CQ2．'
+            until: '^(#+\s*)?CQ3．'
+            allow_overlap: true
+      - path: CQ03
+        title: '[治療/爪白癬 CQ3] 爪白癬にエフィナコナゾール爪外用液は有用か【推奨度 B】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [27, 28]
+            from: '^(#+\s*)?CQ3．'
+            until: '^(#+\s*)?CQ4．'
+            allow_overlap: true
+      - path: CQ04
+        title: '[治療/爪白癬 CQ4] 爪白癬にルリコナゾール爪外用液は有用か【推奨度 B】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [28, 28]
+            from: '^(#+\s*)?CQ4．'
+            until: '^(#+\s*)?CQ5．'
+            allow_overlap: true
+      - path: CQ05
+        title: '[治療/爪白癬 CQ5] 爪白癬にテルビナフィンの内服は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [28, 29]
+            from: '^(#+\s*)?CQ5．'
+            until: '^(#+\s*)?CQ6．'
+            allow_overlap: true
+      - path: CQ06
+        title: '[治療/爪白癬 CQ6] 爪白癬にイトラコナゾールの内服は有用か【推奨度 B】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [29, 30]
+            from: '^(#+\s*)?CQ6．'
+            until: '^(#+\s*)?CQ7．'
+            allow_overlap: true
+      - path: CQ07
+        title: '[治療/爪白癬 CQ7] 爪白癬にホスラブコナゾールの内服は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [30, 31]
+            from: '^(#+\s*)?CQ7．'
+            allow_overlap: true
+      - path: CQ08
+        title: '[治療/体部・股部白癬 CQ8] 体部/股部白癬に抗真菌薬による外用療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [32, 32]
+      - path: CQ09
+        title: '[治療/体部・股部白癬 CQ9] 体部/股部白癬に抗真菌薬による内服療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [33, 33]
+            until: '^(#+\s*)?CQ10．'
+      - path: CQ10
+        title: '[治療/頭部白癬 CQ10] 頭部白癬に抗真菌薬による内服療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [33, 34]
+            from: '^(#+\s*)?CQ10．'
+            allow_overlap: true
+      - path: CQ11
+        title: '[治療/Trichophyton tonsurans 感染症 CQ11] Trichophyton tonsurans 感染症に抗真菌薬による内服療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [35, 36]
+            until: '^(#+\s*)?CQ12．'
+      - path: CQ12
+        title: '[治療/Trichophyton tonsurans 感染症 CQ12] Trichophyton tonsurans 感染症に抗真菌薬による外用療法は有用か【推奨度 B】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [36, 36]
+            from: '^(#+\s*)?CQ12．'
+            until: '^(#+\s*)?CQ13．'
+            allow_overlap: true
+      - path: CQ13
+        title: '[治療/皮膚カンジダ症 CQ13] 皮膚カンジダ症に抗真菌薬による外用療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [36, 38]
+            from: '^(#+\s*)?CQ13．'
+            until: '^(#+\s*)?CQ14．'
+            allow_overlap: true
+      - path: CQ14
+        title: '[治療/皮膚カンジダ症 CQ14] 皮膚カンジダ症に抗真菌薬による内服療法は有用か【推奨度 B】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [38, 38]
+            from: '^(#+\s*)?CQ14．'
+            until: '^(#+\s*)?CQ15．'
+            allow_overlap: true
+      - path: CQ15
+        title: '[治療/口腔カンジダ症 CQ15] 口腔カンジダ症に抗真菌薬による外用療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [38, 39]
+            from: '^(#+\s*)?CQ15．'
+            until: '^(#+\s*)?CQ16．'
+            allow_overlap: true
+      - path: CQ16
+        title: '[治療/口腔カンジダ症 CQ16] 口腔カンジダ症に抗真菌薬による内服療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [39, 39]
+            from: '^(#+\s*)?CQ16．'
+            until: '^(#+\s*)?CQ17．'
+            allow_overlap: true
+      - path: CQ17
+        title: '[治療/外陰腟カンジダ症 CQ17] 外陰腟カンジダ症に抗真菌薬による外用療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [39, 40]
+            from: '^(#+\s*)?CQ17．'
+            allow_overlap: true
+      - path: CQ18
+        title: '[治療/外陰腟カンジダ症 CQ18] 外陰腟カンジダ症に抗真菌薬による内服療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [41, 41]
+            until: '^(#+\s*)?CQ19．'
+      - path: CQ19
+        title: '[治療/癜風 CQ19] 癜風に抗真菌薬による外用療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [41, 42]
+            from: '^(#+\s*)?CQ19．'
+            until: '^(#+\s*)?CQ20．'
+            allow_overlap: true
+      - path: CQ20
+        title: '[治療/癜風 CQ20] 癜風に抗真菌薬による内服療法は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [42, 42]
+            from: '^(#+\s*)?CQ20．'
+            until: '^(#+\s*)?CQ21．'
+            allow_overlap: true
+      - path: CQ21
+        title: '[治療/マラセチア毛包炎 CQ21] マラセチア毛包炎に対し抗真菌薬による治療は有用か【推奨度 A】'
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [42, 43]
+            from: '^(#+\s*)?CQ21．'
+            until: '^(#+\s*)?文\s*献'
+            allow_overlap: true
+  - path: 05_文献
+    title: 文献（1)〜367)）
+    children:
+      - path: 01_文献001-073
+        title: 文献 1)〜73)
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [43, 45]
+            from: '^(#+\s*)?文\s*献'
+            allow_overlap: true
+      - path: 02_文献074-162
+        title: 文献 74)〜162)
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [46, 48]
+      - path: 03_文献163-242
+        title: 文献 163)〜242)
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [49, 51]
+      - path: 04_文献243-328
+        title: 文献 243)〜328)
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [52, 54]
+      - path: 05_文献329-367
+        title: 文献 329)〜367)
+        body:
+          - pdf: 皮膚真菌症診療ガイドライン2025.pdf
+            pages: [55, 56]
+vlm_candidates:
+  - {pdf: 皮膚真菌症診療ガイドライン2025.pdf, pages: [13, 14], why: '図1 真菌鏡検の手順（手技の連続写真）・図2〜5 直接鏡検像（白癬の菌糸と分節胞子、カンジダの仮性菌糸、癜風の短い菌糸と球状胞子、菌様モザイク）。写真主体でテキスト層はキャプションのみ'}
+  - {pdf: 皮膚真菌症診療ガイドライン2025.pdf, pages: [15, 15], why: '表2 培地と培養条件（想定起因菌×培地×培養温度の 3 列表）。raw では行が入れ子で出て列対応が崩れる'}
+  - {pdf: 皮膚真菌症診療ガイドライン2025.pdf, pages: [19, 19], why: '図6 テルビナフィン耐性獲得の機序・図7 イトラコナゾール耐性獲得の機序（模式図）'}
+  - {pdf: 皮膚真菌症診療ガイドライン2025.pdf, pages: [21, 21], why: '図8 テストストリップ（爪白癬抗原キットの構造図）'}
+  - {pdf: 皮膚真菌症診療ガイドライン2025.pdf, pages: [26, 26], why: '表3 表在性皮膚真菌症に使用される抗真菌外用薬の系統と一般名および代表的な商品名ならびに保険適用（5 列表）。商品名の登録商標記号が行を割るため列の対応を VLM で確認したい'}
+  - {pdf: 皮膚真菌症診療ガイドライン2025.pdf, pages: [2, 2], why: '表1 Clinical question と推奨度（CQ21 件 × 推奨度の 3 列表）。raw でも読めているが、推奨度の取り違えが致命的なので突合用'}
+notes: |
+  - 原本は日皮会誌 135(13)：2511-2566，2025（令和 7）に掲載された 56 ページの学会誌組版
+    （2 段組）。**抽出は全ページ `raw`**。既定モードでは左右の段の行が 1 行ずつ交互に出て
+    本文が読めず、`layout` は段が横に並ぶだけで散文にならない。`-raw`（内容ストリーム順）
+    だけが段ごとに正しい順で出る。
+  - **`url:` を書いていない。** カタログの url は
+    <https://www.dermatol.or.jp/dermatol/wp-content/uploads/2013/08/19e2ae577a696f81acf51fdcc0173e2c.pdf>
+    で、basename が WordPress の 32 桁ハッシュ（再アップロードで変わる）。build は
+    「url があるならその basename が配信名」なので、そのままだと配信 PDF 名がハッシュに
+    なってしまう。`url:` を省略してカタログの slug（`jda_dermatomycosis_2025.pdf`）を
+    配信名にし、ノードの source は manifest 直下の学会掲載ページに落とした。
+  - **書名にゆれがある。** 原本 1 ページ目・柱・文献 3) はいずれも
+    「皮膚真菌症診療ガイドライン 2025」だが、学会「一般公開ガイドライン」ページの
+    表示は「皮膚真菌診療ガイドライン2025」（「症」が無い）。原本を正とした。
+  - `publisher` は原本 1 ページ目の作成主体どおり **日本皮膚科学会・日本医真菌学会**
+    （合同の「皮膚真菌症診療ガイドライン策定委員会」が策定）。
+  - strip は使わず `strip_edge`（端 3 行）だけ。柱下フッタは奇数/偶数ページで左右が
+    入れ替わる 2 形（`日皮会誌：… ● 2511` と `2512 ● 日皮会誌：…`）で、どちらも
+    `日皮会誌：`（コロン）を含む。文献欄の日皮会誌は `日皮会誌，`（読点）なので巻き込まない。
+    走り柱は `皮膚真菌症診療ガイドライン 2025`（奇数ページ）と
+    `日本皮膚科学会・日本医真菌学会合同皮膚真菌症診療ガイドライン策定委員会`（偶数ページ）、
+    1 ページ目だけ末尾に `… 日本皮膚科学会ガイドライン` の合成バナー。
+    **`\d{1,3}` 単体は入れていない**（推奨度表の記号・表の数値・文献番号が消えるため）。
+  - `normalize_radicals` は付けていない（康熙部首・縦書き用記号の混入 0 件を実測）。
+  - **落としたページは無い（p.1-56 全ページがどこかのノードに載る）。** 表紙・目次・奥付に
+    あたるページは無く、1 ページ目が表題・策定委員・概要を兼ねている。
+  - ノード粒度: CQ は 1 CQ = 1 ノード（21 件）。CQ 以外の章は原本の節（1.1 / 2.1 / 3.1 …）
+    = 1 ノード。1 ページに 2〜4 個の節・CQ が始まるページが多い（p.10 に 2.1/2.2/2.3、
+    p.16 に 3.1〜3.5、p.28 に CQ4/CQ5 …）ので `from` / `until` で割り、同じページを
+    共有する側に `allow_overlap: true` を付けた。
+  - title の推奨度は p.2「表 1 Clinical question と推奨度」と各 CQ の推奨文表の両方で
+    突き合わせ、21 件すべて一致することを確認した（A 17 件・B 4 件）。
+  - 文献（1)〜367)、p.43-56）は 1 ノードで 7 万字を超えるので、`05_文献/` の下に
+    ページ境界の文献番号で 5 ノードに割った（p.43 は CQ21 の本文が前半にあるので
+    `from: '^文\s*献'` で切っている）。
+  - 本ガイドラインに関連する学術委員会文書「白癬菌抗原キット（販売名：デルマクイック®
+    爪白癬）の臨床活用に関して」（1 ページ）は学会ページで**独立掲載**されており、
+    カタログでも別 guideline 行になっているので、この manifest には束ねていない。

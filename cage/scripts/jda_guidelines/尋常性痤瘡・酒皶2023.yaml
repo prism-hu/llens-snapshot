@@ -1,0 +1,526 @@
+id: 尋常性痤瘡・酒皶2023
+title: 尋常性痤瘡・酒皶治療ガイドライン2023
+guideline: 尋常性痤瘡・酒皶治療ガイドライン2023
+publisher: 日本皮膚科学会
+source: https://www.dermatol.or.jp/medical/guideline/4742/
+retrieved_at: '2026-09-07'
+description: |
+  『尋常性痤瘡・酒皶治療ガイドライン 2023』(日本皮膚科学会ガイドライン)。
+  尋常性痤瘡・酒皶治療ガイドライン策定委員会が作成し、日本皮膚科学会雑誌に掲載された。
+  **尋常性痤瘡 (にきび) と酒皶を 1 冊で扱う**ガイドラインで、症候別病型分類に基づく
+  治療推奨を示す。
+
+  構成:
+  - 序 (背景・目的・対象・用語の定義〈萎縮性瘢痕など〉・作成方法)
+  - 表1 Clinical Question のまとめ 2023 (CQ1〜CQ47・CQ S1〜S4 の推奨度一覧)
+  - 尋常性痤瘡治療アルゴリズムと酒皶病型別治療一覧 (図1 尋常性痤瘡治療アルゴリズム 2023・
+    表2 酒皶病型別治療一覧 2023・表3 策定委員会の構成と利益相反)
+  - 尋常性痤瘡の CQ1〜CQ47 (炎症性皮疹 CQ1〜17／面皰 CQ18〜24／炎症を伴う囊腫・硬結 CQ25・26／
+    炎症軽快後の寛解維持 CQ27〜29／瘢痕 CQ30〜34／痤瘡全般 CQ35〜47)
+  - 酒皶の CQ S1〜S4 (紅斑毛細血管拡張型〈第 1 度〉／丘疹膿疱型〈第 2 度〉／瘤腫型・鼻瘤〈第 3 度〉／
+    スキンケア)
+
+  推奨度は A / B / C1 / C2 / D で、薬剤ごとに分かれるものが多い (`A＊` は保険適用等の条件付き)。
+  収録は 1 CQ = 1 ノード。
+strip:
+  # 柱 (ノド柱・書名)。日皮会誌の学会誌組版で、raw モードでは**ページ末尾**に出る
+  - '尋常性痤瘡・酒皶治療ガイドライン\s*2023(\s*日本皮膚科学会ガイドライン)?'
+  - '尋常性痤瘡・酒皶治療ガイドライン策定委員会'
+  - '日本皮膚科学会ガイドライン'
+  # ノンブル入りの版面フッタ。`●` を必ず含むので文献中の「日皮会誌，…」とは紛れない
+  - '\d{1,4}\s*●\s*日皮会誌.*'
+  - '日皮会誌.*●\s*\d{1,4}'
+strip_edge:
+  # 裸のノンブル。薬剤の濃度 (0.1％・2.5％ 等) や有効率を守るため strip ではなく端だけ
+  lines: 3
+  patterns:
+    - '\d{1,3}'
+pdfs:
+  - file: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+    url: https://www.dermatol.or.jp/uploads/uploads/files/guideline/zasou2023_230820.pdf
+    label: 尋常性痤瘡・酒皶治療ガイドライン2023
+    mode: raw
+nodes:
+  - path: 01_序
+    title: 序（背景・目的・対象・用語の定義・作成方法）
+    body:
+      - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+        pages: [1, 4]
+  - path: 02_CQ一覧
+    title: 表1 Clinical Question のまとめ 2023（CQ1〜CQ47・CQ S1〜S4 の推奨度一覧）
+    body:
+      - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+        pages: [5, 7]
+        allow_overlap: true
+  - path: 03_治療アルゴリズムと酒皶病型別治療一覧
+    title: 尋常性痤瘡治療アルゴリズムと酒皶病型別治療一覧（図1 尋常性痤瘡治療アルゴリズム 2023・表2 酒皶病型別治療一覧 2023・表3 策定委員会の構成と利益相反）
+    body:
+      - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+        pages: [8, 9]
+        from: '^(#+\s*)?尋常性痤瘡治療アルゴリズムと酒皶病型別治'
+        until: '^(#+\s*)?CQ1[：:]'
+        allow_overlap: true
+  - path: 04_CQ
+    title: クリニカルクエスチョン（尋常性痤瘡 CQ1〜CQ47／酒皶 CQ S1〜CQ S4）
+    body_text: |
+      症候別 (炎症性皮疹・面皰・囊腫／硬結・寛解維持・瘢痕・痤瘡全般) と酒皶の病型別に
+      分けた 51 件のクリニカルクエスチョン。各ノードは推奨度・推奨文・解説・文献を持つ。
+    children:
+      - path: 01_炎症性皮疹
+        title: '炎症性皮疹（CQ1〜CQ17）'
+        children:
+          - path: CQ01
+            title: '[CQ1] 炎症性皮疹にクリンダマイシン 1％/過酸化ベンゾイル 3％配合ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [9, 9]
+                from: '^(#+\s*)?CQ1[：:]'
+                until: '^(#+\s*)?CQ2[：:]'
+                allow_overlap: true
+          - path: CQ02
+            title: '[CQ2] 炎症性皮疹にアダパレン 0.1％/過酸化ベンゾイル 2.5％配合ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [9, 10]
+                from: '^(#+\s*)?CQ2[：:]'
+                until: '^(#+\s*)?CQ3[：:]'
+                allow_overlap: true
+          - path: CQ03
+            title: '[CQ3] 炎症性皮疹にアダパレン 0.1％ゲルと外用抗菌薬の併用は有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [10, 10]
+                from: '^(#+\s*)?CQ3[：:]'
+                until: '^(#+\s*)?CQ4[：:]'
+                allow_overlap: true
+          - path: CQ04
+            title: '[CQ4] 炎症性皮疹に過酸化ベンゾイル 2.5％ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [10, 11]
+                from: '^(#+\s*)?CQ4[：:]'
+                until: '^(#+\s*)?CQ5[：:]'
+                allow_overlap: true
+          - path: CQ05
+            title: '[CQ5] 炎症性皮疹にアダパレン 0.1％ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [11, 11]
+                from: '^(#+\s*)?CQ5[：:]'
+                until: '^(#+\s*)?CQ6[：:]'
+                allow_overlap: true
+          - path: CQ06
+            title: '[CQ6] 炎症性皮疹に外用抗菌薬は有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [11, 13]
+                from: '^(#+\s*)?CQ6[：:]'
+                until: '^(#+\s*)?CQ7[：:]'
+                allow_overlap: true
+          - path: CQ07
+            title: '[CQ7] 炎症性皮疹にアダパレン 0.1％/過酸化ベンゾイル 2.5％配合ゲルと内服抗菌薬の併用は有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [13, 13]
+                from: '^(#+\s*)?CQ7[：:]'
+                until: '^(#+\s*)?CQ8[：:]'
+                allow_overlap: true
+          - path: CQ08
+            title: '[CQ8] 炎症性皮疹にアダパレン 0.1％ゲルと内服抗菌薬の併用は有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [13, 14]
+                from: '^(#+\s*)?CQ8[：:]'
+                until: '^(#+\s*)?CQ9[：:]'
+                allow_overlap: true
+          - path: CQ09
+            title: '[CQ9] 炎症性皮疹に非ステロイド系抗炎症薬（NSAID）外用は有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [14, 14]
+                from: '^(#+\s*)?CQ9[：:]'
+                until: '^(#+\s*)?CQ10[：:]'
+                allow_overlap: true
+          - path: CQ10
+            title: '[CQ10] 炎症性皮疹にステロイド外用は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [14, 15]
+                from: '^(#+\s*)?CQ10[：:]'
+                until: '^(#+\s*)?CQ11[：:]'
+                allow_overlap: true
+          - path: CQ11
+            title: '[CQ11] 炎症性皮疹に内服抗菌薬は有効か？【推奨度：A（ドキシサイクリン）ないし A＊（ミノサイクリン）ないし B（ロキシスロマイシン，ファロペネム）ないし C1（テトラサイクリン，エリスロマイシンほか）】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [15, 19]
+                from: '^(#+\s*)?CQ11[：:]'
+                until: '^(#+\s*)?CQ12[：:]'
+                allow_overlap: true
+          - path: CQ12
+            title: '[CQ12] 炎症性皮疹に漢方は有効か？【推奨度：C1（荊芥連翹湯，清上防風湯，十味敗毒湯），C2（黄連解毒湯，温清飲，温経湯，桂枝茯苓丸）】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [19, 19]
+                from: '^(#+\s*)?CQ12[：:]'
+                until: '^(#+\s*)?CQ13[：:]'
+                allow_overlap: true
+          - path: CQ13
+            title: '[CQ13] 最重症の炎症性皮疹にステロイド内服は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [19, 20]
+                from: '^(#+\s*)?CQ13[：:]'
+                until: '^(#+\s*)?CQ14[：:]'
+                allow_overlap: true
+          - path: CQ14
+            title: '[CQ14] 炎症性皮疹に DDS（diaminodiphenyl sulfone, dapsone）内服は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [20, 20]
+                from: '^(#+\s*)?CQ14[：:]'
+                until: '^(#+\s*)?CQ15[：:]'
+                allow_overlap: true
+          - path: CQ15
+            title: '[CQ15] 炎症性皮疹に非ステロイド系抗炎症薬（NSAID）内服は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [20, 20]
+                from: '^(#+\s*)?CQ15[：:]'
+                allow_overlap: true
+          - path: CQ16
+            title: '[CQ16] 炎症性皮疹にケミカルピーリングは有効か？【推奨度：C1（グリコール酸，サリチル酸マクロゴール），C2（サリチル酸エタノール）】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [21, 22]
+                from: '^(#+\s*)?CQ16[：:]'
+                until: '^(#+\s*)?CQ17[：:]'
+                allow_overlap: true
+          - path: CQ17
+            title: '[CQ17] 炎症性皮疹に光線療法は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [22, 23]
+                from: '^(#+\s*)?CQ17[：:]'
+                allow_overlap: true
+      - path: 02_面皰
+        title: '面皰（CQ18〜CQ24）'
+        children:
+          - path: CQ18
+            title: '[CQ18] 面皰にアダパレン 0.1％ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [24, 24]
+                from: '^(#+\s*)?CQ18[：:]'
+                until: '^(#+\s*)?CQ19[：:]'
+                allow_overlap: true
+          - path: CQ19
+            title: '[CQ19] 面皰に過酸化ベンゾイル 2.5％ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [24, 25]
+                from: '^(#+\s*)?CQ19[：:]'
+                until: '^(#+\s*)?CQ20[：:]'
+                allow_overlap: true
+          - path: CQ20
+            title: '[CQ20] 面皰にアダパレン 0.1％/過酸化ベンゾイル 2.5％配合ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [25, 25]
+                from: '^(#+\s*)?CQ20[：:]'
+                until: '^(#+\s*)?CQ21[：:]'
+                allow_overlap: true
+          - path: CQ21
+            title: '[CQ21] 面皰にクリンダマイシン 1％/過酸化ベンゾイル 3％配合ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [25, 26]
+                from: '^(#+\s*)?CQ21[：:]'
+                until: '^(#+\s*)?CQ22[：:]'
+                allow_overlap: true
+          - path: CQ22
+            title: '[CQ22] 面皰に外用抗菌薬は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [26, 26]
+                from: '^(#+\s*)?CQ22[：:]'
+                until: '^(#+\s*)?CQ23[：:]'
+                allow_overlap: true
+          - path: CQ23
+            title: '[CQ23] 面皰に漢方は有効か？【推奨度：C1（荊芥連翹湯），C2（黄連解毒湯，十味敗毒湯，桂枝茯苓丸）】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [26, 27]
+                from: '^(#+\s*)?CQ23[：:]'
+                until: '^(#+\s*)?CQ24[：:]'
+                allow_overlap: true
+          - path: CQ24
+            title: '[CQ24] 面皰にケミカルピーリングは有効か？【推奨度：C1（グリコール酸，サリチル酸マクロゴール），C2（サリチル酸エタノール）】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [27, 29]
+                from: '^(#+\s*)?CQ24[：:]'
+                until: '^(#+\s*)?CQ25[：:]'
+                allow_overlap: true
+      - path: 03_囊腫・硬結
+        title: '炎症を伴う囊腫／硬結（CQ25・CQ26）'
+        children:
+          - path: CQ25
+            title: '[CQ25] 炎症を伴う囊腫/硬結に内服抗菌薬は有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [29, 29]
+                from: '^(#+\s*)?CQ25[：:]'
+                until: '^(#+\s*)?CQ26[：:]'
+                allow_overlap: true
+          - path: CQ26
+            title: '[CQ26] 炎症を伴う囊腫/硬結にステロイド局所注射は有効か？【推奨度：B】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [29, 30]
+                from: '^(#+\s*)?CQ26[：:]'
+                until: '^(#+\s*)?CQ27[：:]'
+                allow_overlap: true
+      - path: 04_寛解維持
+        title: '炎症軽快後の寛解維持（CQ27〜CQ29）'
+        children:
+          - path: CQ27
+            title: '[CQ27] 炎症軽快後の寛解維持にアダパレン 0.1％ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [30, 30]
+                from: '^(#+\s*)?CQ27[：:]'
+                until: '^(#+\s*)?CQ28[：:]'
+                allow_overlap: true
+          - path: CQ28
+            title: '[CQ28] 炎症軽快後の寛解維持に過酸化ベンゾイル 2.5％ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [30, 31]
+                from: '^(#+\s*)?CQ28[：:]'
+                until: '^(#+\s*)?CQ29[：:]'
+                allow_overlap: true
+          - path: CQ29
+            title: '[CQ29] 炎症軽快後の寛解維持にアダパレン 0.1％/過酸化ベンゾイル 2.5％配合ゲルは有効か？【推奨度：A】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [31, 31]
+                from: '^(#+\s*)?CQ29[：:]'
+                until: '^(#+\s*)?CQ30[：:]'
+                allow_overlap: true
+      - path: 05_瘢痕
+        title: '痤瘡の瘢痕（CQ30〜CQ34）'
+        children:
+          - path: CQ30
+            title: '[CQ30] 痤瘡の肥厚性瘢痕にトラニラスト内服は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [31, 31]
+                from: '^(#+\s*)?CQ30[：:]'
+                until: '^(#+\s*)?CQ31[：:]'
+                allow_overlap: true
+          - path: CQ31
+            title: '[CQ31] 痤瘡の肥厚性瘢痕にステロイド局所注射は有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [31, 31]
+                from: '^(#+\s*)?CQ31[：:]'
+                allow_overlap: true
+          - path: CQ32
+            title: '[CQ32] 痤瘡の萎縮性瘢痕に充填剤注射は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [32, 32]
+                from: '^(#+\s*)?CQ32[：:]'
+                until: '^(#+\s*)?CQ33[：:]'
+                allow_overlap: true
+          - path: CQ33
+            title: '[CQ33] 痤瘡の萎縮性瘢痕にケミカルピーリングは有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [32, 32]
+                from: '^(#+\s*)?CQ33[：:]'
+                until: '^(#+\s*)?CQ34[：:]'
+                allow_overlap: true
+          - path: CQ34
+            title: '[CQ34] 痤瘡の肥厚性瘢痕・ケロイドに外科的処置は有効か？【推奨度：C2（外科的切除，冷凍凝固療法）】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [32, 33]
+                from: '^(#+\s*)?CQ34[：:]'
+                until: '^(#+\s*)?CQ35[：:]'
+                allow_overlap: true
+      - path: 06_痤瘡全般
+        title: '痤瘡全般（CQ35〜CQ47）'
+        children:
+          - path: CQ35
+            title: '[CQ35] 面皰・炎症性皮疹にアゼライン酸外用は有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [33, 34]
+                from: '^(#+\s*)?CQ35[：:]'
+                until: '^(#+\s*)?CQ36[：:]'
+                allow_overlap: true
+          - path: CQ36
+            title: '[CQ36] 炎症性皮疹，炎症後の紅斑にビタミン C 外用は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [34, 34]
+                from: '^(#+\s*)?CQ36[：:]'
+                until: '^(#+\s*)?CQ37[：:]'
+                allow_overlap: true
+          - path: CQ37
+            title: '[CQ37] 痤瘡にイオウ製剤外用は有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [34, 34]
+                from: '^(#+\s*)?CQ37[：:]'
+                until: '^(#+\s*)?CQ38[：:]'
+                allow_overlap: true
+          - path: CQ38
+            title: '[CQ38] 痤瘡に経口避妊薬（いわゆるピル）あるいは低用量エストロゲン・プロゲスチン配合薬は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [34, 35]
+                from: '^(#+\s*)?CQ38[：:]'
+                until: '^(#+\s*)?CQ39[：:]'
+                allow_overlap: true
+          - path: CQ39
+            title: '[CQ39] 痤瘡にスピロノラクトンは有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [35, 35]
+                from: '^(#+\s*)?CQ39[：:]'
+                until: '^(#+\s*)?CQ40[：:]'
+                allow_overlap: true
+          - path: CQ40
+            title: '[CQ40] 痤瘡にビタミン薬内服は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [35, 35]
+                from: '^(#+\s*)?CQ40[：:]'
+                until: '^(#+\s*)?CQ41[：:]'
+                allow_overlap: true
+          - path: CQ41
+            title: '[CQ41] 面皰，炎症性皮疹に面皰圧出は有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [35, 36]
+                from: '^(#+\s*)?CQ41[：:]'
+                until: '^(#+\s*)?CQ42[：:]'
+                allow_overlap: true
+          - path: CQ42
+            title: '[CQ42] 痤瘡あるいは痤瘡瘢痕にレーザー治療は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [36, 37]
+                from: '^(#+\s*)?CQ42[：:]'
+                until: '^(#+\s*)?CQ43[：:]'
+                allow_overlap: true
+          - path: CQ43
+            title: '[CQ43] 痤瘡に洗顔は有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [37, 38]
+                from: '^(#+\s*)?CQ43[：:]'
+                until: '^(#+\s*)?CQ44[：:]'
+                allow_overlap: true
+          - path: CQ44
+            title: '[CQ44] 痤瘡患者のスキンケアに痤瘡用基礎化粧品の使用は有用か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [38, 38]
+                from: '^(#+\s*)?CQ44[：:]'
+                allow_overlap: true
+          - path: CQ45
+            title: '[CQ45] 痤瘡に化粧（メイクアップ）指導は有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [39, 39]
+                from: '^(#+\s*)?CQ45[：:]'
+                until: '^(#+\s*)?CQ46[：:]'
+                allow_overlap: true
+          - path: CQ46
+            title: '[CQ46] 痤瘡患者に特定の食べ物を一律に制限することは有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [39, 40]
+                from: '^(#+\s*)?CQ46[：:]'
+                until: '^(#+\s*)?CQ47[：:]'
+                allow_overlap: true
+          - path: CQ47
+            title: '[CQ47] 痤瘡患者に食事指導は有効か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [40, 40]
+                from: '^(#+\s*)?CQ47[：:]'
+                until: '^(#+\s*)?CQ S1[：:]'
+                allow_overlap: true
+      - path: 07_酒皶
+        title: '酒皶（CQ S1〜CQ S4）'
+        children:
+          - path: CQ_S1
+            title: '[CQ S1] 紅斑毛細血管拡張型酒皶（第 1 度酒皶）に有効な治療は何か？【推奨度：C1（パルス色素レーザー〈595 nm〉，Nd:YAG レーザー〈1,064 nm，ロングパルス〉，intense pulsed light）ないし C2（外用薬，内服薬〈漢方を含む〉）】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [40, 41]
+                from: '^(#+\s*)?CQ S1[：:]'
+                until: '^(#+\s*)?CQ S2[：:]'
+                allow_overlap: true
+          - path: CQ_S2
+            title: '[CQ S2] 丘疹膿疱型酒皶（第 2 度酒皶）に有効な治療は何か？【推奨度：A（0.75％メトロニダゾールゲル）ないし C1（アゼライン酸外用，ドキシサイクリン内服，ミノサイクリン内服，テトラサイクリン内服）ないし C2（イオウカンフルローション外用，漢方内服，イベルメクチンほか）】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [41, 44]
+                from: '^(#+\s*)?CQ S2[：:]'
+                until: '^(#+\s*)?CQ S3[：:]'
+                allow_overlap: true
+          - path: CQ_S3
+            title: '[CQ S3] 瘤腫型酒皶・鼻瘤（第 3 度酒皶）に有効な治療は何か？【推奨度：C2】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [44, 44]
+                from: '^(#+\s*)?CQ S3[：:]'
+                until: '^(#+\s*)?CQ S4[：:]'
+                allow_overlap: true
+          - path: CQ_S4
+            title: '[CQ S4] 酒皶にスキンケアは有効か？【推奨度：C1】'
+            body:
+              - pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf
+                pages: [44, 44]
+                from: '^(#+\s*)?CQ S4[：:]'
+                allow_overlap: true
+
+vlm_candidates:
+  - {pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf, pages: [5, 7], why: 表1 Clinical Question のまとめ 2023（CQ／推奨度／推奨文の 3 列表、51 行。raw では列が縦に潰れて推奨度と CQ の対応が崩れる）}
+  - {pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf, pages: [8, 8], why: 図1 尋常性痤瘡治療アルゴリズム 2023（重症度別のフローチャート）・表2 酒皶病型別治療一覧 2023}
+  - {pdf: 尋常性痤瘡・酒皶治療ガイドライン2023.pdf, pages: [9, 9], why: 表3 尋常性痤瘡・酒皶治療ガイドライン策定委員会の構成と利益相反（多列表）}
+notes: |
+  ## 版の扱い
+  - 2023 年版 (配信 PDF は 2023-08-20 版)。2017 年版の改訂版だが、旧版の PDF は素材に
+    含まれないので落とした版は無い。
+  - **尋常性痤瘡と酒皶が 1 冊にまとまった原本**なので、id も 1 本 (`尋常性痤瘡・酒皶2023`) に
+    してある。CQ の番号体系も痤瘡が CQ1〜47、酒皶が CQ S1〜S4 と 1 冊の中で通っている。
+
+  ## 抽出モード
+  - 日皮会誌の 2 段組。既定モードは左右段の行が交互に出て文がつながらず、`-layout` は
+    1 行に左段 + 右段が並ぶ。`-raw` だけが段ごとに上から下へ出るので `mode: raw` にした。
+  - 康熙部首の混入は 0 件なので `normalize_radicals` は付けていない。
+
+  ## strip / strip_edge
+  - 柱 (書名・策定委員会名) と版面フッタを `strip`。
+  - 裸のノンブルは `strip_edge` (lines: 3)。薬剤の濃度 (0.1％ゲル・2.5％ゲル・3％配合ゲル)、
+    有効率、症例数を守るため `strip` には置いていない。
+
+  ## 落としたページ
+  - 落としたページは無い。全 44 ページがいずれかのノードに載る。
+
+  ## ページ内分割
+  - 序 (p.1〜4)・表1 (p.5〜7) はページ境界と一致するので分割していない。アルゴリズム節の開始
+    (p.8) と CQ1〜CQ47・CQ S1〜CQ S4 の境界は `from` / `until` で割った。
+  - **p.5〜7 の表1 は CQ の一覧だが、行の書式が本体の見出しと違う** (一覧は `CQ2 炎症性皮疹に…`、
+    本体は `CQ2：炎症性皮疹に…` と全角コロンが入る)。境界を `^CQ<n>[：:]` にしてあるので
+    一覧行には当たらない。`^CQ1[：:]` が `CQ11：`〜`CQ17：` に当たることもない
+    (数字の直後がコロンでないため)。
+  - 酒皶の CQ は `CQ S1：` のように S 付きなので、`^CQ S<n>[：:]` を境界にしている。
+  - overlay (VLM) が見出しを `## ` 付きで起こしても当たるように、境界は `^(#+\s*)?…` の形で書いてある。
